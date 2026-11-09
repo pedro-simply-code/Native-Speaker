@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tandem Natives — Two people. Two languages. One hour.</title>
+  <meta name="description" content="A guided language exchange that pairs learners in the US with partners in Guatemala. Half the hour in English, half in Spanish, with a host who keeps the conversation moving.">
+  <meta name="theme-color" content="#F7FAF8">
+  <meta property="og:title" content="Tandem Natives — Half the hour in English. Half in Spanish.">
+  <meta property="og:description" content="Trade languages with a partner in Guatemala or the US. A host sets the prompts, keeps the time, and sends the notes.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="../assets/logos/tandem.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&family=Mulish:ital,wght@0,300..800;1,400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.78 5.63 6.22.9-4.5 4.39 1.06 6.2L12 17.2l-5.56 2.92 1.06-6.2L3 9.53l6.22-.9L12 3Z" fill="currentColor"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 3v4M16 3v4M3 10h18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m16 10 5-3v10l-5-3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h13m-4-4 4 4-4 4M20 16H7m4 4-4-4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-headphone" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><rect x="3" y="13" width="4" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="17" y="13" width="4" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20v3H6.5A2.5 2.5 0 0 1 4 20.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 8.2 7 10 4-1.8 7-5.5 7-10V6l-7-3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m10 9.5 5 2.5-5 2.5v-5Z" fill="currentColor"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 10v6M8 7.5v.1M12 16v-3.5a2.5 2.5 0 0 1 5 0V16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Tandem Natives home">
+        <img class="brand-mark" src="../assets/logos/tandem.svg" alt="" width="40" height="40">
+        <span class="brand-name" aria-hidden="true">
+          <span class="brand-line brand-line--top">TANDEM</span>
+          <span class="brand-line brand-line--bottom">NATIVES</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+        <a href="#how">How it works</a>
+        <a href="#exchanges">Exchanges</a>
+        <a href="#partners">Partners</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary nav-mobile-cta" href="#join">Find a partner</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm nav-cta" href="#join">Find a partner</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"></use></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Guided language exchange · Guatemala &amp; the US</p>
+          <h1>Half the hour in English.<br><em>Half in Spanish.</em></h1>
+          <p class="hero-lede">Trade languages with a partner who is learning what you already speak. A host sets the prompts, keeps the time, and sends the notes. Spanish from Guatemala, English from the US and Guatemala.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#join">Find my tandem</a>
+            <a class="btn btn-ghost btn-lg" href="#how">How a session works</a>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="../assets/img/learner-ana.jpg" alt="">
+              <img src="../assets/img/teacher-camila.jpg" alt="">
+              <img src="../assets/img/learner-tom.jpg" alt="">
+              <img src="../assets/img/learner-lucia.jpg" alt="">
+            </div>
+            <div>
+              <p><strong>4.8 from 940 exchanges</strong></p>
+              <p>Pairs in Guatemala and the US, every week.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exchange-shell" id="exchange">
+          <div class="exchange-card" aria-labelledby="exchange-title">
+            <div class="exchange-top">
+              <div>
+                <p class="exchange-kicker">Next exchange</p>
+                <h2 id="exchange-title">Thursday · 18:00 CT</h2>
+              </div>
+              <span class="live-chip"><span class="live-dot" aria-hidden="true"></span> 6 pairs</span>
+            </div>
+
+            <div class="order-switch" role="group" aria-label="Choose which language goes first">
+              <button class="order-btn is-active" type="button" data-order="en-first" aria-pressed="true">English first</button>
+              <button class="order-btn" type="button" data-order="es-first" aria-pressed="false">Spanish first</button>
+            </div>
+
+            <div class="pair">
+              <div class="pair-person">
+                <img src="../assets/img/learner-ana.jpg" alt="Portrait of Ana, a learner in Austin">
+                <span class="pair-role">You</span>
+                <strong>Ana</strong>
+                <span>Austin, US · learning Spanish</span>
+              </div>
+              <span class="pair-swap" aria-hidden="true"><svg class="icon"><use href="#i-swap"></use></svg></span>
+              <div class="pair-person">
+                <img src="../assets/img/teacher-camila.jpg" alt="Portrait of Camila, a partner in Quetzaltenango">
+                <span class="pair-role">Your partner</span>
+                <strong>Camila</strong>
+                <span>Quetzaltenango, GT · learning English</span>
+              </div>
+            </div>
+
+            <div class="exchange-timeline">
+              <div class="timeline-half" id="half-one">
+                <span class="half-time" id="half-one-time">00:00–30:00</span>
+                <strong id="half-one-title">English</strong>
+                <span id="half-one-note">Camila practises with you</span>
+              </div>
+              <div class="timeline-half timeline-half--alt" id="half-two">
+                <span class="half-time" id="half-two-time">30:00–60:00</span>
+                <strong id="half-two-title">Spanish</strong>
+                <span id="half-two-note">You practise with Camila</span>
+              </div>
+            </div>
+
+            <div class="exchange-foot">
+              <span><svg class="icon" aria-hidden="true"><use href="#i-clock"></use></svg> 60 minutes</span>
+              <span><svg class="icon" aria-hidden="true"><use href="#i-video"></use></svg> Live video</span>
+              <span><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg> Hosted</span>
+            </div>
+          </div>
+
+          <div class="exchange-float" aria-hidden="true">
+            <svg class="icon"><use href="#i-message"></use></svg>
+            <span><strong>3 prompts</strong> sent before you meet</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Where our pairs are based">
+      <div class="container proof-inner">
+        <p>Pairs in</p>
+        <ul>
+          <li>Antigua</li>
+          <li>Quetzaltenango</li>
+          <li>Lake Atitlán</li>
+          <li>Guatemala City</li>
+          <li>Austin</li>
+          <li>Chicago</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section how" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-title">Two people.<br><em>One fair exchange.</em></h2>
+          <p>No one teaches. No one performs. You both bring a language, and the host makes sure each side gets the same room.</p>
+        </div>
+
+        <div class="step-grid">
+          <article class="step-card">
+            <span class="step-num">01</span>
+            <span class="step-icon"><svg class="icon" aria-hidden="true"><use href="#i-globe"></use></svg></span>
+            <h3>Tell us your levels</h3>
+            <p>What you speak, what you are learning, and how confident you feel. We pair you by level and interests.</p>
+            <span class="step-tag">5 minutes</span>
+          </article>
+          <article class="step-card">
+            <span class="step-num">02</span>
+            <span class="step-icon"><svg class="icon" aria-hidden="true"><use href="#i-message"></use></svg></span>
+            <h3>Meet your partner</h3>
+            <p>You get a profile, three conversation prompts, and a host who opens the room and keeps the time.</p>
+            <span class="step-tag">Same week</span>
+          </article>
+          <article class="step-card">
+            <span class="step-num">03</span>
+            <span class="step-icon"><svg class="icon" aria-hidden="true"><use href="#i-swap"></use></svg></span>
+            <h3>Swap halfway</h3>
+            <p>Thirty minutes in English, thirty in Spanish. The host sends a note with the words you reached for.</p>
+            <span class="step-tag">60 minutes</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section exchanges" id="exchanges" aria-labelledby="exchanges-title">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">Choose your exchange</p>
+            <h2 id="exchanges-title">A format for<br><em>the conversation you need.</em></h2>
+            <p>Every exchange has the same two-language shape. The prompts and the pace change with the room.</p>
+          </div>
+        </div>
+
+        <div class="exchange-tabs" role="tablist" aria-label="Exchange formats">
+          <button class="exchange-tab is-active" type="button" role="tab" id="tab-casual" aria-selected="true" aria-controls="panel-casual" data-exchange="casual">Casual</button>
+          <button class="exchange-tab" type="button" role="tab" id="tab-work" aria-selected="false" aria-controls="panel-work" data-exchange="work" tabindex="-1">Work</button>
+          <button class="exchange-tab" type="button" role="tab" id="tab-exam" aria-selected="false" aria-controls="panel-exam" data-exchange="exam" tabindex="-1">Exam</button>
+          <button class="exchange-tab" type="button" role="tab" id="tab-culture" aria-selected="false" aria-controls="panel-culture" data-exchange="culture" tabindex="-1">Culture</button>
+        </div>
+
+        <div class="exchange-panel is-active" id="panel-casual" role="tabpanel" aria-labelledby="tab-casual" tabindex="0">
+          <div class="panel-copy">
+            <p class="panel-kicker">Casual · A1–C2</p>
+            <h3>The week, in two languages.</h3>
+            <p>Best for learners who want to speak more often without homework. You bring what happened this week; your partner brings theirs.</p>
+            <ul class="prompt-list">
+              <li><span>01</span> One thing that surprised you this week.</li>
+              <li><span>02</span> A place in your city the other person should see.</li>
+              <li><span>03</span> A word you keep forgetting — and a sentence that uses it.</li>
+            </ul>
+          </div>
+          <div class="panel-side">
+            <div class="panel-fact"><span>Rhythm</span><strong>Weekly · 60 min</strong></div>
+            <div class="panel-fact"><span>Group</span><strong>2 people + host</strong></div>
+            <div class="panel-fact"><span>Price</span><strong>$15 per exchange</strong></div>
+            <a class="btn btn-primary" href="#join">Try a casual exchange</a>
+          </div>
+        </div>
+
+        <div class="exchange-panel" id="panel-work" role="tabpanel" aria-labelledby="tab-work" tabindex="0" hidden>
+          <div class="panel-copy">
+            <p class="panel-kicker">Work · B1–C2</p>
+            <h3>The meeting before the meeting.</h3>
+            <p>For people who use the language at work. Rehearse the update, the pushback, and the follow-up with someone who is doing the same in the other language.</p>
+            <ul class="prompt-list">
+              <li><span>01</span> Give a two-minute status update with one blocker.</li>
+              <li><span>02</span> Disagree with a decision without softening it into nothing.</li>
+              <li><span>03</span> Repeat back what was agreed so nobody leaves with a different version.</li>
+            </ul>
+          </div>
+          <div class="panel-side">
+            <div class="panel-fact"><span>Rhythm</span><strong>Weekly · 60 min</strong></div>
+            <div class="panel-fact"><span>Group</span><strong>2 people + host</strong></div>
+            <div class="panel-fact"><span>Price</span><strong>$18 per exchange</strong></div>
+            <a class="btn btn-primary" href="#join">Try a work exchange</a>
+          </div>
+        </div>
+
+        <div class="exchange-panel" id="panel-exam" role="tabpanel" aria-labelledby="tab-exam" tabindex="0" hidden>
+          <div class="panel-copy">
+            <p class="panel-kicker">Exam · B1–C1</p>
+            <h3>Practise the part that makes you nervous.</h3>
+            <p>For IELTS, DELE, or a visa interview. Your partner takes the other side of the table, and the host keeps the timing honest.</p>
+            <ul class="prompt-list">
+              <li><span>01</span> A two-minute answer with a clear structure.</li>
+              <li><span>02</span> A follow-up question you did not prepare for.</li>
+              <li><span>03</span> The same answer again, shorter and calmer.</li>
+            </ul>
+          </div>
+          <div class="panel-side">
+            <div class="panel-fact"><span>Rhythm</span><strong>Twice a month · 60 min</strong></div>
+            <div class="panel-fact"><span>Group</span><strong>2 people + host</strong></div>
+            <div class="panel-fact"><span>Price</span><strong>$20 per exchange</strong></div>
+            <a class="btn btn-primary" href="#join">Try an exam exchange</a>
+          </div>
+        </div>
+
+        <div class="exchange-panel" id="panel-culture" role="tabpanel" aria-labelledby="tab-culture" tabindex="0" hidden>
+          <div class="panel-copy">
+            <p class="panel-kicker">Culture · A2–C2</p>
+            <h3>Food, music, and the joke after.</h3>
+            <p>For learners who want the language that lives outside the classroom. Each exchange starts with a piece of culture and ends with a recommendation.</p>
+            <ul class="prompt-list">
+              <li><span>01</span> A dish from home and the story behind it.</li>
+              <li><span>02</span> A song that everyone in your city knows.</li>
+              <li><span>03</span> A local expression the other person should take home.</li>
+            </ul>
+          </div>
+          <div class="panel-side">
+            <div class="panel-fact"><span>Rhythm</span><strong>Weekly · 60 min</strong></div>
+            <div class="panel-fact"><span>Group</span><strong>2 people + host</strong></div>
+            <div class="panel-fact"><span>Price</span><strong>$15 per exchange</strong></div>
+            <a class="btn btn-primary" href="#join">Try a culture exchange</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section partners" id="partners" aria-labelledby="partners-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Meet the room</p>
+          <h2 id="partners-title">Partners, not<br><em>performance partners.</em></h2>
+          <p>Every partner is vetted, level-checked, and briefed on the format. The host is there so the exchange stays fair.</p>
+        </div>
+
+        <div class="partner-grid">
+          <article class="partner-card">
+            <div class="partner-top">
+              <img src="../assets/img/teacher-camila.jpg" alt="Portrait of Camila Rojas" loading="lazy">
+              <span class="partner-badge">Host</span>
+            </div>
+            <h3>Camila Rojas</h3>
+            <p class="partner-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Quetzaltenango, Guatemala</p>
+            <p class="partner-langs"><strong>Spanish</strong> native · <strong>English</strong> B2</p>
+            <p class="partner-quote">“I like the exchanges where both people bring a real question, not a perfect answer.”</p>
+            <div class="partner-tags"><span>Culture</span><span>Beginners</span><span>Food</span></div>
+          </article>
+
+          <article class="partner-card">
+            <div class="partner-top">
+              <img src="../assets/img/teacher-maya.jpg" alt="Portrait of Maya Okafor" loading="lazy">
+              <span class="partner-badge">Host</span>
+            </div>
+            <h3>Maya Okafor</h3>
+            <p class="partner-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Chicago, Illinois</p>
+            <p class="partner-langs"><strong>English</strong> native · <strong>Spanish</strong> B2</p>
+            <p class="partner-quote">“No scripts. We talk about your life, your work, your next trip.”</p>
+            <div class="partner-tags"><span>Casual</span><span>Interviews</span><span>Writing</span></div>
+          </article>
+
+          <article class="partner-card">
+            <div class="partner-top">
+              <img src="../assets/img/teacher-diego.jpg" alt="Portrait of Diego Álvarez" loading="lazy">
+              <span class="partner-badge">Host</span>
+            </div>
+            <h3>Diego Álvarez</h3>
+            <p class="partner-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Guatemala City, Guatemala</p>
+            <p class="partner-langs"><strong>Spanish</strong> native · <strong>English</strong> C1</p>
+            <p class="partner-quote">“Spanish for the meeting, the dinner, and the joke after.”</p>
+            <div class="partner-tags"><span>Work</span><span>Business</span><span>Conversation</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quality" id="quality" aria-labelledby="quality-title">
+      <div class="container quality-grid">
+        <div class="quality-copy">
+          <p class="eyebrow">A room with a host</p>
+          <h2 id="quality-title">The exchange is<br><em>the easy part.</em></h2>
+          <p class="quality-lede">The hard part is finding someone who shows up, speaks at your level, and does not turn the hour into a lesson. That is what the host is for.</p>
+          <ul class="check-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><span><strong>Vetted partners.</strong> Every partner is interviewed, level-checked, and briefed on the format before their first exchange.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><span><strong>Prompts before you meet.</strong> Three questions land in your inbox the day before, so nobody has to invent a conversation.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><span><strong>A host keeps the time.</strong> Thirty minutes each way, with a gentle nudge when one language starts taking over.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><span><strong>Notes after.</strong> The host sends the words you reached for and one thing to try next time.</span></li>
+          </ul>
+        </div>
+        <div class="quality-media">
+          <img src="../assets/img/academy/family-learning.jpg" alt="Two people talking together during an online language exchange" loading="lazy">
+          <div class="quality-card">
+            <span>After one exchange</span>
+            <strong>92%</strong>
+            <p>say they spoke more than they expected to.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stories" id="stories" aria-labelledby="stories-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Exchange stories</p>
+          <h2 id="stories-title">The other half<br><em>of the conversation.</em></h2>
+        </div>
+        <div class="story-grid">
+          <article class="story-card">
+            <div class="story-stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg></div>
+            <blockquote>“I had been in classes for a year and still froze. In a tandem I only had to survive thirty minutes, and then I got to help someone else with English. It changed the stakes.”</blockquote>
+            <div class="story-person"><img src="../assets/img/learner-ana.jpg" alt="" loading="lazy"><div><strong>Ana R.</strong><span>Austin · Spanish A2 → B1</span></div></div>
+          </article>
+          <article class="story-card">
+            <div class="story-stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg></div>
+            <blockquote>“My partner wanted to practise job interviews in English. I wanted to stop apologising for my Spanish. We spent eight weeks doing both and neither of us noticed the clock.”</blockquote>
+            <div class="story-person"><img src="../assets/img/learner-tom.jpg" alt="" loading="lazy"><div><strong>Tom B.</strong><span>Guatemala City · English B2</span></div></div>
+          </article>
+          <article class="story-card">
+            <div class="story-stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg></div>
+            <blockquote>“The host is the secret. She notices when I slip into English and gives me a sentence to try instead. It feels like a conversation, not a correction.”</blockquote>
+            <div class="story-person"><img src="../assets/img/learner-lucia.jpg" alt="" loading="lazy"><div><strong>Lucía M.</strong><span>Quetzaltenango · English B1</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Simple pricing</p>
+          <h2 id="pricing-title">Pay for the room.<br><em>Not the minutes.</em></h2>
+          <p>Every exchange includes a host, three prompts, and a note afterward. Cancel or pause whenever you need.</p>
+        </div>
+
+        <div class="price-grid">
+          <article class="price-card">
+            <p class="price-kicker">The trial</p>
+            <p class="price-amount"><strong>$0</strong><span>first exchange</span></p>
+            <p class="price-desc">Meet a partner, try the format, and see whether the room fits. No card needed.</p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> One 60-minute exchange</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> A hosted room</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Three prompts</li>
+            </ul>
+            <a class="btn btn-quiet btn-block" href="#join">Try it free</a>
+          </article>
+
+          <article class="price-card price-card--featured">
+            <span class="price-flag">Most chosen</span>
+            <p class="price-kicker">The rhythm</p>
+            <p class="price-amount"><strong>$60</strong><span>4 exchanges</span></p>
+            <p class="price-desc">One exchange a week for a month, with the same partner when the fit is right.</p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> 4 × 60-minute exchanges</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Same partner if you both agree</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Host notes after each room</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> $15 per exchange</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="#join">Choose the rhythm</a>
+          </article>
+
+          <article class="price-card">
+            <p class="price-kicker">The habit</p>
+            <p class="price-amount"><strong>$108</strong><span>8 exchanges</span></p>
+            <p class="price-desc">Two months of steady practice for the learner who wants the language to become routine.</p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> 8 × 60-minute exchanges</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Priority partner matching</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> A monthly progress note</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> $13.50 per exchange</li>
+            </ul>
+            <a class="btn btn-quiet btn-block" href="#join">Start the habit</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="faq-copy">
+          <p class="eyebrow">Questions</p>
+          <h2 id="faq-title">Before you<br><em>swap languages.</em></h2>
+          <p>Still unsure? Email <a href="mailto:hello@nativespeaker.com">hello@nativespeaker.com</a> and a human will answer.</p>
+          <div class="contact-card">
+            <svg class="icon" aria-hidden="true"><use href="#i-message"></use></svg>
+            <span><strong>Talk to a human</strong><span>Usually replies within a day</span></span>
+          </div>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item is-open">
+            <h3><button class="faq-question" type="button" aria-expanded="true" aria-controls="tandem-faq-1">Do I need to be fluent in one language?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="tandem-faq-1" aria-hidden="false"><div><p>No. You need enough of your stronger language to help someone else, and enough curiosity to survive the other half. We pair by level, so both people are stretching in the same direction.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="tandem-faq-2">Is a tandem a lesson?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="tandem-faq-2" aria-hidden="true" inert><div><p>No. A host sets the room and the prompts, but the two partners do the talking. If you want a teacher who corrects every sentence, a 1:1 lesson is the better fit. A tandem is for speaking more, with someone who is also learning.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="tandem-faq-3">Who are the partners?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="tandem-faq-3" aria-hidden="true" inert><div><p>Spanish partners are native Spanish speakers based in Guatemala. English partners are native English speakers based in the US or Guatemala. Every partner is interviewed, level-checked, and briefed on the format.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="tandem-faq-4">What if we do not click?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="tandem-faq-4" aria-hidden="true" inert><div><p>Tell the host after the exchange and we will pair you with someone else. The first exchange is free, and every paid pack includes a rematch if the fit is not right.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="tandem-faq-5">How do you keep it safe?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="tandem-faq-5" aria-hidden="true" inert><div><p>All exchanges run through our video room, not a personal number. Partners are vetted, and the host stays for the full hour. You can report a room from the note afterward, and we will follow up the same day.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="join" aria-labelledby="join-title">
+      <div class="container">
+        <div class="cta-panel">
+          <div class="cta-copy">
+            <p class="cta-eyebrow"><span class="live-dot" aria-hidden="true"></span> New pairs matched every Monday</p>
+            <h2 id="join-title">Your next conversation<br><em>has two sides.</em></h2>
+            <p>Tell us what you speak, what you are learning, and when you can meet. We will send a partner, three prompts, and a host.</p>
+          </div>
+          <div class="cta-form-wrap">
+            <form id="join-form" class="cta-form" novalidate>
+              <div class="field">
+                <label for="join-email">Your email</label>
+                <input id="join-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="join-direction">I speak / I am learning</label>
+                  <select id="join-direction" name="direction">
+                    <option>English / Spanish</option>
+                    <option>Spanish / English</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="join-frequency">Frequency</label>
+                  <select id="join-frequency" name="frequency">
+                    <option>Weekly</option>
+                    <option>Twice a month</option>
+                    <option>Just the trial</option>
+                  </select>
+                </div>
+              </div>
+              <p class="form-error" id="form-error" role="alert" hidden></p>
+              <button class="btn btn-primary btn-block" type="submit">Find my partner</button>
+              <p class="form-note">No spam. One email with a partner and a time.</p>
+            </form>
+            <div class="form-success" id="join-success" hidden>
+              <span class="success-icon"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+              <h3 tabindex="-1">Your exchange is being matched.</h3>
+              <p>We will send a <strong id="success-direction">English / Spanish</strong> partner on a <strong id="success-frequency">Weekly</strong> rhythm to <strong id="success-email">you@example.com</strong>.</p>
+              <button class="btn btn-quiet" type="button" id="join-again">Use another email</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand--footer" href="#top" aria-label="Tandem Natives home">
+            <img class="brand-mark" src="../assets/logos/tandem.svg" alt="" width="40" height="40">
+            <span class="brand-name" aria-hidden="true">
+              <span class="brand-line brand-line--top">TANDEM</span>
+              <span class="brand-line brand-line--bottom">NATIVES</span>
+            </span>
+          </a>
+          <p>Two people, two languages, and a host who makes sure both get the room.</p>
+          <div class="socials">
+            <a href="https://instagram.com" aria-label="Tandem Natives on Instagram" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+            <a href="https://youtube.com" aria-label="Tandem Natives on YouTube" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-youtube"></use></svg></a>
+            <a href="https://linkedin.com" aria-label="Tandem Natives on LinkedIn" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Exchange</h3>
+          <a href="#exchanges">Casual</a>
+          <a href="#exchanges">Work</a>
+          <a href="#exchanges">Exam</a>
+          <a href="#exchanges">Culture</a>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="#quality">How we host</a>
+          <a href="#partners">Become a partner</a>
+          <a href="#stories">Exchange stories</a>
+          <a href="#faq">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <a href="#faq">Help centre</a>
+          <a href="#faq">Safety</a>
+          <a href="#faq">Community guidelines</a>
+          <a href="#faq">Privacy</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Tandem Natives. Share the hour.</p>
+        <div class="footer-legal">
+          <a href="#faq">Privacy</a>
+          <a href="#faq">Terms</a>
+          <a href="#faq">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="../assets/brand-fit.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speak Spanish — Short lessons. Long conversations.</title>
+  <meta name="description" content="Private 25-minute Spanish and English lessons with native teachers from Guatemala, plus an AI practice partner between classes. First month $1. No contracts.">
+  <meta name="theme-color" content="#EEF1F3">
+  <meta property="og:title" content="Speak Spanish — Short lessons. Long conversations.">
+  <meta property="og:description" content="25-minute private lessons with native teachers from Guatemala, plus unlimited AI practice. First month $1.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="../assets/logos/one-on-one.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-play" viewBox="0 0 24 24">
+      <path d="M9 6.2v11.6a1 1 0 0 0 1.52.85l9.1-5.8a1 1 0 0 0 0-1.7l-9.1-5.8A1 1 0 0 0 9 6.2Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path d="m5 12.5 4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-star" viewBox="0 0 24 24">
+      <path d="m12 3 2.78 5.63 6.22.9-4.5 4.39 1.06 6.2L12 17.2l-5.56 2.92 1.06-6.2L3 9.53l6.22-.9L12 3Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24">
+      <path d="M12 3.5 13.9 9l5.6 1.9-5.6 1.9L12 18.5l-1.9-5.7L4.5 11 10.1 9 12 3.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M19 16.5 19.8 19l2.2.8-2.2.8-.8 2.4-.8-2.4-2.2-.8 2.2-.8.8-2.5Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-book" viewBox="0 0 24 24">
+      <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+      <path d="M4 17.5A2.5 2.5 0 0 1 6.5 15H20M8 7h8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24">
+      <rect x="9" y="3" width="6" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M5 11a7 7 0 0 0 14 0M12 18v3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    </symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24">
+      <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24">
+      <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24">
+      <path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="m3 7 9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <circle cx="17.4" cy="6.6" r="1" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24">
+      <rect x="2.5" y="6" width="19" height="12" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="m10 9 5 3-5 3V9Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M7.5 10v7M7.5 7.1v.1M11.5 17v-4a2.5 2.5 0 0 1 5 0v4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Speak Spanish home">
+        <img class="brand-mark" src="../assets/logos/one-on-one.svg" alt="" width="40" height="40">
+        <span class="brand-name" aria-hidden="true">
+          <span class="brand-line brand-line--top">SPEAK</span>
+          <span class="brand-line brand-line--bottom">SPANISH</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+        <a href="#how">How it works</a>
+        <a href="#practice">Practice</a>
+        <a href="#teachers">Teachers</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary nav-mobile-cta" href="#level-test">Free level test</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm nav-cta" href="#level-test">Free level test</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"></use></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-kicker"><span class="kicker-dot" aria-hidden="true"></span> Private lessons · Spanish from Guatemala · English for Guatemala</p>
+          <h1>Short lessons.<br><em>Long conversations.</em></h1>
+          <p class="hero-lede">Twenty-five minutes with a native teacher from Guatemala, plus an AI practice partner for the days in between. For US learners picking up Spanish and Guatemalans taking their English further — a habit small enough to keep, strong enough to change how you speak.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#level-test">Take the free level test</a>
+            <a class="btn btn-quiet btn-lg" href="#how">See how it works <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="../assets/img/learner-ana.jpg" alt="">
+              <img src="../assets/img/learner-tom.jpg" alt="">
+              <img src="../assets/img/learner-lucia.jpg" alt="">
+              <img src="../assets/img/learner-max.jpg" alt="">
+            </div>
+            <p><strong>4.9 from 12,400 learners</strong><span>700,000+ one-to-one lessons taught</span></p>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <div class="hero-plate" aria-hidden="true"></div>
+
+          <article class="lesson-demo" aria-labelledby="demo-title">
+            <header class="demo-head">
+              <span class="demo-when" id="demo-title">Tuesday · 09:30</span>
+              <span class="demo-pill">25 min</span>
+            </header>
+
+            <div class="demo-teacher">
+              <img src="../assets/img/teacher-camila.jpg" alt="Camila Rojas, a native Spanish teacher from Quetzaltenango, Guatemala" fetchpriority="high">
+              <div class="demo-teacher-id">
+                <strong>Camila Rojas</strong>
+                <span>Spanish · Quetzaltenango</span>
+              </div>
+              <span class="demo-ready"><span aria-hidden="true"></span> ready</span>
+            </div>
+
+            <div class="demo-timer">
+              <svg class="timer-ring" viewBox="0 0 200 200" aria-hidden="true">
+                <circle class="timer-track" cx="100" cy="100" r="88"></circle>
+                <circle class="timer-progress" id="timer-progress" cx="100" cy="100" r="88"></circle>
+              </svg>
+              <div class="timer-center">
+                <span class="timer-time" id="timer-display" role="timer" aria-label="25 minutes remaining">25:00</span>
+                <span class="timer-caption">one conversation</span>
+              </div>
+            </div>
+
+            <p class="timer-status" id="timer-status">Press play to try the format.</p>
+
+            <div class="demo-controls">
+              <button class="btn btn-primary" id="timer-toggle" type="button">Start demo</button>
+              <button class="timer-reset" id="timer-reset" type="button" disabled>Reset</button>
+            </div>
+
+            <div class="demo-prompt">
+              <span class="prompt-label">Today's conversation</span>
+              <p lang="es">Un café con leche, por favor. ¿Qué me recomienda?</p>
+              <span>Ordering at a café · polite requests</span>
+            </div>
+
+            <footer class="demo-foot">
+              <svg class="icon" aria-hidden="true"><use href="#i-book"></use></svg>
+              After class: corrections, vocabulary, next step.
+            </footer>
+          </article>
+
+          <aside class="ai-chip" aria-label="AI practice partner available between lessons">
+            <span class="ai-chip-icon"><svg class="icon" aria-hidden="true"><use href="#i-spark"></use></svg></span>
+            <div>
+              <strong>AI practice partner</strong>
+              <span>Talk between lessons. No limits.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="ledger" aria-label="Speak Spanish in numbers">
+      <div class="container ledger-grid">
+        <div><strong>700k+</strong><span>one-to-one lessons taught</span></div>
+        <div><strong>25 min</strong><span>per private lesson</span></div>
+        <div><strong>4.9/5</strong><span>average lesson rating</span></div>
+        <div><strong>0</strong><span>contracts or lock-ins</span></div>
+      </div>
+    </section>
+
+    <section class="section why" id="why">
+      <div class="container why-grid">
+        <div class="why-intro">
+          <h2>Twenty-five minutes is the whole idea.</h2>
+          <p>Long enough for a real conversation. Short enough to keep the appointment. The format does most of the work.</p>
+          <p class="why-aside">The lesson you keep beats the lesson you plan.</p>
+        </div>
+
+        <div class="why-list">
+          <article class="why-item">
+            <span class="why-tag">25 min</span>
+            <div>
+              <h3>Long enough to speak</h3>
+              <p>Warm up, make a mistake, get corrected, and keep going. That is a conversation, not a drill.</p>
+            </div>
+          </article>
+          <article class="why-item">
+            <span class="why-tag">daily</span>
+            <div>
+              <h3>Short enough to keep</h3>
+              <p>Book one before work, one at lunch, one before bed. The habit survives a busy week.</p>
+            </div>
+          </article>
+          <article class="why-item">
+            <span class="why-tag">frequency</span>
+            <div>
+              <h3>Repetition, not endurance</h3>
+              <p>Four short lessons beat one long one you cancel. Fluency is built in returns, not marathons.</p>
+            </div>
+          </article>
+          <article class="why-item">
+            <span class="why-tag">context</span>
+            <div>
+              <h3>A teacher who remembers</h3>
+              <p>Your notes open before you do: what you covered, what you struggled with, what comes next.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section-head">
+          <h2>From first hello to a habit.</h2>
+          <p>No placement marathon. The level test is a conversation, and the first one is free.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3>Take the free level test</h3>
+            <p>A short conversation with a teacher. We listen for speaking, listening, grammar, and confidence, then recommend a plan.</p>
+            <span class="step-meta">Free · no card</span>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3>Meet your teacher</h3>
+            <p>Matched by level, goals, and the accent you want. Guatemalan Spanish, neutral English, or a mix of both.</p>
+            <span class="step-meta">One teacher · your notes</span>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3>Speak for 25 minutes</h3>
+            <p>Vocabulary and grammar arrive inside a real conversation about your work, your trip, your week.</p>
+            <span class="step-meta">25 min · one-to-one</span>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">04</span>
+            <h3>Get your report</h3>
+            <p>Corrections, pronunciation notes, new vocabulary, and one clear next step after every lesson.</p>
+            <span class="step-meta">After every class</span>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">05</span>
+            <h3>Keep practicing with AI</h3>
+            <p>Your practice partner picks up where the lesson stopped. Role-play the same scene as often as you like.</p>
+            <span class="step-meta">Unlimited · anytime</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section practice" id="practice">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <h2>Real teaching.<br><em>Extra practice.</em></h2>
+          <p>Apps are good at repetition. Teachers are good at noticing. You need both.</p>
+        </div>
+
+        <div class="practice-grid">
+          <article class="teacher-panel">
+            <img src="../assets/img/academy/program-adults.jpg" alt="An adult learner taking notes beside a laptop during an online class" loading="lazy">
+            <div class="teacher-panel-copy">
+              <span class="panel-label">Your teacher</span>
+              <h3>Someone who remembers you.</h3>
+              <ul>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Guides the conversation and corrects it in context.</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Explains what you missed without stopping the flow.</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Adapts each lesson to your work, your trip, your week.</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Follows your notes from lesson to lesson.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="ai-panel" aria-labelledby="ai-title">
+            <header class="ai-head">
+              <span class="ai-badge">AI</span>
+              <div>
+                <strong id="ai-title">Practice partner</strong>
+                <span>Between lessons · no time limits</span>
+              </div>
+            </header>
+
+            <div class="scenario-tabs" role="group" aria-label="Choose a practice scenario">
+              <button class="scenario-btn is-active" type="button" data-scenario="coffee" aria-pressed="true">Order coffee</button>
+              <button class="scenario-btn" type="button" data-scenario="interview" aria-pressed="false">Job interview</button>
+              <button class="scenario-btn" type="button" data-scenario="dinner" aria-pressed="false">Dinner out</button>
+            </div>
+
+            <p class="scenario-context" id="scenario-context">You’re at a café in Antigua.</p>
+
+            <div class="chat-log" id="chat-log" aria-live="polite">
+              <div class="chat-msg chat-msg--ai">
+                <span class="chat-who">Practice partner</span>
+                <p>¡Buenos días! ¿Qué te pongo?</p>
+              </div>
+              <div class="chat-msg chat-msg--user">
+                <span class="chat-who">You</span>
+                <p lang="es">Un café con leche, por favor.</p>
+              </div>
+              <div class="chat-msg chat-msg--ai">
+                <span class="chat-who">Practice partner</span>
+                <p>Claro. ¿Lo quieres con azúcar?</p>
+              </div>
+            </div>
+
+            <div class="chat-replies" id="chat-replies">
+              <button class="chat-reply" type="button" data-reply="Sin azúcar, gracias.">Sin azúcar, gracias.</button>
+              <button class="chat-reply" type="button" data-reply="¿Tienes leche de avena?">¿Tienes leche de avena?</button>
+            </div>
+
+            <p class="ai-note">No embarrassment. Repeat the scene until it feels normal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section report" id="report">
+      <div class="container report-grid">
+        <div class="report-copy">
+          <h2>You leave with something to keep.</h2>
+          <p>No vague “good job”. After every lesson you get a written report you can actually use.</p>
+          <ul class="report-list">
+            <li>
+              <strong>Corrections in context</strong>
+              <span>“You said this; here is the natural version.”</span>
+            </li>
+            <li>
+              <strong>Words you reached for</strong>
+              <span>The vocabulary that came up, ready to reuse.</span>
+            </li>
+            <li>
+              <strong>One next step</strong>
+              <span>A single scene to practice before the next class.</span>
+            </li>
+          </ul>
+        </div>
+
+        <article class="report-card" aria-label="Sample lesson report">
+          <header class="report-head">
+            <div>
+              <span class="report-kicker">Lesson report</span>
+              <h3>Café, politely</h3>
+            </div>
+            <span class="report-date">Tue · Nov 10</span>
+          </header>
+
+          <div class="report-row">
+            <span class="report-label">Teacher</span>
+            <span>Camila Rojas · Spanish · Quetzaltenango</span>
+          </div>
+
+          <div class="report-block">
+            <span class="report-label">Correction</span>
+            <p class="report-said">“Me gustaría un café.”</p>
+            <p class="report-fixed"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> “Quisiera un café, por favor.”</p>
+            <p class="report-why">More natural at a café. “Quisiera” softens the request without sounding formal.</p>
+          </div>
+
+          <div class="report-block">
+            <span class="report-label">Words to keep</span>
+            <div class="report-tags">
+              <span>la cuenta</span>
+              <span>sin azúcar</span>
+              <span>¿Qué me recomienda?</span>
+            </div>
+          </div>
+
+          <div class="report-block report-block--split">
+            <div>
+              <span class="report-label">Pronunciation</span>
+              <p>“ll” in <em>llamar</em> → a soft <strong>y</strong> sound.</p>
+            </div>
+            <div>
+              <span class="report-label">Next step</span>
+              <p>Role-play a market visit. Ask for two things and a price.</p>
+            </div>
+          </div>
+
+          <footer class="report-foot">
+            <span class="report-saved"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Saved to your notes</span>
+            <span>2 min read</span>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="section teachers" id="teachers">
+      <div class="container">
+        <div class="section-head section-head--split teachers-head">
+          <div>
+            <h2>Pick the voice you want to sound like.</h2>
+            <p>Every teacher is a native speaker, interviewed, background-checked, and rated after every lesson. Choose an accent, or mix them.</p>
+          </div>
+          <div class="teacher-tools">
+            <div class="coach-filter" role="group" aria-label="Filter teachers by language">
+              <button class="coach-filter-btn is-active" type="button" data-filter="spanish" aria-pressed="true">Spanish</button>
+              <button class="coach-filter-btn" type="button" data-filter="english" aria-pressed="false">English</button>
+            </div>
+            <p class="coach-count" id="coach-count" aria-live="polite">Showing 3 Spanish teachers</p>
+          </div>
+        </div>
+
+        <div class="coach-grid" id="coach-grid">
+          <article class="coach-card" data-language="spanish">
+            <div class="coach-photo">
+              <img src="../assets/img/hero-maria.jpg" alt="Portrait of María Serrano" loading="lazy">
+              <span class="coach-tag">Antigua</span>
+            </div>
+            <div class="coach-body">
+              <h3>María Serrano</h3>
+              <p class="coach-place">Antigua · Native Spanish</p>
+              <p class="coach-quote">“We fix the mistakes that have been following you around.”</p>
+              <p class="coach-meta">4.9 ★ · 2,140 lessons · Conversation, DELE</p>
+              <a class="btn btn-outline btn-block js-choose-teacher" href="#level-test" data-teacher="María Serrano">Choose María</a>
+            </div>
+          </article>
+
+          <article class="coach-card" data-language="spanish">
+            <div class="coach-photo">
+              <img src="../assets/img/teacher-camila.jpg" alt="Portrait of Camila Rojas" loading="lazy">
+              <span class="coach-tag">Quetzaltenango</span>
+            </div>
+            <div class="coach-body">
+              <h3>Camila Rojas</h3>
+              <p class="coach-place">Quetzaltenango · Native Spanish</p>
+              <p class="coach-quote">“Mistakes are how we find the words that stick. Bring all of yours.”</p>
+              <p class="coach-meta">4.8 ★ · 760 lessons · Beginners, pronunciation</p>
+              <a class="btn btn-outline btn-block js-choose-teacher" href="#level-test" data-teacher="Camila Rojas">Choose Camila</a>
+            </div>
+          </article>
+
+          <article class="coach-card" data-language="spanish">
+            <div class="coach-photo">
+              <img src="../assets/img/teacher-diego.jpg" alt="Portrait of Diego Álvarez" loading="lazy">
+              <span class="coach-tag">Guatemala City</span>
+            </div>
+            <div class="coach-body">
+              <h3>Diego Álvarez</h3>
+              <p class="coach-place">Guatemala City · Native Spanish</p>
+              <p class="coach-quote">“Spanish for the meeting, the dinner, and the joke after.”</p>
+              <p class="coach-meta">4.9 ★ · 1,530 lessons · Business, Guatemalan Spanish</p>
+              <a class="btn btn-outline btn-block js-choose-teacher" href="#level-test" data-teacher="Diego Álvarez">Choose Diego</a>
+            </div>
+          </article>
+
+          <article class="coach-card" data-language="english" hidden>
+            <div class="coach-photo">
+              <img src="../assets/img/teacher-james.jpg" alt="Portrait of James Whitfield" loading="lazy">
+              <span class="coach-tag">Antigua</span>
+            </div>
+            <div class="coach-body">
+              <h3>James Whitfield</h3>
+              <p class="coach-place">Antigua · Native English</p>
+              <p class="coach-quote">“We rehearse the real meeting, not a textbook dialogue.”</p>
+              <p class="coach-meta">4.9 ★ · 1,860 lessons · IELTS, business, accent</p>
+              <a class="btn btn-outline btn-block js-choose-teacher" href="#level-test" data-teacher="James Whitfield">Choose James</a>
+            </div>
+          </article>
+
+          <article class="coach-card" data-language="english" hidden>
+            <div class="coach-photo">
+              <img src="../assets/img/teacher-maya.jpg" alt="Portrait of Maya Okafor" loading="lazy">
+              <span class="coach-tag">Livingston</span>
+            </div>
+            <div class="coach-body">
+              <h3>Maya Okafor</h3>
+              <p class="coach-place">Livingston · Native English</p>
+              <p class="coach-quote">“No scripts. We talk about your life, your work, your next trip.”</p>
+              <p class="coach-meta">4.8 ★ · 980 lessons · Conversation, interviews</p>
+              <a class="btn btn-outline btn-block js-choose-teacher" href="#level-test" data-teacher="Maya Okafor">Choose Maya</a>
+            </div>
+          </article>
+
+          <article class="coach-card" data-language="english" hidden>
+            <div class="coach-photo">
+              <img src="../assets/img/teacher-daniel.jpg" alt="Portrait of Daniel Brooks" loading="lazy">
+              <span class="coach-tag">Lake Atitlán</span>
+            </div>
+            <div class="coach-body">
+              <h3>Daniel Brooks</h3>
+              <p class="coach-place">Lake Atitlán · Native English</p>
+              <p class="coach-quote">“We rehearse the real meeting, then the small talk after it.”</p>
+              <p class="coach-meta">4.9 ★ · 1,420 lessons · Business, presentations</p>
+              <a class="btn btn-outline btn-block js-choose-teacher" href="#level-test" data-teacher="Daniel Brooks">Choose Daniel</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="teachers-note">Not sure who fits? The level test ends with a recommendation.</p>
+      </div>
+    </section>
+
+    <section class="section uses" id="uses">
+      <div class="container">
+        <div class="section-head">
+          <h2>The language you’ll actually use.</h2>
+          <p>Lessons follow the situations in your life, not a textbook. These are a few of the scenes learners bring.</p>
+        </div>
+
+        <div class="use-grid">
+          <article class="use-card use-card--white">
+            <span class="use-label">Travel</span>
+            <p class="use-phrase" lang="es">“Una mesa para dos, por favor.”</p>
+            <span class="use-gloss">A table for two — and the confidence to ask for it.</span>
+          </article>
+          <article class="use-card use-card--lilac">
+            <span class="use-label">Work</span>
+            <p class="use-phrase" lang="es">“¿Podemos revisar el presupuesto mañana?”</p>
+            <span class="use-gloss">Can we review the budget tomorrow? Said without rehearsing it ten times.</span>
+          </article>
+          <article class="use-card use-card--butter">
+            <span class="use-label">Family</span>
+            <p class="use-phrase" lang="es">“Cuéntame cómo te fue en la escuela.”</p>
+            <span class="use-gloss">Tell me how school went. The conversation at the kitchen table.</span>
+          </article>
+          <article class="use-card use-card--ink">
+            <span class="use-label">Everyday</span>
+            <p class="use-phrase" lang="es">“¿Me pones un café con leche?”</p>
+            <span class="use-gloss">A coffee with milk, please. The small talk that starts the day.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-head section-head--split pricing-head">
+          <div>
+            <h2>Pick a rhythm. Change it whenever.</h2>
+            <p>First month $1, then monthly. The same teacher, the same 25 minutes, and unlimited practice between lessons.</p>
+          </div>
+          <p class="price-offer"><span>$1</span> first month on any plan</p>
+        </div>
+
+        <div class="plan-includes" aria-label="Every plan includes">
+          <span><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> 25-minute private lessons</span>
+          <span><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Unlimited AI practice</span>
+          <span><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Report after every class</span>
+          <span><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Cancel or pause anytime</span>
+        </div>
+
+        <div class="price-grid">
+          <article class="price-card">
+            <span class="price-rhythm">One lesson a week</span>
+            <h3>4 lessons</h3>
+            <p class="price-amount"><span class="price-currency">$</span>84<span class="price-per">/month</span></p>
+            <p class="price-lesson">$21 per 25-minute lesson</p>
+            <a class="btn btn-outline btn-block js-choose-plan" href="#level-test" data-plan="4 lessons a month · $84/month">Choose 4</a>
+          </article>
+
+          <article class="price-card">
+            <span class="price-rhythm">Twice a week</span>
+            <h3>8 lessons</h3>
+            <p class="price-amount"><span class="price-currency">$</span>144<span class="price-per">/month</span></p>
+            <p class="price-lesson">$18 per 25-minute lesson</p>
+            <a class="btn btn-outline btn-block js-choose-plan" href="#level-test" data-plan="8 lessons a month · $144/month">Choose 8</a>
+          </article>
+
+          <article class="price-card price-card--featured">
+            <span class="price-flag">Most popular</span>
+            <span class="price-rhythm">Three times a week</span>
+            <h3>12 lessons</h3>
+            <p class="price-amount"><span class="price-currency">$</span>207<span class="price-per">/month</span></p>
+            <p class="price-lesson">$17.25 per 25-minute lesson</p>
+            <a class="btn btn-butter btn-block js-choose-plan" href="#level-test" data-plan="12 lessons a month · $207/month">Choose 12</a>
+          </article>
+
+          <article class="price-card">
+            <span class="price-rhythm">Four times a week</span>
+            <h3>16 lessons</h3>
+            <p class="price-amount"><span class="price-currency">$</span>264<span class="price-per">/month</span></p>
+            <p class="price-lesson">$16.50 per 25-minute lesson</p>
+            <a class="btn btn-outline btn-block js-choose-plan" href="#level-test" data-plan="16 lessons a month · $264/month">Choose 16</a>
+          </article>
+        </div>
+
+        <p class="pricing-note">Prices in USD. Pause or cancel from your account. The $1 first month applies to new learners on any plan.</p>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-head section-head--split reviews-head">
+          <h2>What changed after a month.</h2>
+          <p class="reviews-score"><strong>4.9</strong> <span>from 12,400 learners<br>and 700,000+ lessons</span></p>
+        </div>
+
+        <div class="review-grid">
+          <figure class="review">
+            <div class="review-stars" role="img" aria-label="Rated 5 out of 5">
+              <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
+            </div>
+            <blockquote>“I used to rehearse one sentence for ten minutes. Now I lead client calls without thinking about it.”</blockquote>
+            <figcaption>
+              <img src="../assets/img/testimonial-1.jpg" alt="Portrait of Ana Torres" loading="lazy">
+              <span><strong>Ana Torres</strong><span>Product designer · Guatemala City → Austin</span></span>
+              <span class="review-result">B1 → B2</span>
+            </figcaption>
+          </figure>
+
+          <figure class="review">
+            <div class="review-stars" role="img" aria-label="Rated 5 out of 5">
+              <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
+            </div>
+            <blockquote>“I moved to Antigua with ‘hola’ and ‘gracias’. Six months later, I negotiated my rent in Spanish.”</blockquote>
+            <figcaption>
+              <img src="../assets/img/testimonial-3.jpg" alt="Portrait of Tom Becker" loading="lazy">
+              <span><strong>Tom Becker</strong><span>Software engineer · Austin → Antigua</span></span>
+              <span class="review-result">A2 → B1</span>
+            </figcaption>
+          </figure>
+
+          <figure class="review">
+            <div class="review-stars" role="img" aria-label="Rated 5 out of 5">
+              <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
+            </div>
+            <blockquote>“My IELTS was stuck at 6.5. James found the three things costing me points. I got an 8.0.”</blockquote>
+            <figcaption>
+              <img src="../assets/img/testimonial-2.jpg" alt="Portrait of Lucía Fernández" loading="lazy">
+              <span><strong>Lucía Fernández</strong><span>Grad student · Quetzaltenango → Chicago</span></span>
+              <span class="review-result">6.5 → 8.0</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-copy">
+          <h2>Everything people ask before the first lesson.</h2>
+          <p>Still wondering? Write to a human. We answer.</p>
+          <a class="contact-card" href="mailto:hello@nativespeaker.com">
+            <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg></span>
+            <span><strong>Talk to a human</strong><span>hello@nativespeaker.com</span></span>
+          </a>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item is-open">
+            <h3>
+              <button class="faq-question" type="button" aria-expanded="true" aria-controls="faq-panel-1">
+                Are 25-minute lessons really long enough?
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-1" aria-hidden="false">
+              <div><p>Yes, if they are frequent. Twenty-five minutes is long enough for a real conversation and short enough that you keep the appointment. Four short lessons a week build more fluency than one long lesson you cancel.</p></div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-panel-2">
+                Do I get the same teacher every lesson?
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-2" aria-hidden="true" inert>
+              <div><p>Yes. You are matched with one teacher who keeps your notes and follows your progress. If the fit is not right, you can switch at any time — your notes move with you.</p></div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-panel-3">
+                What happens in the free level test?
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-3" aria-hidden="true" inert>
+              <div><p>It is a short conversation with a teacher, online, and no card is needed. They listen to your speaking and listening, find the gaps in grammar and vocabulary, and recommend a plan. You get the result whether or not you sign up.</p></div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-panel-4">
+                What is the AI practice partner?
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-4" aria-hidden="true" inert>
+              <div><p>A practice space that picks up where your lesson stopped. Role-play the same scenes, repeat vocabulary, and get gentle corrections whenever you want — with no time limits and nobody waiting for you to be perfect.</p></div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-panel-5">
+                Can I cancel or pause my plan?
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-5" aria-hidden="true" inert>
+              <div><p>Yes. No contract and no minimum term. Cancel or pause from your account whenever you need to. If you cancel during your $1 first month, you have paid a dollar.</p></div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-panel-6">
+                Do I need to know any Spanish or English to start?
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-6" aria-hidden="true" inert>
+              <div><p>No. Teachers work with complete beginners as well as people who studied years ago and stopped. The level test exists so your first lesson starts in the right place instead of wasting time on assessment.</p></div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-panel-7">
+                What do I need for a lesson?
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-7" aria-hidden="true" inert>
+              <div><p>A phone, tablet, or laptop with a camera, a stable connection, and headphones if you have them. Lessons run in your browser, so there is nothing to install.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="level" id="level-test">
+      <div class="container level-grid">
+        <div class="level-copy">
+          <h2>Your first conversation is free.</h2>
+          <p>Twenty minutes with a real teacher. We will find your level, hear what you want to do, and recommend a plan. No card, no pressure, no sales call.</p>
+          <ul class="level-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"></use></svg> 20 minutes, online</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-mic"></use></svg> A real teacher, not a quiz</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> A clear recommendation either way</li>
+          </ul>
+          <p class="level-proof"><strong>4.9 / 5</strong> from 12,400 learners</p>
+        </div>
+
+        <div class="level-card">
+          <p class="selection-note" id="selection-note" hidden></p>
+
+          <form id="level-form" novalidate>
+            <div class="field">
+              <label for="level-name">Your name</label>
+              <input id="level-name" name="name" type="text" autocomplete="name" placeholder="Ana Torres">
+            </div>
+
+            <div class="field">
+              <label for="level-email">Email</label>
+              <input id="level-email" name="email" type="email" autocomplete="email" placeholder="ana@example.com">
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="level-language">I want to learn</label>
+                <select id="level-language" name="language">
+                  <option value="Spanish">Spanish</option>
+                  <option value="English">English</option>
+                  <option value="Not sure yet">Not sure yet</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="level-goal">My goal</label>
+                <select id="level-goal" name="goal">
+                  <option value="Travel">Travel</option>
+                  <option value="Work">Work</option>
+                  <option value="Family">Family</option>
+                  <option value="Everyday confidence">Everyday confidence</option>
+                  <option value="Exams">Exams</option>
+                </select>
+              </div>
+            </div>
+
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+
+            <button class="btn btn-ink btn-block" type="submit">Book my free level test</button>
+            <p class="form-note">No card. A real teacher replies within one business day.</p>
+          </form>
+
+          <div class="level-success" id="level-success" hidden aria-live="polite">
+            <span class="success-mark"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+            <h3>You’re in, <span id="success-name">Ana</span>.</h3>
+            <p>We’ll email <strong id="success-email">ana@example.com</strong> with times for your <span id="success-language">Spanish</span> level test.</p>
+            <p class="success-next">Next: a short conversation, a clear level, and a plan you can keep.</p>
+            <button class="btn btn-outline" id="level-again" type="button">Book another</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand--footer" href="#top" aria-label="Speak Spanish home">
+            <img class="brand-mark" src="../assets/logos/one-on-one.svg" alt="" width="40" height="40">
+            <span class="brand-name" aria-hidden="true">
+              <span class="brand-line brand-line--top">SPEAK</span>
+              <span class="brand-line brand-line--bottom">SPANISH</span>
+            </span>
+          </a>
+          <p>Private Spanish and English lessons for people who would rather talk. Rooted in Guatemala, open to the US.</p>
+          <div class="socials">
+            <a href="https://instagram.com" aria-label="Speak Spanish on Instagram" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+            <a href="https://youtube.com" aria-label="Speak Spanish on YouTube" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-youtube"></use></svg></a>
+            <a href="https://linkedin.com" aria-label="Speak Spanish on LinkedIn" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Learn</h3>
+          <a href="#how">How it works</a>
+          <a href="#teachers">Teachers</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#level-test">Free level test</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="#why">About us</a>
+          <a href="#teachers">Become a teacher</a>
+          <a href="#reviews">Learner stories</a>
+          <a href="mailto:hello@nativespeaker.com">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Support</h3>
+          <a href="#faq">Help centre</a>
+          <a href="#faq">Safety</a>
+          <a href="#faq">Cancellation policy</a>
+          <a href="#faq">Privacy &amp; terms</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Speak Spanish. Made for conversations.</p>
+        <span>Spanish &amp; English · Guatemala &amp; online</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="../assets/brand-fit.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Make Talk — Make something in another language</title>
+  <meta name="description" content="Small-group language classes built around making things: conversations, scenes, zines and radio. Spanish from Guatemala and English for Guatemala, live online, four nights a week.">
+  <meta name="theme-color" content="#12121A">
+  <meta property="og:title" content="Make Talk — Make something in another language">
+  <meta property="og:description" content="Small groups, real projects, native mentors. A language studio instead of a language course.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="../assets/logos/studio.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 19.5a5.5 5.5 0 0 1 11 0M16 5.3a3 3 0 0 1 0 5.6M17 14.2a5 5 0 0 1 3.5 4.7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 9.5h17M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.78 5.63 6.22.9-4.5 4.39 1.06 6.2L12 17.2l-5.56 2.92 1.06-6.2L3 9.53l6.22-.9L12 3Z" fill="currentColor"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M9 6.5 18 12l-9 5.5v-11Z" fill="currentColor"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3M9 21h6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m3 7 9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m10 9 5 3-5 3V9Z" fill="currentColor"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7.5 10v7M7.5 7.1v.1M11.5 17v-4a2.5 2.5 0 0 1 5 0v4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Make Talk home">
+        <img class="brand-mark" src="../assets/logos/studio.svg" alt="" width="40" height="40">
+        <span class="brand-name" aria-hidden="true">
+          <span class="brand-line brand-line--top">MAKE</span>
+          <span class="brand-line brand-line--bottom">TALK</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+        <a href="#method">The studio</a>
+        <a href="#classes">Classes</a>
+        <a href="#projects">Projects</a>
+        <a href="#mentors">Mentors</a>
+        <a href="#pricing">Pricing</a>
+        <a class="btn btn-ink nav-mobile-cta" href="#join">Book a free class</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-sm nav-cta" href="#join">Book a free class</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"></use></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker"><span class="kicker-dot" aria-hidden="true"></span> A bilingual studio · Guatemala &amp; the US</p>
+          <h1>Make something<br><span class="marker">in another</span><br>language.</h1>
+          <p class="hero-lede">Small groups. Real projects. Native mentors from Guatemala who would rather hear your half-finished idea than your perfect conjugation. Spanish for US makers, English for Guatemalan makers, four nights a week, live online.</p>
+          <div class="hero-actions">
+            <a class="btn btn-ink btn-lg" href="#join">Try a class free</a>
+            <a class="btn btn-quiet btn-lg" href="#classes">See the season <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="../assets/img/learner-ana.jpg" alt="">
+              <img src="../assets/img/learner-max.jpg" alt="">
+              <img src="../assets/img/learner-lucia.jpg" alt="">
+              <img src="../assets/img/learner-tom.jpg" alt="">
+            </div>
+            <p><strong>4.9 from 780 makers</strong><span>Eight seats per room · four seasons a year</span></p>
+          </div>
+        </div>
+
+        <div class="hero-stage" aria-label="A sample evening in the studio">
+          <span class="stage-label">Tonight in the studio</span>
+
+          <article class="live-card">
+            <div class="live-top">
+              <span class="live-pill"><span aria-hidden="true"></span> Live · 19:00 CT</span>
+              <span class="live-room">Room 02</span>
+            </div>
+            <div class="live-photo">
+              <img src="../assets/img/academy/hero-class.jpg" alt="A small group class in conversation around a table">
+              <span class="live-caption">Conversation Lab · B1+</span>
+            </div>
+            <div class="live-body">
+              <span class="live-prompt-label">Tonight’s prompt</span>
+              <p class="live-prompt">“Tell us about a meal you will never order again.”</p>
+              <div class="live-foot">
+                <div class="live-people">
+                  <img src="../assets/img/teacher-maya.jpg" alt="">
+                  <span><strong>Maya</strong> mentor</span>
+                </div>
+                <span class="live-seats">6 of 8 seats</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-kicker">Project 03 · in progress</span>
+            <h2>A six-scene<br>radio play.</h2>
+            <div class="project-bars" aria-hidden="true">
+              <span style="--fill:100%"></span>
+              <span style="--fill:72%"></span>
+              <span style="--fill:34%"></span>
+            </div>
+            <div class="project-foot">
+              <div class="project-people">
+                <img src="../assets/img/learner-ana.jpg" alt="">
+                <img src="../assets/img/learner-tom.jpg" alt="">
+                <img src="../assets/img/learner-max.jpg" alt="">
+              </div>
+              <span>3 makers · 2 scenes to go</span>
+            </div>
+          </article>
+
+          <span class="stage-note">No textbooks.<br>Ever.</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Conversation Lab</span><span>Scene Study</span><span>Writing Room</span><span>Listening Club</span><span>Pronunciation Gym</span><span>Open Mic</span>
+        <span>Conversation Lab</span><span>Scene Study</span><span>Writing Room</span><span>Listening Club</span><span>Pronunciation Gym</span><span>Open Mic</span>
+      </div>
+    </div>
+
+    <section class="numbers" aria-label="The studio in numbers">
+      <div class="container numbers-grid">
+        <div><strong>8</strong><span>seats per room</span></div>
+        <div><strong>4</strong><span>nights a week</span></div>
+        <div><strong>1</strong><span>project per season</span></div>
+        <div><strong>0</strong><span>textbooks</span></div>
+      </div>
+    </section>
+
+    <section class="section method" id="method">
+      <div class="container method-grid">
+        <div class="method-intro">
+          <p class="eyebrow">The studio model</p>
+          <h2>A class should<br>leave you with<br><span>something.</span></h2>
+          <p class="method-lede">Not a page of notes. A scene you performed, a question you asked well, a paragraph someone else understood. The language is the material; the thing you make is the point.</p>
+        </div>
+
+        <div class="method-steps">
+          <article class="step">
+            <span class="step-num">01</span>
+            <div>
+              <h3>Warm up out loud</h3>
+              <p>Ten minutes of low-stakes talking. No introductions, no syllabus. A question everyone answers badly, then better.</p>
+            </div>
+          </article>
+          <article class="step">
+            <span class="step-num">02</span>
+            <div>
+              <h3>Make the thing</h3>
+              <p>Pairs or small groups work on the night’s task while the mentor moves between rooms, correcting in the moment.</p>
+            </div>
+          </article>
+          <article class="step">
+            <span class="step-num">03</span>
+            <div>
+              <h3>Show it, then keep it</h3>
+              <p>The last twenty minutes are for sharing. Every project goes into your studio shelf, with the mentor’s notes attached.</p>
+            </div>
+          </article>
+
+          <aside class="method-quote">
+            <p>“The best sentence in the room is usually the one someone almost did not say.”</p>
+            <span>Maya Okonkwo · Conversation Lab · Livingston</span>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section classes" id="classes">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Spring season · April to June</p>
+            <h2>Four rooms.<br>Pick your <span>practice.</span></h2>
+          </div>
+          <p>Each class meets once a week for eleven weeks and ends with a small public showing. You can join one room or move between them with a membership.</p>
+        </div>
+
+        <div class="class-tabs" role="tablist" aria-label="Choose a studio class">
+          <button class="class-tab is-active" type="button" role="tab" id="tab-conversation" aria-selected="true" aria-controls="class-panel" data-room="conversation">
+            <span class="class-tab-num">01</span>
+            <span><strong>Conversation Lab</strong><small>Tuesdays · 19:00</small></span>
+          </button>
+          <button class="class-tab" type="button" role="tab" id="tab-scene" aria-selected="false" aria-controls="class-panel" data-room="scene" tabindex="-1">
+            <span class="class-tab-num">02</span>
+            <span><strong>Scene Study</strong><small>Thursdays · 18:30</small></span>
+          </button>
+          <button class="class-tab" type="button" role="tab" id="tab-writing" aria-selected="false" aria-controls="class-panel" data-room="writing" tabindex="-1">
+            <span class="class-tab-num">03</span>
+            <span><strong>Writing Room</strong><small>Saturdays · 11:00</small></span>
+          </button>
+          <button class="class-tab" type="button" role="tab" id="tab-listening" aria-selected="false" aria-controls="class-panel" data-room="listening" tabindex="-1">
+            <span class="class-tab-num">04</span>
+            <span><strong>Listening Club</strong><small>Sundays · 17:00</small></span>
+          </button>
+        </div>
+
+        <div class="class-panel" id="class-panel" role="tabpanel" aria-labelledby="tab-conversation">
+          <div class="class-detail">
+            <div class="class-detail-top">
+              <span class="class-badge" id="room-level">B1–C1</span>
+              <span class="class-badge class-badge--ghost" id="room-seats">8 seats</span>
+            </div>
+            <h3 id="room-title">Conversation Lab</h3>
+            <p class="class-desc" id="room-desc">One good question, seventy-five minutes, no agenda beyond following the interesting part. You will practice entering a conversation, changing its direction, and leaving it without apologising.</p>
+            <dl class="class-meta">
+              <div><dt>When</dt><dd id="room-when">Tuesdays · 19:00 CT</dd></div>
+              <div><dt>Mentor</dt><dd id="room-mentor">Maya Okonkwo</dd></div>
+              <div><dt>Season project</dt><dd id="room-project">The question deck</dd></div>
+            </dl>
+            <a class="btn btn-ink js-choose-room" href="#join" data-room="Conversation Lab">Take a free seat <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+          </div>
+
+          <div class="session-shape">
+            <header class="shape-head">
+              <h3>Inside a session</h3>
+              <span id="room-length">75 min</span>
+            </header>
+            <ol class="shape-list" id="shape-list">
+              <li><span>00:00</span><strong>Warm-up</strong><em>One question, everyone answers</em></li>
+              <li><span>00:10</span><strong>Prompt</strong><em>Choose a direction for the night</em></li>
+              <li><span>00:25</span><strong>Work</strong><em>Pairs, then the whole room</em></li>
+              <li><span>00:55</span><strong>Share</strong><em>One thing you want to keep</em></li>
+            </ol>
+            <div class="shape-foot">
+              <img src="../assets/img/teacher-maya.jpg" alt="" id="room-photo">
+              <div>
+                <strong id="room-mentor-foot">Maya Okonkwo</strong>
+                <span id="room-mentor-role">Native Spanish · 11 seasons</span>
+              </div>
+              <span class="shape-rating"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg> 4.9</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">Made in the studio</p>
+            <h2>Eleven weeks.<br><span>One thing to show.</span></h2>
+          </div>
+          <p>Every season ends with an Open Mic night. These are three projects from the winter cohort — unfinished, imperfect, and actually used outside the room.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="work work--tall">
+            <div class="work-media">
+              <img src="../assets/img/academy/program-high.jpg" alt="Two learners rehearsing a scene together" loading="lazy">
+              <span class="work-tag">Scene Study</span>
+            </div>
+            <div class="work-body">
+              <span class="work-meta">Winter · B1</span>
+              <h3>“La última llamada”</h3>
+              <p>A ten-minute two-hander about a phone call neither character wants to end. Written in class, performed at Open Mic.</p>
+              <span class="work-credit">Ana &amp; Tom · 3 drafts</span>
+            </div>
+          </article>
+
+          <article class="work">
+            <div class="work-media">
+              <img src="../assets/img/academy/program-adults.jpg" alt="A learner presenting a small printed zine" loading="lazy">
+              <span class="work-tag">Writing Room</span>
+            </div>
+            <div class="work-body">
+              <span class="work-meta">Spring · A2</span>
+              <h3>The pocket zine</h3>
+              <p>Twelve short pieces: a complaint, a recommendation, a love note, and one recipe that only works if you argue about it.</p>
+              <span class="work-credit">8 makers · printed locally</span>
+            </div>
+          </article>
+
+          <article class="work">
+            <div class="work-media work-media--photo">
+              <img src="../assets/img/academy/hero-class.jpg" alt="A group recording a conversation for a radio project" loading="lazy">
+              <span class="work-tag work-tag--lime">Listening Club</span>
+            </div>
+            <div class="work-body">
+              <span class="work-meta">Winter · B2</span>
+              <h3>How people actually talk</h3>
+              <p>A six-episode audio guide to the phrases textbooks skip: the soft no, the polite interruption, the joke that lands.</p>
+              <span class="work-credit">Radio play · 41 min</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section mentors" id="mentors">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">The people in the room</p>
+            <h2>Mentors, not<br><span>lecturers.</span></h2>
+          </div>
+          <p>All native speakers, all working makers in their own right. They keep the room moving, notice what you avoid, and send you home with one thing to try.</p>
+        </div>
+
+        <div class="mentor-grid">
+          <article class="mentor">
+            <div class="mentor-photo">
+              <img src="../assets/img/teacher-maya.jpg" alt="Portrait of Maya, a Make Talk mentor" loading="lazy">
+            </div>
+            <div class="mentor-body">
+              <span class="mentor-room">Conversation Lab</span>
+              <h3>Maya Okonkwo</h3>
+              <p>Spanish · Livingston. Radio producer and ruthless editor of small talk.</p>
+              <span class="mentor-line">“Bring the question you are afraid to ask.”</span>
+            </div>
+          </article>
+          <article class="mentor">
+            <div class="mentor-photo">
+              <img src="../assets/img/teacher-diego.jpg" alt="Portrait of Diego, a Make Talk mentor" loading="lazy">
+            </div>
+            <div class="mentor-body">
+              <span class="mentor-room">Scene Study</span>
+              <h3>Diego Salas</h3>
+              <p>Spanish · Antigua. Theatre director who treats every conversation as a scene with stakes.</p>
+              <span class="mentor-line">“Say it like you mean it, then again softer.”</span>
+            </div>
+          </article>
+          <article class="mentor">
+            <div class="mentor-photo">
+              <img src="../assets/img/teacher-camila.jpg" alt="Portrait of Camila, a Make Talk mentor" loading="lazy">
+            </div>
+            <div class="mentor-body">
+              <span class="mentor-room">Writing Room</span>
+              <h3>Camila Rojas</h3>
+              <p>Spanish · Quetzaltenango. Essayist and zine maker. Believes a good sentence is a small act of courage.</p>
+              <span class="mentor-line">“Write the version you would say out loud.”</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="week" aria-label="A week at the studio">
+      <div class="container week-grid">
+        <div class="week-intro">
+          <p class="eyebrow">A week at the studio</p>
+          <h2>One night in.<br><span>One thing made.</span></h2>
+          <p>Classes are live, capped, and recorded for the room. Miss one and you get the prompt, the notes, and a make-up task — not a lecture to sit through.</p>
+        </div>
+        <ul class="week-list">
+          <li>
+            <span class="week-day">Tue</span>
+            <div><strong>Conversation Lab</strong><span>19:00 · 75 min · 8 seats</span></div>
+            <span class="week-status">Booking</span>
+          </li>
+          <li>
+            <span class="week-day">Thu</span>
+            <div><strong>Scene Study</strong><span>18:30 · 90 min · 6 seats</span></div>
+            <span class="week-status">2 left</span>
+          </li>
+          <li>
+            <span class="week-day">Sat</span>
+            <div><strong>Writing Room</strong><span>11:00 · 75 min · 10 seats</span></div>
+            <span class="week-status">Booking</span>
+          </li>
+          <li>
+            <span class="week-day">Sun</span>
+            <div><strong>Listening Club</strong><span>17:00 · 60 min · 12 seats</span></div>
+            <span class="week-status week-status--free">Free</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section voices" id="voices">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">From the room</p>
+            <h2>What people<br><span>took home.</span></h2>
+          </div>
+          <p>Not “I feel more confident.” More specific than that: the sentence they used, the thing they made, the moment it stopped being a lesson.</p>
+        </div>
+
+        <div class="voice-grid">
+          <figure class="voice voice--feature">
+            <span class="voice-mark" aria-hidden="true">“</span>
+            <blockquote>I joined for conversation and stayed for the zine. I have never been so happy to be corrected in front of six strangers.</blockquote>
+            <figcaption>
+              <img src="../assets/img/testimonial-1.jpg" alt="Portrait of Ana Torres" loading="lazy">
+              <span><strong>Ana Torres</strong><span>Writing Room · three seasons</span></span>
+            </figcaption>
+          </figure>
+          <figure class="voice">
+            <blockquote>“The scene was two pages. We spent three weeks on the pause before the first line. That pause is now how I start meetings.”</blockquote>
+            <figcaption>
+              <img src="../assets/img/testimonial-2.jpg" alt="Portrait of Lucía Fernández" loading="lazy">
+              <span><strong>Lucía Fernández</strong><span>Scene Study · B2 → C1</span></span>
+            </figcaption>
+          </figure>
+          <figure class="voice">
+            <blockquote>“I stopped planning what I was going to say. The room was too interesting for that.”</blockquote>
+            <figcaption>
+              <img src="../assets/img/testimonial-3.jpg" alt="Portrait of Tom Becker" loading="lazy">
+              <span><strong>Tom Becker</strong><span>Listening Club · two seasons</span></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">Join the season</p>
+            <h2>Pay for a room.<br><span>Not a curriculum.</span></h2>
+          </div>
+          <p>Every plan includes the project shelf, the room recording, and Open Mic. Cancel a membership before the next season starts; drop-ins never expire.</p>
+        </div>
+
+        <div class="plan-grid">
+          <article class="plan">
+            <span class="plan-label">Try it</span>
+            <h3>Drop-in</h3>
+            <p class="plan-price">$32<span>/ class</span></p>
+            <p class="plan-note">One seat in any open room</p>
+            <ul class="plan-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> One 60–90 minute class</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> The night’s project brief</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Mentor notes by email</li>
+            </ul>
+            <a class="btn btn-outline btn-block js-choose-plan" href="#join" data-plan="Drop-in class · $32">Try a room</a>
+          </article>
+
+          <article class="plan plan--feature">
+            <span class="plan-flag">Most chosen</span>
+            <span class="plan-label">The habit</span>
+            <h3>Studio membership</h3>
+            <p class="plan-price">$185<span>/ month</span></p>
+            <p class="plan-note">Two classes a week · pause anytime</p>
+            <ul class="plan-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Any two classes each week</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> All four rooms, no extra fee</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Your project shelf + recordings</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Open Mic every season</li>
+            </ul>
+            <a class="btn btn-ink btn-block js-choose-plan" href="#join" data-plan="Studio membership · $185/month">Join the studio</a>
+          </article>
+
+          <article class="plan">
+            <span class="plan-label">Go all in</span>
+            <h3>Full season</h3>
+            <p class="plan-price">$490<span>/ season</span></p>
+            <p class="plan-note">Eleven weeks · one payment</p>
+            <ul class="plan-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Unlimited room access</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> One 1:1 mentor session a month</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Final project produced and printed</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Two guest passes</li>
+            </ul>
+            <a class="btn btn-outline btn-block js-choose-plan" href="#join" data-plan="Full season · $490">Take the season</a>
+          </article>
+        </div>
+        <p class="pricing-note">Prices in USD. Your first class is always free. If the room is not right after that, we will help you find a better one.</p>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-copy">
+          <p class="eyebrow">Before you join</p>
+          <h2>The small<br><span>questions.</span></h2>
+          <p>Still deciding? Write to a human. We answer within one working day, usually sooner.</p>
+          <a class="faq-contact" href="mailto:studio@nativespeaker.com">
+            <span><svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg></span>
+            <div><strong>Ask the studio</strong><span>studio@nativespeaker.com</span></div>
+          </a>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item is-open">
+            <h3><button class="faq-question" type="button" aria-expanded="true" aria-controls="studio-faq-1">Do I need to be good at languages to join?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="studio-faq-1" aria-hidden="true"><div><p>No. The rooms run from A2 to C1, and every class has a “low floor” version of the task. The only requirement is that you are willing to speak before you feel ready. That is the whole method.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="studio-faq-2">What if I miss a class?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="studio-faq-2" aria-hidden="true" inert><div><p>You get the prompt, the recording, the mentor notes, and a short make-up task. You can also use a membership seat in another room that week. We do not make you sit through a two-hour replay.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="studio-faq-3">Is this only for Spanish?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="studio-faq-3" aria-hidden="true" inert><div><p>No. English rooms run at the same times with English-speaking mentors. You choose the language when you book, and you can switch once per season.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="studio-faq-4">How big are the groups?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="studio-faq-4" aria-hidden="true" inert><div><p>Six to twelve people, depending on the room. Scene Study is capped at six because everyone performs. Listening Club is the largest because the work is mostly individual, then shared.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="studio-faq-5">Can I change rooms?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="studio-faq-5" aria-hidden="true" inert><div><p>Yes. A membership lets you move between all four rooms. If you take a single room, you can switch once before week three, and your project notes move with you.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="join" id="join">
+      <div class="container join-grid">
+        <div class="join-copy">
+          <p class="eyebrow">First class is free</p>
+          <h2>Come make<br>something<br><span>out loud.</span></h2>
+          <p>Tell us what you want to make and we will hold a seat in the right room. No card, no placement test, no thirty-minute sales call.</p>
+          <ul class="join-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"></use></svg> 60–90 minutes, live online</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-users"></use></svg> Six to twelve people</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Something to keep at the end</li>
+          </ul>
+          <div class="join-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="../assets/img/teacher-maya.jpg" alt="">
+              <img src="../assets/img/teacher-diego.jpg" alt="">
+              <img src="../assets/img/teacher-camila.jpg" alt="">
+            </div>
+            <p><strong>Maya, Diego and Camila</strong><span>teach most weeks. You will meet one of them first.</span></p>
+          </div>
+        </div>
+
+        <div class="join-card">
+          <p class="selection-note" id="selection-note" hidden></p>
+
+          <form id="join-form" novalidate>
+            <div class="field">
+              <label for="join-name">Your name</label>
+              <input id="join-name" name="name" type="text" autocomplete="name" placeholder="Ana Torres">
+            </div>
+            <div class="field">
+              <label for="join-email">Email</label>
+              <input id="join-email" name="email" type="email" autocomplete="email" placeholder="ana@example.com">
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="join-language">Language</label>
+                <select id="join-language" name="language">
+                  <option value="Spanish">Spanish</option>
+                  <option value="English">English</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="join-room">Room</label>
+                <select id="join-room" name="room">
+                  <option value="Conversation Lab">Conversation Lab</option>
+                  <option value="Scene Study">Scene Study</option>
+                  <option value="Writing Room">Writing Room</option>
+                  <option value="Listening Club">Listening Club</option>
+                  <option value="Not sure yet">Not sure yet</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="join-level">Where are you now?</label>
+              <select id="join-level" name="level">
+                <option value="A2 — I can survive a simple exchange">A2 — I can survive a simple exchange</option>
+                <option value="B1 — I can keep a conversation going">B1 — I can keep a conversation going</option>
+                <option value="B2 — I can argue a point">B2 — I can argue a point</option>
+                <option value="C1 — I want to sound like myself">C1 — I want to sound like myself</option>
+                <option value="Not sure — help me place myself">Not sure — help me place myself</option>
+              </select>
+            </div>
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+            <button class="btn btn-ink btn-block" type="submit">Book my free class</button>
+            <p class="form-note">No card. The studio replies within one business day.</p>
+          </form>
+
+          <div class="join-success" id="join-success" hidden aria-live="polite">
+            <span class="success-mark"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+            <h3>See you in the room, <span id="success-name">Ana</span>.</h3>
+            <p>We will email <strong id="success-email">ana@example.com</strong> with a seat in <span id="success-room">Conversation Lab</span> for <span id="success-language">Spanish</span>.</p>
+            <p class="success-next">Bring one question you have been avoiding. That is the whole preparation.</p>
+            <button class="btn btn-outline" id="join-again" type="button">Book another room</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand--footer" href="#top" aria-label="Make Talk home">
+            <img class="brand-mark" src="../assets/logos/studio.svg" alt="" width="40" height="40">
+            <span class="brand-name" aria-hidden="true">
+              <span class="brand-line brand-line--top">MAKE</span>
+              <span class="brand-line brand-line--bottom">TALK</span>
+            </span>
+          </a>
+          <p>A bilingual studio for people who would rather make a thing than finish a unit. Rooted in Guatemala, open to the US.</p>
+          <div class="socials">
+            <a href="https://instagram.com" aria-label="Make Talk on Instagram" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+            <a href="https://youtube.com" aria-label="Make Talk on YouTube" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-youtube"></use></svg></a>
+            <a href="https://linkedin.com" aria-label="Make Talk on LinkedIn" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Make Talk</h3>
+          <a href="#method">The model</a>
+          <a href="#classes">Rooms</a>
+          <a href="#projects">Projects</a>
+          <a href="#mentors">Mentors</a>
+        </div>
+        <div class="footer-col">
+          <h3>Take part</h3>
+          <a href="#pricing">Pricing</a>
+          <a href="#join">Free class</a>
+          <a href="#voices">Voices</a>
+          <a href="mailto:studio@nativespeaker.com">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <a href="#faq">Help centre</a>
+          <a href="#faq">Cancellation</a>
+          <a href="#faq">Privacy</a>
+          <a href="#faq">Terms</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Make Talk. Make something.</p>
+        <span>Live online · Guatemala &amp; the US · Eight seats</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="../assets/brand-fit.js" defer></script>
+</body>
+</html>

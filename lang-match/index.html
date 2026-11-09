@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lang Match — Find the teacher who fits</title>
+  <meta name="description" content="A short matching quiz that introduces you to native Spanish and English teachers in Guatemala and the US. Real lessons, clear prices, and a teacher who remembers your goals.">
+  <meta name="theme-color" content="#F6F7FC">
+  <meta property="og:title" content="Lang Match — Stop scrolling. Start matching.">
+  <meta property="og:description" content="Tell us how you like to learn and meet three native teachers who fit. Spanish from Guatemala, English from the US and Guatemala.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="../assets/logos/match.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400..800;1,400..700&family=Public+Sans:ital,wght@0,300..700;1,400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.78 5.63 6.22.9-4.5 4.39 1.06 6.2L12 17.2l-5.56 2.92 1.06-6.2L3 9.53l6.22-.9L12 3Z" fill="currentColor"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 3v4M16 3v4M3 10h18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m16 10 5-3v10l-5-3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.8 2.8M15.2 15.2 18 18M18 6l-2.8 2.8M8.8 15.2 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M9 6.2v11.6a1 1 0 0 0 1.52.85l9.1-5.8a1 1 0 0 0 0-1.7l-9.1-5.8A1 1 0 0 0 9 6.2Z" fill="currentColor"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m10 9.5 5 2.5-5 2.5v-5Z" fill="currentColor"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 10v6M8 7.5v.1M12 16v-3.5a2.5 2.5 0 0 1 5 0V16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Lang Match home">
+        <img class="brand-mark" src="../assets/logos/match.svg" alt="" width="40" height="40">
+        <span class="brand-name" aria-hidden="true">
+          <span class="brand-line brand-line--top">LANG</span>
+          <span class="brand-line brand-line--bottom">MATCH</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+        <a href="#how">How it works</a>
+        <a href="#teachers">Teachers</a>
+        <a href="#why">Why it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary nav-mobile-cta" href="#match">Find my match</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm nav-cta" href="#match">Find my match</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"></use></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Teacher matching · Guatemala &amp; the US</p>
+          <h1>Stop scrolling.<br><em>Start matching.</em></h1>
+          <p class="hero-lede">Tell us how you like to learn and we’ll introduce you to three native teachers who fit. Spanish from Guatemala, English from the US and Guatemala — real people, clear prices, no endless catalogue.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#match">Start the match</a>
+            <a class="btn btn-ghost btn-lg" href="#teachers">Meet the teachers</a>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="../assets/img/learner-ana.jpg" alt="">
+              <img src="../assets/img/learner-tom.jpg" alt="">
+              <img src="../assets/img/learner-lucia.jpg" alt="">
+              <img src="../assets/img/learner-max.jpg" alt="">
+            </div>
+            <div>
+              <p><strong>4.9 from 1,240 matches</strong></p>
+              <p>Most learners meet their teacher within 48 hours.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-shell" id="match">
+          <div class="match-card" aria-labelledby="match-title">
+            <div class="match-top">
+              <div>
+                <p class="match-kicker">Your match</p>
+                <h2 id="match-title">Three questions. One good fit.</h2>
+              </div>
+              <div class="match-dots" aria-hidden="true">
+                <span class="is-on"></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="match-lang" role="group" aria-label="Which language do you want to learn?">
+              <button class="lang-pill is-active" type="button" data-lang="spanish" aria-pressed="true">Spanish</button>
+              <button class="lang-pill" type="button" data-lang="english" aria-pressed="false">English</button>
+            </div>
+
+            <div class="match-progress" aria-hidden="true"><span id="match-bar"></span></div>
+
+            <div class="match-step is-active" data-step="1" role="group" aria-labelledby="q1">
+              <p class="match-question" id="q1">What do you want to do?</p>
+              <div class="choice-grid">
+                <button class="choice" type="button" data-key="goal" data-value="Travel" aria-pressed="false">
+                  <span class="choice-icon"><svg class="icon" aria-hidden="true"><use href="#i-globe"></use></svg></span>
+                  <span><strong>Travel</strong><small>Order, ask, get around</small></span>
+                </button>
+                <button class="choice" type="button" data-key="goal" data-value="Work" aria-pressed="false">
+                  <span class="choice-icon"><svg class="icon" aria-hidden="true"><use href="#i-target"></use></svg></span>
+                  <span><strong>Work</strong><small>Meetings and email</small></span>
+                </button>
+                <button class="choice" type="button" data-key="goal" data-value="Family" aria-pressed="false">
+                  <span class="choice-icon"><svg class="icon" aria-hidden="true"><use href="#i-heart"></use></svg></span>
+                  <span><strong>Family</strong><small>Talk with people you love</small></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="match-step" data-step="2" role="group" aria-labelledby="q2" hidden>
+              <p class="match-question" id="q2">How do you like to learn?</p>
+              <div class="choice-grid">
+                <button class="choice" type="button" data-key="style" data-value="Structure" aria-pressed="false">
+                  <span class="choice-icon"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+                  <span><strong>Structure</strong><small>A clear plan each week</small></span>
+                </button>
+                <button class="choice" type="button" data-key="style" data-value="Conversation" aria-pressed="false">
+                  <span class="choice-icon"><svg class="icon" aria-hidden="true"><use href="#i-message"></use></svg></span>
+                  <span><strong>Conversation</strong><small>Talk first, fix later</small></span>
+                </button>
+                <button class="choice" type="button" data-key="style" data-value="A mix" aria-pressed="false">
+                  <span class="choice-icon"><svg class="icon" aria-hidden="true"><use href="#i-spark"></use></svg></span>
+                  <span><strong>A mix</strong><small>Both, depending on the day</small></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="match-step" data-step="3" role="group" aria-labelledby="q3" hidden>
+              <p class="match-question" id="q3">When can you meet?</p>
+              <div class="choice-grid">
+                <button class="choice" type="button" data-key="time" data-value="Mornings" aria-pressed="false">
+                  <span class="choice-icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"></use></svg></span>
+                  <span><strong>Mornings</strong><small>Before 11:00 CT</small></span>
+                </button>
+                <button class="choice" type="button" data-key="time" data-value="Evenings" aria-pressed="false">
+                  <span class="choice-icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"></use></svg></span>
+                  <span><strong>Evenings</strong><small>After 18:00 CT</small></span>
+                </button>
+                <button class="choice" type="button" data-key="time" data-value="Weekends" aria-pressed="false">
+                  <span class="choice-icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg></span>
+                  <span><strong>Weekends</strong><small>Saturday or Sunday</small></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="match-result" id="match-result" aria-live="polite" hidden>
+              <div class="result-head">
+                <span class="result-badge"><svg class="icon" aria-hidden="true"><use href="#i-spark"></use></svg> <span id="result-score">94%</span> match</span>
+                <span class="result-note">Based on your answers</span>
+              </div>
+              <div class="result-person">
+                <img id="result-photo" src="../assets/img/hero-maria.jpg" alt="Portrait of your matched teacher">
+                <div>
+                  <h3 id="result-name">María Serrano</h3>
+                  <p id="result-meta"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Antigua, Guatemala · Native Spanish</p>
+                  <p class="result-quote" id="result-quote">“We’ll build the Spanish you actually need, one real conversation at a time.”</p>
+                </div>
+              </div>
+              <div class="result-tags" id="result-tags"><span>Travel</span><span>Conversation</span><span>Mornings</span></div>
+              <div class="result-actions">
+                <a class="btn btn-primary" href="#pricing">Book a $5 trial</a>
+                <button class="btn btn-quiet" type="button" id="match-restart">Try different answers</button>
+              </div>
+            </div>
+
+            <p class="match-foot">No account needed. Two minutes, no sales call.</p>
+          </div>
+
+          <div class="match-float match-float--one" aria-hidden="true">
+            <svg class="icon"><use href="#i-star"></use></svg>
+            <span><strong>4.9</strong> average teacher rating</span>
+          </div>
+          <div class="match-float match-float--two" aria-hidden="true">
+            <span class="pulse-dot"></span>
+            <span>3 teachers online now</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Where our teachers are based">
+      <div class="container proof-inner">
+        <p>Teachers in</p>
+        <ul>
+          <li>Antigua</li>
+          <li>Quetzaltenango</li>
+          <li>Lake Atitlán</li>
+          <li>Guatemala City</li>
+          <li>Austin</li>
+          <li>Chicago</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section how" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-title">Less browsing.<br><em>More talking.</em></h2>
+          <p>Three steps, one shortlist, and a first lesson that feels like a conversation instead of an interview.</p>
+        </div>
+
+        <div class="step-grid">
+          <article class="step-card">
+            <span class="step-num">01</span>
+            <h3>Tell us what matters</h3>
+            <p>Your goal, your comfort level, and when you can meet. Three questions, no essay.</p>
+            <span class="step-tag">2 minutes</span>
+          </article>
+          <article class="step-card">
+            <span class="step-num">02</span>
+            <h3>Meet three teachers</h3>
+            <p>We show you a shortlist with a real match score, a short intro, and the price up front.</p>
+            <span class="step-tag">Same day</span>
+          </article>
+          <article class="step-card">
+            <span class="step-num">03</span>
+            <h3>Keep the one who gets you</h3>
+            <p>Book a $5 trial. If it clicks, keep going. If not, we rematch you for free.</p>
+            <span class="step-tag">$5 trial</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section teachers" id="teachers" aria-labelledby="teachers-title">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">A sample shortlist</p>
+            <h2 id="teachers-title">Three teachers,<br><em>one good fit.</em></h2>
+            <p>Every profile shows the price, the teaching style, and the kind of learner they work best with. No surprises at checkout.</p>
+          </div>
+          <a class="text-link" href="#match">Get your own shortlist <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+        </div>
+
+        <div class="teacher-grid">
+          <article class="teacher-card">
+            <div class="teacher-top">
+              <img class="teacher-photo" src="../assets/img/hero-maria.jpg" alt="Portrait of María Serrano" loading="lazy">
+              <div class="teacher-id">
+                <h3>María Serrano</h3>
+                <p><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Antigua, Guatemala · Native Spanish</p>
+              </div>
+              <span class="match-badge">96%</span>
+            </div>
+            <div class="teacher-meta">
+              <span class="rating"><svg class="icon star" aria-hidden="true"><use href="#i-star"></use></svg> 4.9 <span>(301)</span></span>
+              <span>2,140 lessons</span>
+            </div>
+            <div class="tags"><span>Conversation</span><span>Travel</span><span>DELE</span></div>
+            <p class="teacher-quote">“I’ll have you ordering pepián and arguing about football in no time.”</p>
+            <div class="teacher-foot">
+              <div class="price"><strong>From $15</strong><span>/ 60 min</span></div>
+              <a class="btn btn-soft btn-sm" href="#pricing">View profile</a>
+            </div>
+          </article>
+
+          <article class="teacher-card">
+            <div class="teacher-top">
+              <img class="teacher-photo" src="../assets/img/teacher-james.jpg" alt="Portrait of James Whitfield" loading="lazy">
+              <div class="teacher-id">
+                <h3>James Whitfield</h3>
+                <p><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Austin, Texas · Native English</p>
+              </div>
+              <span class="match-badge">93%</span>
+            </div>
+            <div class="teacher-meta">
+              <span class="rating"><svg class="icon star" aria-hidden="true"><use href="#i-star"></use></svg> 4.9 <span>(214)</span></span>
+              <span>1,860 lessons</span>
+            </div>
+            <div class="tags"><span>IELTS</span><span>Business</span><span>Accent</span></div>
+            <p class="teacher-quote">“We’ll fix the mistakes that have been following you around for years.”</p>
+            <div class="teacher-foot">
+              <div class="price"><strong>From $18</strong><span>/ 60 min</span></div>
+              <a class="btn btn-soft btn-sm" href="#pricing">View profile</a>
+            </div>
+          </article>
+
+          <article class="teacher-card">
+            <div class="teacher-top">
+              <img class="teacher-photo" src="../assets/img/teacher-camila.jpg" alt="Portrait of Camila Rojas" loading="lazy">
+              <div class="teacher-id">
+                <h3>Camila Rojas</h3>
+                <p><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Quetzaltenango, Guatemala · Native Spanish</p>
+              </div>
+              <span class="match-badge">91%</span>
+            </div>
+            <div class="teacher-meta">
+              <span class="rating"><svg class="icon star" aria-hidden="true"><use href="#i-star"></use></svg> 4.8 <span>(142)</span></span>
+              <span>760 lessons</span>
+            </div>
+            <div class="tags"><span>Beginners</span><span>Pronunciation</span><span>Travel</span></div>
+            <p class="teacher-quote">“Mistakes are how we find the words that stick. Bring all of yours.”</p>
+            <div class="teacher-foot">
+              <div class="price"><strong>From $13</strong><span>/ 60 min</span></div>
+              <a class="btn btn-soft btn-sm" href="#pricing">View profile</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why" id="why" aria-labelledby="why-title">
+      <div class="container why-grid">
+        <div class="why-media">
+          <img src="../assets/img/academy/hero-class.jpg" alt="A small group talking together during a live online class" loading="lazy">
+          <div class="why-card">
+            <span class="why-card-label">After the first month</span>
+            <strong>87%</strong>
+            <p>of matched learners keep the same teacher.</p>
+          </div>
+        </div>
+        <div class="why-copy">
+          <p class="eyebrow">Why matching beats browsing</p>
+          <h2 id="why-title">The right teacher<br><em>changes the hour.</em></h2>
+          <p class="why-lede">A marketplace gives you 200 profiles. Lang Match gives you three people who already fit the way you learn, the goals you have, and the hours you keep.</p>
+          <ul class="check-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><span><strong>Native, not near-native.</strong> Spanish teachers live in Guatemala. English teachers are native speakers based in the US or Guatemala.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><span><strong>Corrections in context.</strong> Your teacher fixes the sentence you are actually saying, not a textbook one.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><span><strong>One clear price.</strong> The number on the profile is the number you pay. No subscription required.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><span><strong>Free rematch.</strong> If the first lesson does not click, tell us and we will introduce someone else.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stories" id="stories" aria-labelledby="stories-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Learner stories</p>
+          <h2 id="stories-title">The match is the method.</h2>
+        </div>
+        <div class="story-grid">
+          <article class="story-card">
+            <div class="story-stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg></div>
+            <blockquote>“I picked María because she wanted to talk about food, not grammar drills. Three months later I ordered dinner for six people in Antigua without switching to English.”</blockquote>
+            <div class="story-person">
+              <img src="../assets/img/learner-ana.jpg" alt="" loading="lazy">
+              <div><strong>Ana R.</strong><span>Product designer · Austin → Antigua</span></div>
+            </div>
+          </article>
+          <article class="story-card">
+            <div class="story-stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg></div>
+            <blockquote>“James matched my schedule and my stubbornness. We rehearsed the real client call twice, then I did it in English without writing a script.”</blockquote>
+            <div class="story-person">
+              <img src="../assets/img/learner-tom.jpg" alt="" loading="lazy">
+              <div><strong>Tom B.</strong><span>Engineer · Guatemala City</span></div>
+            </div>
+          </article>
+          <article class="story-card">
+            <div class="story-stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg></div>
+            <blockquote>“The quiz put me with Camila, who is patient with beginners and hilarious. I stopped postponing the lesson and started looking forward to it.”</blockquote>
+            <div class="story-person">
+              <img src="../assets/img/learner-lucia.jpg" alt="" loading="lazy">
+              <div><strong>Lucía M.</strong><span>Teacher · Quetzaltenango</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Simple pricing</p>
+          <h2 id="pricing-title">Try first.<br><em>Decide later.</em></h2>
+          <p>Every plan includes the match, the teacher, and a written summary after each lesson. Cancel anytime.</p>
+        </div>
+
+        <div class="price-grid">
+          <article class="price-card">
+            <p class="price-kicker">The trial</p>
+            <p class="price-amount"><strong>$5</strong><span>one lesson</span></p>
+            <p class="price-desc">A real 25-minute lesson with your matched teacher. Not a sales call.</p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> 25 minutes, live</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> A written next-step note</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Free rematch if it does not click</li>
+            </ul>
+            <a class="btn btn-quiet btn-block" href="#join">Book the trial</a>
+          </article>
+
+          <article class="price-card price-card--featured">
+            <span class="price-flag">Most chosen</span>
+            <p class="price-kicker">The pack</p>
+            <p class="price-amount"><strong>$120</strong><span>8 lessons</span></p>
+            <p class="price-desc">Two months of steady practice with the same teacher. Use them whenever you like.</p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> 8 × 60-minute lessons</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Lesson summaries and homework</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Reschedule up to 12 hours before</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> $15 per lesson</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="#join">Choose the pack</a>
+          </article>
+
+          <article class="price-card">
+            <p class="price-kicker">The habit</p>
+            <p class="price-amount"><strong>$160</strong><span>per month</span></p>
+            <p class="price-desc">For the learner who wants a fixed weekly hour and a teacher who keeps the thread.</p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> 4 × 60-minute lessons a month</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> A monthly progress note</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Priority scheduling</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Pause or cancel anytime</li>
+            </ul>
+            <a class="btn btn-quiet btn-block" href="#join">Start monthly</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="faq-copy">
+          <p class="eyebrow">Questions</p>
+          <h2 id="faq-title">Before you<br><em>press start.</em></h2>
+          <p>Still unsure? Email <a href="mailto:hello@nativespeaker.com">hello@nativespeaker.com</a> and a human will answer.</p>
+          <div class="contact-card">
+            <svg class="icon" aria-hidden="true"><use href="#i-message"></use></svg>
+            <span><strong>Talk to a human</strong><span>Usually replies within a day</span></span>
+          </div>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item is-open">
+            <h3><button class="faq-question" type="button" aria-expanded="true" aria-controls="match-faq-1">How does the match actually work?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="match-faq-1" aria-hidden="false"><div><p>You answer three questions about your goal, learning style, and schedule. We compare your answers with each teacher’s specialties, teaching style, and availability, then show you a shortlist of three with a match score and a short intro.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="match-faq-2">Are the English teachers American?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="match-faq-2" aria-hidden="true" inert><div><p>Our English teachers are native English speakers based in the United States or Guatemala. Spanish teachers are native speakers who live in Guatemala. Every teacher is interviewed and background-checked.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="match-faq-3">What if I do not like my match?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="match-faq-3" aria-hidden="true" inert><div><p>Tell us after the trial and we will rematch you for free. The $5 trial is a real lesson, so you will still leave with something useful even if the teacher is not the right long-term fit.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="match-faq-4">Do I need to buy a subscription?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="match-faq-4" aria-hidden="true" inert><div><p>No. The trial is a one-off $5 lesson, and the 8-lesson pack has no expiry date. The monthly plan is there if you want a fixed weekly hour, but you can pause or cancel it anytime.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="match-faq-5">What happens after the first lesson?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="match-faq-5" aria-hidden="true" inert><div><p>Your teacher sends a short note with what you did well, the two things to practise, and a suggested next step. If you want to continue, you book the next lesson directly from that note.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="join" aria-labelledby="join-title">
+      <div class="container">
+        <div class="cta-panel">
+          <div class="cta-copy">
+            <p class="cta-eyebrow"><span class="pulse-dot" aria-hidden="true"></span> Next matches go out today</p>
+            <h2 id="join-title">Meet your teacher<br><em>this week.</em></h2>
+            <p>Tell us where to send your shortlist. We will reply with three teachers, a price, and a time that works in Guatemala or the US.</p>
+          </div>
+          <div class="cta-form-wrap">
+            <form id="join-form" class="cta-form" novalidate>
+              <div class="field">
+                <label for="join-email">Your email</label>
+                <input id="join-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="join-language">Language</label>
+                  <select id="join-language" name="language">
+                    <option>Spanish</option>
+                    <option>English</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="join-level">Level</label>
+                  <select id="join-level" name="level">
+                    <option>A1–A2</option>
+                    <option>B1–B2</option>
+                    <option>C1–C2</option>
+                    <option>Not sure</option>
+                  </select>
+                </div>
+              </div>
+              <p class="form-error" id="form-error" role="alert" hidden></p>
+              <button class="btn btn-primary btn-block" type="submit">Send my shortlist</button>
+              <p class="form-note">No spam. One email with three teachers and a booking link.</p>
+            </form>
+            <div class="form-success" id="join-success" hidden>
+              <span class="success-icon"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+              <h3 tabindex="-1">Your shortlist is on its way.</h3>
+              <p>We will send three <strong id="success-language">Spanish</strong> teachers for a <strong id="success-level">B1–B2</strong> learner to <strong id="success-email">you@example.com</strong>.</p>
+              <button class="btn btn-quiet" type="button" id="join-again">Use another email</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand--footer" href="#top" aria-label="Lang Match home">
+            <img class="brand-mark" src="../assets/logos/match.svg" alt="" width="40" height="40">
+            <span class="brand-name" aria-hidden="true">
+              <span class="brand-line brand-line--top">LANG</span>
+              <span class="brand-line brand-line--bottom">MATCH</span>
+            </span>
+          </a>
+          <p>A short match, a real teacher, and a conversation worth showing up for.</p>
+          <div class="socials">
+            <a href="https://instagram.com" aria-label="Lang Match on Instagram" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+            <a href="https://youtube.com" aria-label="Lang Match on YouTube" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-youtube"></use></svg></a>
+            <a href="https://linkedin.com" aria-label="Lang Match on LinkedIn" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Learn</h3>
+          <a href="#teachers">Spanish teachers</a>
+          <a href="#teachers">English teachers</a>
+          <a href="#how">How matching works</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="#why">About us</a>
+          <a href="#stories">Learner stories</a>
+          <a href="#faq">Contact</a>
+          <a href="#join">Get matched</a>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <a href="#faq">Help centre</a>
+          <a href="#faq">Safety</a>
+          <a href="#faq">Cancellation policy</a>
+          <a href="#faq">Privacy</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Lang Match. Find your person.</p>
+        <div class="footer-legal">
+          <a href="#faq">Privacy</a>
+          <a href="#faq">Terms</a>
+          <a href="#faq">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="../assets/brand-fit.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+<rect width="48" height="48" rx="13" fill="#4A56D6"/>
+      <rect x="4" y="10" width="26" height="20" rx="6" fill="#FFFFFF"/>
+      <path d="M9 30l-3 6 7-6" fill="#FFFFFF"/>
+      <rect x="18" y="18" width="26" height="20" rx="6" fill="#FFB38A"/>
+      <path d="M39 38l3 6-7-6" fill="#FFB38A"/>
+      <text x="14" y="25" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="9" font-weight="800" fill="#4A56D6">A</text>
+      <text x="34" y="33" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="9" font-weight="800" fill="#4A56D6">ñ</text>
+      <circle cx="24" cy="27" r="4.2" fill="#19B892"/>
+      <path d="m22.2 27 1.4 1.4 2.5-2.6" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

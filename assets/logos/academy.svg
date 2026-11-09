@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+<rect width="48" height="48" rx="13" fill="#124A43"/>
+      <path d="M24 9 6 18l18 9 18-9-18-9Z" fill="#FFF6E9"/>
+      <path d="M13 22.5v6.2c0 3.2 4.9 5.8 11 5.8s11-2.6 11-5.8v-6.2l-11 5.5-11-5.5Z" fill="#FFF6E9"/>
+      <path d="M40 18v9" stroke="#F2B33D" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="40" cy="29" r="2" fill="#F2B33D"/>
+      <path d="M29 30h10a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-4l-3 3v-3h-3a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3Z" fill="#F2B33D"/>
+      <text x="35" y="38.5" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="7" font-weight="800" fill="#124A43">ñ</text>
+</svg>

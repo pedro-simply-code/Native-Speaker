@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+<rect width="48" height="48" rx="13" fill="#1D2B4F"/>
+      <rect x="4" y="9" width="16" height="13" rx="4" fill="#E86A33"/>
+      <path d="M9 22l-2 5 5-5" fill="#E86A33"/>
+      <text x="12" y="19" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="8" font-weight="800" fill="#1D2B4F">A</text>
+      <rect x="28" y="9" width="16" height="13" rx="4" fill="#F8F9F6"/>
+      <path d="M39 22l2 5-5-5" fill="#F8F9F6"/>
+      <text x="36" y="19" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="8" font-weight="800" fill="#1D2B4F">ñ</text>
+      <path d="M8 37c0-7 7-12 16-12s16 5 16 12" fill="none" stroke="#F8F9F6" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M8 37h32" stroke="#F8F9F6" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M14 37v-5M24 37V28M34 37v-5" stroke="#E86A33" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

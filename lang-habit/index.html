@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lang Habit — Ten minutes a day, one live hour a week</title>
+  <meta name="description" content="A daily micro-practice in Spanish or English, plus a live weekly class with a native teacher. Ten minutes on your phone, one hour with real people. Spanish from Guatemala, English from the US and Guatemala.">
+  <meta name="theme-color" content="#F7FAFD">
+  <meta property="og:title" content="Lang Habit — Small practice. Real progress.">
+  <meta property="og:description" content="One short prompt a day and a live class every week. Spanish from Guatemala, English from the US and Guatemala.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="../assets/logos/daily.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300..800;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.78 5.63 6.22.9-4.5 4.39 1.06 6.2L12 17.2l-5.56 2.92 1.06-6.2L3 9.53l6.22-.9L12 3Z" fill="currentColor"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 3v4M16 3v4M3 10h18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m16 10 5-3v10l-5-3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M9 6.2v11.6a1 1 0 0 0 1.52.85l9.1-5.8a1 1 0 0 0 0-1.7l-9.1-5.8A1 1 0 0 0 9 6.2Z" fill="currentColor"/></symbol>
+    <symbol id="i-fire" viewBox="0 0 24 24"><path d="M12 21c3.6 0 6.2-2.4 6.2-5.6 0-2.4-1.3-4.2-3-6.1-.6 1.5-1.4 2.4-2.4 2.8.3-3.4-1-6.3-3.6-8.1.3 3-1 4.9-2.2 6.6-.9 1.2-1.4 2.7-1.4 4.4C5.6 18.4 8.2 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m10 9.5 5 2.5-5 2.5v-5Z" fill="currentColor"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 10v6M8 7.5v.1M12 16v-3.5a2.5 2.5 0 0 1 5 0V16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Lang Habit home">
+        <img class="brand-mark" src="../assets/logos/daily.svg" alt="" width="40" height="40">
+        <span class="brand-name" aria-hidden="true">
+          <span class="brand-line brand-line--top">LANG</span>
+          <span class="brand-line brand-line--bottom">HABIT</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+        <a href="#how">How it works</a>
+        <a href="#week">This week</a>
+        <a href="#live">Live class</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary nav-mobile-cta" href="#join">Start free</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm nav-cta" href="#join">Start free</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"></use></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Daily practice · Live class weekly</p>
+          <h1>Ten minutes a day.<br><em>One hour a week.</em></h1>
+          <p class="hero-lede">A short prompt on your phone every morning, then a live class with a native teacher every week. Spanish from Guatemala, English from the US and Guatemala — built for people with a full calendar.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#join">Start free</a>
+            <a class="btn btn-ghost btn-lg" href="#week">See this week</a>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="../assets/img/learner-ana.jpg" alt="">
+              <img src="../assets/img/learner-tom.jpg" alt="">
+              <img src="../assets/img/learner-lucia.jpg" alt="">
+              <img src="../assets/img/learner-max.jpg" alt="">
+            </div>
+            <div>
+              <p><strong>11 minutes, on average</strong></p>
+              <p>Daily practice from learners in the US and Guatemala.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="today-shell" id="today">
+          <div class="today-card" aria-labelledby="today-title">
+            <div class="today-top">
+              <div>
+                <p class="today-kicker">Today · Wednesday</p>
+                <h2 id="today-title">Your ten minutes</h2>
+              </div>
+              <span class="streak-chip"><svg class="icon" aria-hidden="true"><use href="#i-fire"></use></svg> <span><strong id="streak-count">2</strong>-day streak</span></span>
+            </div>
+
+            <div class="day-dots" aria-hidden="true">
+              <span class="is-done" data-day="mon">M</span>
+              <span class="is-done" data-day="tue">T</span>
+              <span class="is-today" data-day="wed">W</span>
+              <span data-day="thu">T</span>
+              <span data-day="fri">F</span>
+              <span data-day="sat">S</span>
+              <span data-day="sun">S</span>
+            </div>
+            <p class="sr-only">Monday and Tuesday are done. Wednesday is today.</p>
+
+            <div class="today-prompt">
+              <p class="prompt-label"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg> Today's prompt</p>
+              <h3>Ask for directions without apologising</h3>
+              <div class="phrase-card">
+                <p class="phrase-target" id="today-phrase" data-es="Perdón, ¿cómo llego al mercado?" data-en="Excuse me, how do I get to the market?">Perdón, ¿cómo llego al mercado?</p>
+                <p class="phrase-source" data-es="Excuse me, how do I get to the market?" data-en="Perdón, ¿cómo llego al mercado?">Excuse me, how do I get to the market?</p>
+                <button class="listen-btn" type="button" id="today-listen" aria-pressed="false">
+                  <svg class="icon" aria-hidden="true"><use href="#i-play"></use></svg>
+                  <span id="today-listen-label">Listen</span>
+                </button>
+              </div>
+              <ul class="today-tasks">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-mic"></use></svg> Say it out loud twice.</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-message"></use></svg> Repeat the answer back to confirm.</li>
+              </ul>
+            </div>
+
+            <div class="today-actions">
+              <button class="btn btn-primary" type="button" id="today-done" aria-pressed="false">Mark today done</button>
+              <a class="btn btn-quiet" href="#week">See the week</a>
+            </div>
+            <p class="today-status" id="today-status" role="status" aria-live="polite">2 minutes, no signup.</p>
+          </div>
+
+          <div class="today-float" aria-hidden="true">
+            <span class="pulse-dot"></span>
+            <span><strong>Sunday class</strong> included free</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Where our teachers are based">
+      <div class="container proof-inner">
+        <p>Teachers in</p>
+        <ul>
+          <li>Antigua</li>
+          <li>Quetzaltenango</li>
+          <li>Lake Atitlán</li>
+          <li>Guatemala City</li>
+          <li>Austin</li>
+          <li>Chicago</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section how" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-title">Small enough<br><em>to actually do.</em></h2>
+          <p>No forty-minute video, no twelve-step lesson. One prompt, one live hour, and a streak that does not punish you for missing a day.</p>
+        </div>
+
+        <div class="step-grid">
+          <article class="step-card">
+            <span class="step-num">01</span>
+            <span class="step-icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"></use></svg></span>
+            <h3>Pick your ten minutes</h3>
+            <p>Morning coffee, lunch break, or the ride home. Lang Habit sends one prompt at the time you choose.</p>
+            <span class="step-tag">2 minutes to set up</span>
+          </article>
+          <article class="step-card">
+            <span class="step-num">02</span>
+            <span class="step-icon"><svg class="icon" aria-hidden="true"><use href="#i-mic"></use></svg></span>
+            <h3>Say one thing out loud</h3>
+            <p>A phrase, a question, a thirty-second voice note. You practise the sentence you will actually use.</p>
+            <span class="step-tag">10 minutes a day</span>
+          </article>
+          <article class="step-card">
+            <span class="step-num">03</span>
+            <span class="step-icon"><svg class="icon" aria-hidden="true"><use href="#i-video"></use></svg></span>
+            <h3>Bring it to the live class</h3>
+            <p>Sunday, 45 minutes, a small group and a native teacher. Everything you practised that week gets used.</p>
+            <span class="step-tag">Once a week</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section week" id="week" aria-labelledby="week-title">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">This week</p>
+            <h2 id="week-title">Seven prompts.<br><em>One real conversation.</em></h2>
+            <p>Each day has a theme, one phrase, and two things to do with it. Switch the language to see the same week in English.</p>
+          </div>
+          <div class="daily-lang" role="group" aria-label="Practice language">
+            <button class="lang-btn is-active" type="button" data-lang="spanish" aria-pressed="true">Spanish</button>
+            <button class="lang-btn" type="button" data-lang="english" aria-pressed="false">English</button>
+          </div>
+        </div>
+
+        <div class="day-tabs" role="tablist" aria-label="Days of the week">
+          <button class="day-tab" type="button" role="tab" id="tab-mon" aria-selected="false" aria-controls="day-mon" tabindex="-1" data-day="mon"><span>Mon</span><small>Hello</small></button>
+          <button class="day-tab" type="button" role="tab" id="tab-tue" aria-selected="false" aria-controls="day-tue" tabindex="-1" data-day="tue"><span>Tue</span><small>Coffee</small></button>
+          <button class="day-tab is-active" type="button" role="tab" id="tab-wed" aria-selected="true" aria-controls="day-wed" tabindex="0" data-day="wed"><span>Wed</span><small>Directions</small></button>
+          <button class="day-tab" type="button" role="tab" id="tab-thu" aria-selected="false" aria-controls="day-thu" tabindex="-1" data-day="thu"><span>Thu</span><small>Work</small></button>
+          <button class="day-tab" type="button" role="tab" id="tab-fri" aria-selected="false" aria-controls="day-fri" tabindex="-1" data-day="fri"><span>Fri</span><small>Plans</small></button>
+          <button class="day-tab" type="button" role="tab" id="tab-sat" aria-selected="false" aria-controls="day-sat" tabindex="-1" data-day="sat"><span>Sat</span><small>Story</small></button>
+          <button class="day-tab" type="button" role="tab" id="tab-sun" aria-selected="false" aria-controls="day-sun" tabindex="-1" data-day="sun"><span>Sun</span><small>Live</small></button>
+        </div>
+
+        <div class="day-panel" id="day-mon" role="tabpanel" aria-labelledby="tab-mon" tabindex="0" hidden>
+          <div class="panel-copy">
+            <p class="panel-kicker">Day 1 · 10 minutes · A1–C2</p>
+            <h3>Introduce yourself in one breath.</h3>
+            <p class="panel-desc">Name, city, and one thing you are doing this week. That is enough to open almost any conversation.</p>
+            <div class="phrase-card phrase-card--panel">
+              <p class="phrase-target" data-es="Me llamo Ana y vivo en Austin." data-en="My name is Ana and I live in Austin.">Me llamo Ana y vivo en Austin.</p>
+              <p class="phrase-source" data-es="My name is Ana and I live in Austin." data-en="Me llamo Ana y vivo en Austin.">My name is Ana and I live in Austin.</p>
+            </div>
+            <ul class="prompt-list">
+              <li><span>01</span> Say it with your real name and city.</li>
+              <li><span>02</span> Add what you are doing this week.</li>
+              <li><span>03</span> Record a 20-second voice note.</li>
+            </ul>
+          </div>
+          <div class="panel-side">
+            <div class="panel-fact"><span>Focus</span><strong>First contact</strong></div>
+            <div class="panel-fact"><span>Practice</span><strong>Speaking · 10 min</strong></div>
+            <div class="panel-fact"><span>Use it</span><strong>At the live class</strong></div>
+            <a class="btn btn-primary" href="#join">Get Monday's prompt</a>
+          </div>
+        </div>
+
+        <div class="day-panel" id="day-tue" role="tabpanel" aria-labelledby="tab-tue" tabindex="0" hidden>
+          <div class="panel-copy">
+            <p class="panel-kicker">Day 2 · 10 minutes · A1–C2</p>
+            <h3>Order the coffee you actually want.</h3>
+            <p class="panel-desc">Milk, size, sugar, and one question. The vocabulary of the first ten minutes of every morning.</p>
+            <div class="phrase-card phrase-card--panel">
+              <p class="phrase-target" data-es="Un café con leche, por favor. ¿Tienen leche de avena?" data-en="A coffee with milk, please. Do you have oat milk?">Un café con leche, por favor. ¿Tienen leche de avena?</p>
+              <p class="phrase-source" data-es="A coffee with milk, please. Do you have oat milk?" data-en="Un café con leche, por favor. ¿Tienen leche de avena?">A coffee with milk, please. Do you have oat milk?</p>
+            </div>
+            <ul class="prompt-list">
+              <li><span>01</span> Order it out loud, slowly.</li>
+              <li><span>02</span> Change the milk to oat, soy, or none.</li>
+              <li><span>03</span> Ask a follow-up question.</li>
+            </ul>
+          </div>
+          <div class="panel-side">
+            <div class="panel-fact"><span>Focus</span><strong>Ordering</strong></div>
+            <div class="panel-fact"><span>Practice</span><strong>Speaking · 10 min</strong></div>
+            <div class="panel-fact"><span>Use it</span><strong>At the café</strong></div>
+            <a class="btn btn-primary" href="#join">Get Tuesday's prompt</a>
+          </div>
+        </div>
+
+        <div class="day-panel is-active" id="day-wed" role="tabpanel" aria-labelledby="tab-wed" tabindex="0">
+          <div class="panel-copy">
+            <p class="panel-kicker">Day 3 · 10 minutes · A1–C2</p>
+            <h3>Ask for directions without apologising.</h3>
+            <p class="panel-desc">One polite opener, one place, and one follow-up so you understand the answer the first time.</p>
+            <div class="phrase-card phrase-card--panel">
+              <p class="phrase-target" data-es="Perdón, ¿cómo llego al mercado?" data-en="Excuse me, how do I get to the market?">Perdón, ¿cómo llego al mercado?</p>
+              <p class="phrase-source" data-es="Excuse me, how do I get to the market?" data-en="Perdón, ¿cómo llego al mercado?">Excuse me, how do I get to the market?</p>
+            </div>
+            <ul class="prompt-list">
+              <li><span>01</span> Ask for a place near your home.</li>
+              <li><span>02</span> Repeat the answer back to confirm.</li>
+              <li><span>03</span> Thank them and say how far it is.</li>
+            </ul>
+          </div>
+          <div class="panel-side">
+            <div class="panel-fact"><span>Focus</span><strong>Directions</strong></div>
+            <div class="panel-fact"><span>Practice</span><strong>Speaking · 10 min</strong></div>
+            <div class="panel-fact"><span>Use it</span><strong>On the street</strong></div>
+            <a class="btn btn-primary" href="#join">Get Wednesday's prompt</a>
+          </div>
+        </div>
+
+        <div class="day-panel" id="day-thu" role="tabpanel" aria-labelledby="tab-thu" tabindex="0" hidden>
+          <div class="panel-copy">
+            <p class="panel-kicker">Day 4 · 10 minutes · A2–C2</p>
+            <h3>Give a status update in four lines.</h3>
+            <p class="panel-desc">What you did, what you are doing, what is blocking you, and what you need. Short enough for a real meeting.</p>
+            <div class="phrase-card phrase-card--panel">
+              <p class="phrase-target" data-es="Terminé la propuesta. Ahora reviso el presupuesto." data-en="I finished the proposal. Now I am reviewing the budget.">Terminé la propuesta. Ahora reviso el presupuesto.</p>
+              <p class="phrase-source" data-es="I finished the proposal. Now I am reviewing the budget." data-en="Terminé la propuesta. Ahora reviso el presupuesto.">I finished the proposal. Now I am reviewing the budget.</p>
+            </div>
+            <ul class="prompt-list">
+              <li><span>01</span> Use a real task from this week.</li>
+              <li><span>02</span> Add one blocker and one ask.</li>
+              <li><span>03</span> Say it again in thirty seconds.</li>
+            </ul>
+          </div>
+          <div class="panel-side">
+            <div class="panel-fact"><span>Focus</span><strong>Work</strong></div>
+            <div class="panel-fact"><span>Practice</span><strong>Speaking · 10 min</strong></div>
+            <div class="panel-fact"><span>Use it</span><strong>In a meeting</strong></div>
+            <a class="btn btn-primary" href="#join">Get Thursday's prompt</a>
+          </div>
+        </div>
+
+        <div class="day-panel" id="day-fri" role="tabpanel" aria-labelledby="tab-fri" tabindex="0" hidden>
+          <div class="panel-copy">
+            <p class="panel-kicker">Day 5 · 10 minutes · A1–C2</p>
+            <h3>Make a plan with another person.</h3>
+            <p class="panel-desc">Suggest, agree, and set a time. The three moves that turn a nice chat into an actual plan.</p>
+            <div class="phrase-card phrase-card--panel">
+              <p class="phrase-target" data-es="¿Nos vemos el sábado a las diez?" data-en="Shall we meet on Saturday at ten?">¿Nos vemos el sábado a las diez?</p>
+              <p class="phrase-source" data-es="Shall we meet on Saturday at ten?" data-en="¿Nos vemos el sábado a las diez?">Shall we meet on Saturday at ten?</p>
+            </div>
+            <ul class="prompt-list">
+              <li><span>01</span> Suggest a day and a time.</li>
+              <li><span>02</span> Move it once, politely.</li>
+              <li><span>03</span> Confirm who brings what.</li>
+            </ul>
+          </div>
+          <div class="panel-side">
+            <div class="panel-fact"><span>Focus</span><strong>Plans</strong></div>
+            <div class="panel-fact"><span>Practice</span><strong>Speaking · 10 min</strong></div>
+            <div class="panel-fact"><span>Use it</span><strong>With friends</strong></div>
+            <a class="btn btn-primary" href="#join">Get Friday's prompt</a>
+          </div>
+        </div>
+
+        <div class="day-panel" id="day-sat" role="tabpanel" aria-labelledby="tab-sat" tabindex="0" hidden>
+          <div class="panel-copy">
+            <p class="panel-kicker">Day 6 · 10 minutes · A2–C2</p>
+            <h3>Tell a story in the past tense.</h3>
+            <p class="panel-desc">Something small that happened this week. Beginning, middle, and how you felt at the end.</p>
+            <div class="phrase-card phrase-card--panel">
+              <p class="phrase-target" data-es="Ayer caminé hasta el lago y me quedé una hora." data-en="Yesterday I walked to the lake and stayed for an hour.">Ayer caminé hasta el lago y me quedé una hora.</p>
+              <p class="phrase-source" data-es="Yesterday I walked to the lake and stayed for an hour." data-en="Ayer caminé hasta el lago y me quedé una hora.">Yesterday I walked to the lake and stayed for an hour.</p>
+            </div>
+            <ul class="prompt-list">
+              <li><span>01</span> Pick one real thing from your week.</li>
+              <li><span>02</span> Use three past-tense verbs.</li>
+              <li><span>03</span> End with how it felt.</li>
+            </ul>
+          </div>
+          <div class="panel-side">
+            <div class="panel-fact"><span>Focus</span><strong>Storytelling</strong></div>
+            <div class="panel-fact"><span>Practice</span><strong>Speaking · 10 min</strong></div>
+            <div class="panel-fact"><span>Use it</span><strong>At the live class</strong></div>
+            <a class="btn btn-primary" href="#join">Get Saturday's prompt</a>
+          </div>
+        </div>
+
+        <div class="day-panel" id="day-sun" role="tabpanel" aria-labelledby="tab-sun" tabindex="0" hidden>
+          <div class="panel-copy">
+            <p class="panel-kicker">Day 7 · 45 minutes · All levels</p>
+            <h3>Bring the week to the room.</h3>
+            <p class="panel-desc">The live class. A teacher takes the phrases you practised and turns them into one real conversation with the group.</p>
+            <div class="phrase-card phrase-card--panel">
+              <p class="phrase-target" data-es="Esta semana aprendí a pedir café y a preguntar direcciones." data-en="This week I learned to order coffee and ask for directions.">Esta semana aprendí a pedir café y a preguntar direcciones.</p>
+              <p class="phrase-source" data-es="This week I learned to order coffee and ask for directions." data-en="Esta semana aprendí a pedir café y a preguntar direcciones.">This week I learned to order coffee and ask for directions.</p>
+            </div>
+            <ul class="prompt-list">
+              <li><span>01</span> Bring one phrase you used for real.</li>
+              <li><span>02</span> Bring one that still feels awkward.</li>
+              <li><span>03</span> Leave with next week's plan.</li>
+            </ul>
+          </div>
+          <div class="panel-side">
+            <div class="panel-fact"><span>Live class</span><strong>Sunday · 10:00 CT</strong></div>
+            <div class="panel-fact"><span>Group</span><strong>6–10 learners</strong></div>
+            <div class="panel-fact"><span>Included</span><strong>On every plan</strong></div>
+            <a class="btn btn-primary" href="#live">See the class</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section live" id="live" aria-labelledby="live-title">
+      <div class="container live-grid">
+        <div class="live-copy">
+          <p class="eyebrow">The weekly live class</p>
+          <h2 id="live-title">The part where<br><em>it becomes real.</em></h2>
+          <p class="live-lede">Daily practice gives you the sentence. The live class gives you a person to say it to. Same teacher each week, small group, no performance.</p>
+          <ul class="check-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><span><strong>45 minutes, Sunday.</strong> One teacher, six to ten learners, and a plan built from the week's prompts.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><span><strong>Native, not near-native.</strong> Spanish teachers live in Guatemala. English teachers are native speakers based in the US or Guatemala.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><span><strong>A recording and a note.</strong> Miss it? The recording and the teacher's note land in your inbox the same day.</span></li>
+          </ul>
+        </div>
+
+        <div class="live-card" aria-labelledby="live-card-title">
+          <div class="live-card-top">
+            <span class="live-chip"><span class="pulse-dot" aria-hidden="true"></span> Next class</span>
+            <span class="live-seats">4 seats left</span>
+          </div>
+          <h3 id="live-card-title">The week in review</h3>
+          <p class="live-when"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg> Sunday · 10:00 CT · 45 min</p>
+          <div class="live-host">
+            <img src="../assets/img/hero-maria.jpg" alt="Portrait of María Serrano">
+            <div>
+              <strong>María Serrano</strong>
+              <span>Antigua, Guatemala · Native Spanish</span>
+            </div>
+          </div>
+          <ul class="live-list">
+            <li><span>01</span> Warm-up: the phrase you used this week.</li>
+            <li><span>02</span> Small groups: order, ask, plan.</li>
+            <li><span>03</span> One correction each, then next week's plan.</li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="#join">Reserve a seat</a>
+          <p class="live-note">Included free on every Daily plan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section coaches" id="coaches" aria-labelledby="coaches-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Who you practise with</p>
+          <h2 id="coaches-title">A teacher who<br><em>knows your week.</em></h2>
+          <p>The same person reads your practice notes and runs the live class. You are not starting over every Sunday.</p>
+        </div>
+
+        <div class="coach-grid">
+          <article class="coach-card">
+            <div class="coach-top">
+              <img src="../assets/img/hero-maria.jpg" alt="Portrait of María Serrano" loading="lazy">
+              <span class="coach-badge">Spanish</span>
+            </div>
+            <h3>María Serrano</h3>
+            <p class="coach-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Antigua, Guatemala</p>
+            <p class="coach-quote">“Ten minutes you actually do beats an hour you keep postponing.”</p>
+            <div class="coach-tags"><span>Daily practice</span><span>Travel</span><span>Beginners</span></div>
+          </article>
+
+          <article class="coach-card">
+            <div class="coach-top">
+              <img src="../assets/img/teacher-maya.jpg" alt="Portrait of Maya Okafor" loading="lazy">
+              <span class="coach-badge">English</span>
+            </div>
+            <h3>Maya Okafor</h3>
+            <p class="coach-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Chicago, Illinois</p>
+            <p class="coach-quote">“We keep the practice small so the habit survives a bad week.”</p>
+            <div class="coach-tags"><span>Daily practice</span><span>Work</span><span>Interviews</span></div>
+          </article>
+
+          <article class="coach-card">
+            <div class="coach-top">
+              <img src="../assets/img/teacher-diego.jpg" alt="Portrait of Diego Álvarez" loading="lazy">
+              <span class="coach-badge">Spanish</span>
+            </div>
+            <h3>Diego Álvarez</h3>
+            <p class="coach-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Guatemala City, Guatemala</p>
+            <p class="coach-quote">“The live class is where the week's sentences meet a real conversation.”</p>
+            <div class="coach-tags"><span>Live class</span><span>Business</span><span>Pronunciation</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stories" id="stories" aria-labelledby="stories-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Learner stories</p>
+          <h2 id="stories-title">The streak is<br><em>the method.</em></h2>
+        </div>
+        <div class="story-grid">
+          <article class="story-card">
+            <div class="story-stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg></div>
+            <blockquote>“I stopped waiting for a free hour. Ten minutes before my shift, every day. The Sunday class is the only reason I noticed I was getting better.”</blockquote>
+            <div class="story-person"><img src="../assets/img/learner-ana.jpg" alt="" loading="lazy"><div><strong>Ana R.</strong><span>Austin · Spanish A2 → B1</span></div></div>
+          </article>
+          <article class="story-card">
+            <div class="story-stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg></div>
+            <blockquote>“The prompts are the vocabulary I actually need. I used the status-update one in a real meeting on Thursday and nobody switched to Spanish to rescue me.”</blockquote>
+            <div class="story-person"><img src="../assets/img/learner-tom.jpg" alt="" loading="lazy"><div><strong>Tom B.</strong><span>Guatemala City · English B2</span></div></div>
+          </article>
+          <article class="story-card">
+            <div class="story-stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg></div>
+            <blockquote>“I miss days. The streak resets, the class is still there, and nobody makes it weird. That is why I am still doing it eight months later.”</blockquote>
+            <div class="story-person"><img src="../assets/img/learner-lucia.jpg" alt="" loading="lazy"><div><strong>Lucía M.</strong><span>Quetzaltenango · English B1</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Simple pricing</p>
+          <h2 id="pricing-title">Start with<br><em>ten minutes.</em></h2>
+          <p>Daily practice is free forever. Pay when you want the live class, the teacher notes, or a private hour.</p>
+        </div>
+
+        <div class="price-grid">
+          <article class="price-card">
+            <p class="price-kicker">The habit</p>
+            <p class="price-amount"><strong>$0</strong><span>forever</span></p>
+            <p class="price-desc">The daily prompt, the phrase, and the week view. No card, no trial countdown.</p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Seven prompts a week</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Spanish or English</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Streak and week progress</li>
+            </ul>
+            <a class="btn btn-quiet btn-block" href="#join">Start free</a>
+          </article>
+
+          <article class="price-card price-card--featured">
+            <span class="price-flag">Most chosen</span>
+            <p class="price-kicker">Daily + live</p>
+            <p class="price-amount"><strong>$39</strong><span>per month</span></p>
+            <p class="price-desc">Everything in free, plus the weekly live class and a written note from your teacher.</p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> 4 live classes a month</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Same teacher each week</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Class recording and notes</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Pause or cancel anytime</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="#join">Join the class</a>
+          </article>
+
+          <article class="price-card">
+            <p class="price-kicker">Daily + 1:1</p>
+            <p class="price-amount"><strong>$89</strong><span>per month</span></p>
+            <p class="price-desc">The daily habit, the live class, and one private 45-minute lesson each month.</p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Everything in Daily + live</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> 1 private lesson a month</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> A monthly progress review</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Priority live-class seats</li>
+            </ul>
+            <a class="btn btn-quiet btn-block" href="#join">Add a private hour</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="faq-copy">
+          <p class="eyebrow">Questions</p>
+          <h2 id="faq-title">Before your<br><em>first ten minutes.</em></h2>
+          <p>Still unsure? Email <a href="mailto:hello@nativespeaker.com">hello@nativespeaker.com</a> and a human will answer.</p>
+          <div class="contact-card">
+            <svg class="icon" aria-hidden="true"><use href="#i-message"></use></svg>
+            <span><strong>Talk to a human</strong><span>Usually replies within a day</span></span>
+          </div>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item is-open">
+            <h3><button class="faq-question" type="button" aria-expanded="true" aria-controls="daily-faq-1">What if I miss a day?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="daily-faq-1" aria-hidden="false"><div><p>Nothing happens. The streak resets, the next prompt arrives at your usual time, and the Sunday class is still there. The habit is meant to survive a bad week, not to make one worse.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="daily-faq-2">How long is the daily practice?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="daily-faq-2" aria-hidden="true" inert><div><p>About ten minutes: one phrase, two small tasks, and an optional voice note. You can do it on the bus, in a coffee queue, or while dinner is on the stove.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="daily-faq-3">Who teaches the live class?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="daily-faq-3" aria-hidden="true" inert><div><p>Spanish classes are led by native Spanish teachers based in Guatemala. English classes are led by native English speakers based in the US or Guatemala. You keep the same teacher each week so nobody has to re-explain their goals.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="daily-faq-4">Is the free plan really free?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="daily-faq-4" aria-hidden="true" inert><div><p>Yes. The seven daily prompts and the week view cost nothing and do not expire. The paid plans add the live class, teacher notes, and private lessons.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="daily-faq-5">Can I switch between Spanish and English?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="daily-faq-5" aria-hidden="true" inert><div><p>Anytime. The same week is available in both languages, and the live class follows the language you choose. If you are learning both, you can keep two streaks on one account.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="join" aria-labelledby="join-title">
+      <div class="container">
+        <div class="cta-panel">
+          <div class="cta-copy">
+            <p class="cta-eyebrow"><span class="pulse-dot" aria-hidden="true"></span> The next prompt goes out tomorrow</p>
+            <h2 id="join-title">Your first ten<br><em>minutes are free.</em></h2>
+            <p>Tell us where to send the prompt and when you like to practise. We will start you on tomorrow's week.</p>
+          </div>
+          <div class="cta-form-wrap">
+            <form id="join-form" class="cta-form" novalidate>
+              <div class="field">
+                <label for="join-email">Your email</label>
+                <input id="join-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="join-language">Language</label>
+                  <select id="join-language" name="language">
+                    <option>Spanish</option>
+                    <option>English</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="join-time">Practice time</label>
+                  <select id="join-time" name="time">
+                    <option>Morning</option>
+                    <option>Lunch break</option>
+                    <option>Evening</option>
+                  </select>
+                </div>
+              </div>
+              <p class="form-error" id="form-error" role="alert" hidden></p>
+              <button class="btn btn-primary btn-block" type="submit">Send my first prompt</button>
+              <p class="form-note">No spam. One prompt a day, and you can stop anytime.</p>
+            </form>
+            <div class="form-success" id="join-success" hidden>
+              <span class="success-icon"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+              <h3 tabindex="-1">Your first prompt is scheduled.</h3>
+              <p>We will send <strong id="success-language">Spanish</strong> practice in the <strong id="success-time">Morning</strong> to <strong id="success-email">you@example.com</strong>.</p>
+              <button class="btn btn-quiet" type="button" id="join-again">Use another email</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand--footer" href="#top" aria-label="Lang Habit home">
+            <img class="brand-mark" src="../assets/logos/daily.svg" alt="" width="40" height="40">
+            <span class="brand-name" aria-hidden="true">
+              <span class="brand-line brand-line--top">LANG</span>
+              <span class="brand-line brand-line--bottom">HABIT</span>
+            </span>
+          </a>
+          <p>Ten minutes a day, one live hour a week, and a teacher who remembers both.</p>
+          <div class="socials">
+            <a href="https://instagram.com" aria-label="Lang Habit on Instagram" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+            <a href="https://youtube.com" aria-label="Lang Habit on YouTube" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-youtube"></use></svg></a>
+            <a href="https://linkedin.com" aria-label="Lang Habit on LinkedIn" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Practice</h3>
+          <a href="#week">This week</a>
+          <a href="#live">Live class</a>
+          <a href="#coaches">Teachers</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="#how">How it works</a>
+          <a href="#stories">Learner stories</a>
+          <a href="#faq">Contact</a>
+          <a href="#join">Start free</a>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <a href="#faq">Help centre</a>
+          <a href="#faq">Safety</a>
+          <a href="#faq">Cancellation policy</a>
+          <a href="#faq">Privacy</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Lang Habit. Ten minutes, kept.</p>
+        <div class="footer-legal">
+          <a href="#faq">Privacy</a>
+          <a href="#faq">Terms</a>
+          <a href="#faq">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="../assets/brand-fit.js" defer></script>
+</body>
+</html>

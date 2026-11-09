@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Templates — Native Speaker</title>
+  <meta name="description" content="Twelve ready-to-use homepage templates for Native Speaker. Approved names, live pages, palettes, and a Namecheap check for .com, .io, .education, and .online.">
+  <meta name="theme-color" content="#0f1d18">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Karla:ital,wght@0,400..700;1,400..600&display=swap" rel="stylesheet">
+  <style>
+  :root {
+    --paper: #f2ede2;
+    --paper-2: #fbf8f1;
+    --ink: #12201b;
+    --ink-soft: #3e4f48;
+    --muted: #55645d;
+    --line: #ddd4c2;
+    --line-strong: #c9bda6;
+    --white: #fffdf8;
+    --serif: "Fraunces", Georgia, "Times New Roman", serif;
+    --sans: "Karla", "Segoe UI", system-ui, sans-serif;
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --shadow: 0 20px 40px -28px rgba(18, 32, 27, 0.35), 0 2px 6px rgba(18, 32, 27, 0.04);
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    background-image: radial-gradient(rgba(18, 32, 27, 0.06) 1px, transparent 1px);
+    background-size: 22px 22px;
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  code {
+    padding: 1px 5px;
+    border-radius: 5px;
+    background: rgba(18, 32, 27, 0.06);
+    border: 1px solid rgba(18, 32, 27, 0.08);
+    font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+    font-size: 0.88em;
+  }
+
+  ::selection {
+    background: #f2b33d;
+    color: #12201b;
+  }
+
+  :focus-visible {
+    outline: 3px solid #c25028;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  .skip-link {
+    position: absolute;
+    top: 0;
+    left: -999px;
+    z-index: 20;
+    padding: 10px 14px;
+    background: #f2b33d;
+    color: #12201b;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .skip-link:focus {
+    top: 12px;
+    left: 12px;
+  }
+
+  .sprite {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(38px, 7vw, 84px) clamp(20px, 6vw, 88px) clamp(44px, 7vw, 80px);
+    background: #0f1d18;
+    color: #f6efe2;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(42% 38% at 92% 0%, rgba(242, 179, 61, 0.18), transparent 68%),
+      radial-gradient(38% 36% at 0% 100%, rgba(30, 110, 98, 0.35), transparent 70%);
+  }
+
+  .hero-inner {
+    position: relative;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+
+  .hero-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .hero-brand {
+    font-family: var(--display);
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+  }
+
+  .hero-tag {
+    color: #aebfb6;
+  }
+
+  .hero h1 {
+    max-width: 17ch;
+    margin-top: clamp(30px, 5vw, 56px);
+    font-family: var(--serif);
+    font-size: clamp(40px, 6.6vw, 86px);
+    font-weight: 500;
+    line-height: 1.01;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+  }
+
+  .hero h1 em {
+    color: #f2b33d;
+    font-style: italic;
+  }
+
+  .hero-lede {
+    max-width: 64ch;
+    margin-top: 24px;
+    color: #c7d4cd;
+    font-size: clamp(16px, 1.4vw, 19px);
+  }
+
+  .criteria {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 38px;
+  }
+
+  .criteria li {
+    padding-top: 14px;
+    border-top: 1px solid rgba(246, 239, 226, 0.2);
+    color: #b9c8c0;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .criteria strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #f6efe2;
+    font-family: var(--display);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .sheet {
+    padding: clamp(30px, 5vw, 64px) clamp(16px, 4vw, 56px) 80px;
+  }
+
+  .sheet-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 1320px;
+    margin: 0 auto 28px;
+  }
+
+  .sheet-head h2 {
+    font-family: var(--serif);
+    font-size: clamp(28px, 3vw, 46px);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  .sheet-head p {
+    max-width: 48ch;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    background: var(--white);
+    box-shadow: var(--shadow);
+  }
+
+  .card::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: var(--accent);
+  }
+
+  .card-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 20px 22px 16px;
+  }
+
+  .card-index {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    flex: none;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent-ink);
+    font-family: var(--display);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+
+  .card-head h3 {
+    font-family: var(--display);
+    font-size: clamp(22px, 2vw, 28px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+
+  .card-meta {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .stage {
+    display: grid;
+    place-items: center;
+    padding: 30px 22px;
+  }
+
+  .stage--light {
+    min-height: 172px;
+    background: var(--paper-2);
+    background-image: radial-gradient(rgba(18, 32, 27, 0.08) 1px, transparent 1px);
+    background-size: 16px 16px;
+    color: var(--ink);
+  }
+
+  .stage--dark {
+    grid-template-columns: 1fr auto;
+    gap: 18px;
+    min-height: 128px;
+    background: #111a17;
+    color: #f6efe2;
+  }
+
+  .lockup {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 24px;
+  }
+
+  .lockup--small {
+    gap: 9px;
+    font-size: 15px;
+  }
+
+  .mark {
+    width: 52px;
+    height: 52px;
+    flex: none;
+    border-radius: 13px;
+  }
+
+  .lockup--small .mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+
+  .mark--icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px rgba(246, 239, 226, 0.16);
+  }
+
+  .wordmark {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.06em;
+    line-height: 0.92;
+    white-space: nowrap;
+  }
+
+  .wm-top {
+    font-family: var(--display);
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 0.95;
+    color: currentColor;
+  }
+
+  .wm-bottom {
+    font-family: var(--display);
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1;
+    color: var(--wm-accent, var(--accent));
+  }
+
+  .stage--dark .wm-bottom {
+    color: var(--accent-dark, var(--accent));
+  }
+
+  .card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 0 22px 20px;
+  }
+
+  .rationale {
+    color: var(--ink-soft);
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .card-url {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 8px;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--line);
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  .card-url-label {
+    color: var(--ink-soft);
+    font-family: var(--display);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .card-url a {
+    border-bottom: 1px solid currentColor;
+    color: var(--accent-ink);
+    font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+  .domain {
+    margin-top: 12px;
+  }
+
+  .domain-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 7px;
+  }
+
+  .domain-name {
+    color: var(--ink);
+    font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .domain-check {
+    color: var(--muted);
+    font-size: 11px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .domain-check:hover {
+    color: var(--accent-ink);
+  }
+
+  .domain-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .tld {
+    display: grid;
+    gap: 1px;
+    padding: 7px 9px;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: var(--paper-2);
+  }
+
+  .tld-ext {
+    color: var(--ink);
+    font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .tld-status {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .tld--free .tld-status {
+    color: #157a4c;
+  }
+
+  .tld--taken .tld-status {
+    color: #a33a1c;
+  }
+
+  .tld-price {
+    color: var(--ink);
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .tld--taken .tld-price {
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  .palette {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 18px;
+  }
+
+  .swatch {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .swatch > span {
+    display: block;
+    height: 28px;
+    border: 1px solid rgba(18, 32, 27, 0.08);
+    border-radius: 7px;
+  }
+
+  .swatch small {
+    display: block;
+    margin-top: 5px;
+    overflow: hidden;
+    color: var(--muted);
+    font-size: 9px;
+    letter-spacing: 0.04em;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .footer {
+    padding: 30px clamp(16px, 4vw, 56px) 52px;
+    border-top: 1px solid var(--line);
+  }
+
+  .footer-inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 1320px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .footer-inner strong {
+    color: var(--ink);
+  }
+
+  @media (max-width: 1100px) {
+    .grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .criteria {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 760px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .sheet-head {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .criteria {
+      grid-template-columns: 1fr;
+    }
+
+    .stage--dark {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+    .footer-inner {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .lockup {
+      gap: 10px;
+    }
+
+    .mark {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+</style>
+</head>
+<body>
+  <svg class="sprite" aria-hidden="true" focusable="false"><defs><symbol id="mark-01" viewBox="0 0 48 48">
+      <rect width="48" height="48" rx="13" fill="#3D63DA"/>
+      <path d="M21 8h12a4 4 0 0 1 4 4v10a4 4 0 0 1-1.2 2.8L25.6 35a4 4 0 0 1-5.6 0L9.6 24.6a4 4 0 0 1 0-5.6L21 8Z" fill="#FFFFFF"/>
+      <circle cx="20" cy="14" r="2.4" fill="#3D63DA"/>
+      <text x="28" y="25.5" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="9" font-weight="800" fill="#3D63DA">A</text>
+      <path d="M18 12c-3-2-6-1-8 1" fill="none" stroke="#FFB547" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+<symbol id="mark-02" viewBox="0 0 48 48">
+      <rect width="48" height="48" rx="13" fill="#124A43"/>
+      <path d="M24 9 6 18l18 9 18-9-18-9Z" fill="#FFF6E9"/>
+      <path d="M13 22.5v6.2c0 3.2 4.9 5.8 11 5.8s11-2.6 11-5.8v-6.2l-11 5.5-11-5.5Z" fill="#FFF6E9"/>
+      <path d="M40 18v9" stroke="#F2B33D" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="40" cy="29" r="2" fill="#F2B33D"/>
+      <path d="M29 30h10a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-4l-3 3v-3h-3a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3Z" fill="#F2B33D"/>
+      <text x="35" y="38.5" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="7" font-weight="800" fill="#124A43">ñ</text>
+    </symbol>
+<symbol id="mark-03" viewBox="0 0 48 48">
+      <rect width="48" height="48" rx="13" fill="#CF3816"/>
+      <path d="M12 12h24a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H24l-6 6v-6h-6a5 5 0 0 1-5-5V17a5 5 0 0 1 5-5Z" fill="#FFF7EF"/>
+      <text x="24" y="26.5" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="10" font-weight="800" fill="#CF3816">1:1</text>
+      <circle cx="38" cy="12" r="3.2" fill="#F6D75B"/>
+    </symbol>
+<symbol id="mark-04" viewBox="0 0 48 48">
+      <rect width="48" height="48" rx="13" fill="#163B2E"/>
+      <path d="M12 8h24a6 6 0 0 1 6 6v9a6 6 0 0 1-6 6H27l-3 10-3-10h-9a6 6 0 0 1-6-6v-9a6 6 0 0 1 6-6Z" fill="#F2EAD9"/>
+      <text x="24" y="23.5" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="13" font-weight="800" fill="#163B2E">¿</text>
+      <path d="M7 40c5-2 8-1 12-2.5s6-3.5 10-2.5 6 1.5 10 0" fill="none" stroke="#E8562A" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 3"/>
+    </symbol>
+<symbol id="mark-05" viewBox="0 0 48 48">
+      <rect width="48" height="48" rx="13" fill="#12121A"/>
+      <rect x="7" y="15" width="34" height="24" rx="3" fill="#F4F1EA"/>
+      <path d="M7 15h34v6H7z" fill="#D8F36B"/>
+      <path d="M12.5 15 9 21M19 15l-3.5 6M25.5 15 22 21M32 15l-3.5 6M38.5 15 35 21" stroke="#FF6B4A" stroke-width="2" stroke-linecap="round"/>
+      <path d="M17 26h12a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3h-4l-3 3v-3h-5a3 3 0 0 1-3-3v-3a3 3 0 0 1 3-3Z" fill="#FF6B4A"/>
+      <text x="23" y="33.5" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="7.5" font-weight="800" fill="#F4F1EA">ñ</text>
+    </symbol>
+<symbol id="mark-06" viewBox="0 0 48 48">
+      <rect width="48" height="48" rx="13" fill="#0B2E2B"/>
+      <path d="M11 10h26a5 5 0 0 1 5 5v11a5 5 0 0 1-5 5H26l-5 7v-7H11a5 5 0 0 1-5-5V15a5 5 0 0 1 5-5Z" fill="none" stroke="#F7F3EC" stroke-width="2.6" stroke-linejoin="round"/>
+      <rect x="15" y="18" width="3" height="8" rx="1.5" fill="#FF7A59"/>
+      <rect x="21" y="15" width="3" height="14" rx="1.5" fill="#F7F3EC"/>
+      <rect x="27" y="17" width="3" height="10" rx="1.5" fill="#FF7A59"/>
+      <rect x="33" y="19" width="3" height="6" rx="1.5" fill="#F7F3EC"/>
+      <circle cx="39" cy="11" r="2.5" fill="#FF7A59"/>
+    </symbol>
+<symbol id="mark-07" viewBox="0 0 48 48">
+      <rect width="48" height="48" rx="13" fill="#1F6B4F"/>
+      <ellipse cx="24" cy="31" rx="14" ry="4.5" fill="#FFFDF8"/>
+      <rect x="22" y="31" width="4" height="7" rx="1.5" fill="#FFFDF8"/>
+      <ellipse cx="24" cy="39" rx="7" ry="2.5" fill="#FFFDF8"/>
+      <rect x="4" y="11" width="17" height="12" rx="4" fill="#F4A261"/>
+      <path d="M9 23l-2 4 5-4" fill="#F4A261"/>
+      <rect x="27" y="11" width="17" height="12" rx="4" fill="#FFFDF8"/>
+      <path d="M39 23l2 4-5-4" fill="#FFFDF8"/>
+      <circle cx="12.5" cy="17" r="1.4" fill="#1F6B4F"/>
+      <circle cx="35.5" cy="17" r="1.4" fill="#1F6B4F"/>
+    </symbol>
+<symbol id="mark-08" viewBox="0 0 48 48">
+      <rect width="48" height="48" rx="13" fill="#B8492F"/>
+      <path d="M8 39c6 0 5-9 11-9s6 6 11 6 5-4 9-8" fill="none" stroke="#FCFAF4" stroke-width="2.8" stroke-linecap="round"/>
+      <circle cx="8" cy="39" r="2.6" fill="#E4B363"/>
+      <path d="M34 8a9 9 0 0 0-9 9c0 6.5 9 17 9 17s9-10.5 9-17a9 9 0 0 0-9-9Z" fill="#E4B363"/>
+      <circle cx="34" cy="17" r="4.5" fill="#B8492F"/>
+      <text x="34" y="20" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="6.5" font-weight="800" fill="#FCFAF4">ñ</text>
+    </symbol>
+<symbol id="mark-09" viewBox="0 0 48 48">
+      <rect width="48" height="48" rx="13" fill="#1D2B4F"/>
+      <rect x="4" y="9" width="16" height="13" rx="4" fill="#E86A33"/>
+      <path d="M9 22l-2 5 5-5" fill="#E86A33"/>
+      <text x="12" y="19" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="8" font-weight="800" fill="#1D2B4F">A</text>
+      <rect x="28" y="9" width="16" height="13" rx="4" fill="#F8F9F6"/>
+      <path d="M39 22l2 5-5-5" fill="#F8F9F6"/>
+      <text x="36" y="19" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="8" font-weight="800" fill="#1D2B4F">ñ</text>
+      <path d="M8 37c0-7 7-12 16-12s16 5 16 12" fill="none" stroke="#F8F9F6" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M8 37h32" stroke="#F8F9F6" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M14 37v-5M24 37V28M34 37v-5" stroke="#E86A33" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+<symbol id="mark-10" viewBox="0 0 48 48">
+      <rect width="48" height="48" rx="13" fill="#4A56D6"/>
+      <rect x="4" y="10" width="26" height="20" rx="6" fill="#FFFFFF"/>
+      <path d="M9 30l-3 6 7-6" fill="#FFFFFF"/>
+      <rect x="18" y="18" width="26" height="20" rx="6" fill="#FFB38A"/>
+      <path d="M39 38l3 6-7-6" fill="#FFB38A"/>
+      <text x="14" y="25" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="9" font-weight="800" fill="#4A56D6">A</text>
+      <text x="34" y="33" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="9" font-weight="800" fill="#4A56D6">ñ</text>
+      <circle cx="24" cy="27" r="4.2" fill="#19B892"/>
+      <path d="m22.2 27 1.4 1.4 2.5-2.6" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+<symbol id="mark-11" viewBox="0 0 48 48">
+      <rect width="48" height="48" rx="13" fill="#147A6C"/>
+      <rect x="4" y="9" width="17" height="13" rx="4" fill="#FFFFFF"/>
+      <path d="M9 22l-2 5 5-5" fill="#FFFFFF"/>
+      <text x="12.5" y="19" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="8" font-weight="800" fill="#147A6C">A</text>
+      <rect x="27" y="26" width="17" height="13" rx="4" fill="#F6C453"/>
+      <path d="M39 39l2 5-5-5" fill="#F6C453"/>
+      <text x="35.5" y="36" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="8" font-weight="800" fill="#147A6C">ñ</text>
+      <path d="M23 15h7m-2.5-2.5L30 15l-2.5 2.5" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M25 33h-7m2.5-2.5L18 33l2.5 2.5" fill="none" stroke="#F6C453" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+<symbol id="mark-12" viewBox="0 0 48 48">
+      <rect width="48" height="48" rx="13" fill="#1B5FA8"/>
+      <rect x="8" y="11" width="32" height="29" rx="4" fill="#FFFFFF"/>
+      <path d="M8 15a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4v5H8v-5Z" fill="#E8664A"/>
+      <path d="M16 8v6M32 8v6" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M15 24h10a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-3l-3 3v-3h-4a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3Z" fill="#C7EC5B"/>
+      <path d="m17.5 29 1.8 1.8 3.4-3.6" fill="none" stroke="#1B5FA8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="34" y="33" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="7" font-weight="800" fill="#1B5FA8">ñ</text>
+    </symbol></defs></svg>
+  <a class="skip-link" href="#templates">Skip to the templates</a>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-top">
+        <span class="hero-brand">Native Speaker</span>
+        <span class="hero-tag">Templates · twelve homepage directions</span>
+      </div>
+      <h1>Twelve templates,<br><em>ready to open.</em></h1>
+      <p class="hero-lede">Each of the twelve concepts is live under its approved name: Lang Market, Lang Academy, Speak Spanish, and the rest. Every card shows the mark and wordmark as they appear in the page, the reason for the name, a direct link to the template, the Namecheap check for .com, .io, .education, and .online, and the palette.</p>
+      <ul class="criteria">
+        <li><strong>Name</strong> from the approved list: Lang Market, Lang Academy, Speak Spanish, and the rest.</li>
+        <li><strong>Mark</strong> with a two-line wordmark fitted to the same width.</li>
+        <li><strong>Page</strong> with a direct link to the live template.</li>
+        <li><strong>Domain</strong> checked on Namecheap, with first-year price per extension.</li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="sheet" id="templates">
+    <div class="sheet-head">
+      <h2>The twelve templates</h2>
+      <p>Each card shows the mark and wordmark at header size, a small version on a dark background, and the standalone icon. Below: the reason for the name, the page URL, the Namecheap check, and the palette.</p>
+    </div>
+    <div class="grid">
+      <article class="card" id="lang-market" style="--accent:#3D63DA;--accent-soft:#E6EBFF;--accent-ink:#243FA0">
+    <div class="card-head">
+      <span class="card-index">01</span>
+      <div>
+        <h3>Lang Market</h3>
+        <p class="card-meta"><code>lang-market/</code></p>
+      </div>
+    </div>
+    <div class="stage stage--light">
+      <div class="lockup" style="--accent:#3D63DA;--wm-accent:#3D63DA;--accent-dark:#8FA8FF">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-01"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">LANG</span>
+    <span class="wm-bottom">MARKET</span>
+  </span>
+  </div>
+    </div>
+    <div class="stage stage--dark">
+      <div class="lockup lockup--small" style="--accent:#3D63DA;--wm-accent:#3D63DA;--accent-dark:#8FA8FF">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-01"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">LANG</span>
+    <span class="wm-bottom">MARKET</span>
+  </span>
+  </div>
+      <svg class="mark mark--icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-01"></use></svg>
+    </div>
+    <div class="card-body">
+      <p class="rationale">Lang is the common root of the system; Market is the format. The price tag and the A turn the teacher catalog into a language purchase, not a generic marketplace.</p>
+      <div class="card-url">
+        <span class="card-url-label">Page</span>
+        <a href="lang-market/index.html">lang-market/index.html</a>
+      </div>
+      <div class="domain">
+    <div class="domain-head">
+      <span class="domain-name">langmarket.com</span>
+      <a class="domain-check" href="https://www.namecheap.com/domains/registration/results/?domain=langmarket.com" target="_blank" rel="noopener">Namecheap ↗</a>
+    </div>
+    <div class="domain-grid"><div class="tld tld--taken">
+        <span class="tld-ext">.com</span>
+        <span class="tld-status">Taken</span>
+        <span class="tld-price">—</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.io</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$29.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.education</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$40.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.online</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$0.98/yr</span>
+      </div></div>
+  </div>
+      <div class="palette" aria-label="Color palette">
+        <span class="swatch"><span style="background:#3D63DA"></span><small>#3D63DA</small></span><span class="swatch"><span style="background:#FFB547"></span><small>#FFB547</small></span><span class="swatch"><span style="background:#13DEB9"></span><small>#13DEB9</small></span><span class="swatch"><span style="background:#FFFFFF"></span><small>#FFFFFF</small></span>
+      </div>
+    </div>
+  </article>
+<article class="card" id="language-academy" style="--accent:#124A43;--accent-soft:#E2F0EB;--accent-ink:#0C3833">
+    <div class="card-head">
+      <span class="card-index">02</span>
+      <div>
+        <h3>Lang Academy</h3>
+        <p class="card-meta"><code>lang-academy/</code></p>
+      </div>
+    </div>
+    <div class="stage stage--light">
+      <div class="lockup" style="--accent:#124A43;--wm-accent:#9A6A10;--accent-dark:#F2B33D">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-02"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">LANG</span>
+    <span class="wm-bottom">ACADEMY</span>
+  </span>
+  </div>
+    </div>
+    <div class="stage stage--dark">
+      <div class="lockup lockup--small" style="--accent:#124A43;--wm-accent:#9A6A10;--accent-dark:#F2B33D">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-02"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">LANG</span>
+    <span class="wm-bottom">ACADEMY</span>
+  </span>
+  </div>
+      <svg class="mark mark--icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-02"></use></svg>
+    </div>
+    <div class="card-body">
+      <p class="rationale">Lang is the root; Academy is the format. The graduation cap and the letter bubble tie institution and language into one mark.</p>
+      <div class="card-url">
+        <span class="card-url-label">Page</span>
+        <a href="lang-academy/index.html">lang-academy/index.html</a>
+      </div>
+      <div class="domain">
+    <div class="domain-head">
+      <span class="domain-name">langacademy.com</span>
+      <a class="domain-check" href="https://www.namecheap.com/domains/registration/results/?domain=langacademy.com" target="_blank" rel="noopener">Namecheap ↗</a>
+    </div>
+    <div class="domain-grid"><div class="tld tld--taken">
+        <span class="tld-ext">.com</span>
+        <span class="tld-status">Taken</span>
+        <span class="tld-price">—</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.io</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$29.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.education</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$40.98/yr</span>
+      </div><div class="tld tld--taken">
+        <span class="tld-ext">.online</span>
+        <span class="tld-status">Taken</span>
+        <span class="tld-price">—</span>
+      </div></div>
+  </div>
+      <div class="palette" aria-label="Color palette">
+        <span class="swatch"><span style="background:#124A43"></span><small>#124A43</small></span><span class="swatch"><span style="background:#F2B33D"></span><small>#F2B33D</small></span><span class="swatch"><span style="background:#FFF6E9"></span><small>#FFF6E9</small></span><span class="swatch"><span style="background:#E8794F"></span><small>#E8794F</small></span>
+      </div>
+    </div>
+  </article>
+<article class="card" id="speak-1-to-1" style="--accent:#CF3816;--accent-soft:#FBE3D8;--accent-ink:#8E2610">
+    <div class="card-head">
+      <span class="card-index">03</span>
+      <div>
+        <h3>Speak Spanish</h3>
+        <p class="card-meta"><code>speak-spanish/</code></p>
+      </div>
+    </div>
+    <div class="stage stage--light">
+      <div class="lockup" style="--accent:#CF3816;--wm-accent:#A92B0F;--accent-dark:#F6D75B">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-03"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">SPEAK</span>
+    <span class="wm-bottom">SPANISH</span>
+  </span>
+  </div>
+    </div>
+    <div class="stage stage--dark">
+      <div class="lockup lockup--small" style="--accent:#CF3816;--wm-accent:#A92B0F;--accent-dark:#F6D75B">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-03"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">SPEAK</span>
+    <span class="wm-bottom">SPANISH</span>
+  </span>
+  </div>
+      <svg class="mark mark--icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-03"></use></svg>
+    </div>
+    <div class="card-body">
+      <p class="rationale">Speak is the action; Spanish is the language. A single bubble with “1:1” makes the private conversation explicit while naming what is spoken.</p>
+      <div class="card-url">
+        <span class="card-url-label">Page</span>
+        <a href="speak-spanish/index.html">speak-spanish/index.html</a>
+      </div>
+      <div class="domain">
+    <div class="domain-head">
+      <span class="domain-name">speakspanish.com</span>
+      <a class="domain-check" href="https://www.namecheap.com/domains/registration/results/?domain=speakspanish.com" target="_blank" rel="noopener">Namecheap ↗</a>
+    </div>
+    <div class="domain-grid"><div class="tld tld--taken">
+        <span class="tld-ext">.com</span>
+        <span class="tld-status">Taken</span>
+        <span class="tld-price">—</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.io</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$29.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.education</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$40.98/yr</span>
+      </div><div class="tld tld--taken">
+        <span class="tld-ext">.online</span>
+        <span class="tld-status">Taken</span>
+        <span class="tld-price">—</span>
+      </div></div>
+  </div>
+      <div class="palette" aria-label="Color palette">
+        <span class="swatch"><span style="background:#CF3816"></span><small>#CF3816</small></span><span class="swatch"><span style="background:#F6D75B"></span><small>#F6D75B</small></span><span class="swatch"><span style="background:#FFF7EF"></span><small>#FFF7EF</small></span><span class="swatch"><span style="background:#A92B0F"></span><small>#A92B0F</small></span>
+      </div>
+    </div>
+  </article>
+<article class="card" id="street-lang" style="--accent:#163B2E;--accent-soft:#E1EEE8;--accent-ink:#0E2A20">
+    <div class="card-head">
+      <span class="card-index">04</span>
+      <div>
+        <h3>Lang Learn</h3>
+        <p class="card-meta"><code>lang-learn/</code></p>
+      </div>
+    </div>
+    <div class="stage stage--light">
+      <div class="lockup" style="--accent:#163B2E;--wm-accent:#8F2F0E;--accent-dark:#FF8A5C">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-04"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">LANG</span>
+    <span class="wm-bottom">LEARN</span>
+  </span>
+  </div>
+    </div>
+    <div class="stage stage--dark">
+      <div class="lockup lockup--small" style="--accent:#163B2E;--wm-accent:#8F2F0E;--accent-dark:#FF8A5C">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-04"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">LANG</span>
+    <span class="wm-bottom">LEARN</span>
+  </span>
+  </div>
+      <svg class="mark mark--icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-04"></use></svg>
+    </div>
+    <div class="card-body">
+      <p class="rationale">Lang is the subject; Learn is the action. The pin-shaped bubble and the dotted route say the language is learned out in the field.</p>
+      <div class="card-url">
+        <span class="card-url-label">Page</span>
+        <a href="lang-learn/index.html">lang-learn/index.html</a>
+      </div>
+      <div class="domain">
+    <div class="domain-head">
+      <span class="domain-name">langlearn.com</span>
+      <a class="domain-check" href="https://www.namecheap.com/domains/registration/results/?domain=langlearn.com" target="_blank" rel="noopener">Namecheap ↗</a>
+    </div>
+    <div class="domain-grid"><div class="tld tld--taken">
+        <span class="tld-ext">.com</span>
+        <span class="tld-status">Taken</span>
+        <span class="tld-price">—</span>
+      </div><div class="tld tld--taken">
+        <span class="tld-ext">.io</span>
+        <span class="tld-status">Taken</span>
+        <span class="tld-price">—</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.education</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$40.98/yr</span>
+      </div><div class="tld tld--taken">
+        <span class="tld-ext">.online</span>
+        <span class="tld-status">Taken</span>
+        <span class="tld-price">—</span>
+      </div></div>
+  </div>
+      <div class="palette" aria-label="Color palette">
+        <span class="swatch"><span style="background:#163B2E"></span><small>#163B2E</small></span><span class="swatch"><span style="background:#E8562A"></span><small>#E8562A</small></span><span class="swatch"><span style="background:#F2EAD9"></span><small>#F2EAD9</small></span><span class="swatch"><span style="background:#BFD8CF"></span><small>#BFD8CF</small></span>
+      </div>
+    </div>
+  </article>
+<article class="card" id="do-speak" style="--accent:#12121A;--accent-soft:#E9E9EE;--accent-ink:#12121A">
+    <div class="card-head">
+      <span class="card-index">05</span>
+      <div>
+        <h3>Make Talk</h3>
+        <p class="card-meta"><code>make-talk/</code></p>
+      </div>
+    </div>
+    <div class="stage stage--light">
+      <div class="lockup" style="--accent:#12121A;--wm-accent:#5B6B0A;--accent-dark:#D8F36B">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-05"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">MAKE</span>
+    <span class="wm-bottom">TALK</span>
+  </span>
+  </div>
+    </div>
+    <div class="stage stage--dark">
+      <div class="lockup lockup--small" style="--accent:#12121A;--wm-accent:#5B6B0A;--accent-dark:#D8F36B">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-05"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">MAKE</span>
+    <span class="wm-bottom">TALK</span>
+  </span>
+  </div>
+      <svg class="mark mark--icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-05"></use></svg>
+    </div>
+    <div class="card-body">
+      <p class="rationale">Make is the action; Talk is the result. The clapperboard and the letter bubble say “here we produce language”, not “creative studio”.</p>
+      <div class="card-url">
+        <span class="card-url-label">Page</span>
+        <a href="make-talk/index.html">make-talk/index.html</a>
+      </div>
+      <div class="domain">
+    <div class="domain-head">
+      <span class="domain-name">maketalk.com</span>
+      <a class="domain-check" href="https://www.namecheap.com/domains/registration/results/?domain=maketalk.com" target="_blank" rel="noopener">Namecheap ↗</a>
+    </div>
+    <div class="domain-grid"><div class="tld tld--taken">
+        <span class="tld-ext">.com</span>
+        <span class="tld-status">Taken</span>
+        <span class="tld-price">—</span>
+      </div><div class="tld tld--taken">
+        <span class="tld-ext">.io</span>
+        <span class="tld-status">Taken</span>
+        <span class="tld-price">—</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.education</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$40.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.online</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$0.98/yr</span>
+      </div></div>
+  </div>
+      <div class="palette" aria-label="Color palette">
+        <span class="swatch"><span style="background:#12121A"></span><small>#12121A</small></span><span class="swatch"><span style="background:#D8F36B"></span><small>#D8F36B</small></span><span class="swatch"><span style="background:#FF6B4A"></span><small>#FF6B4A</small></span><span class="swatch"><span style="background:#F4F1EA"></span><small>#F4F1EA</small></span>
+      </div>
+    </div>
+  </article>
+<article class="card" id="speak-lab" style="--accent:#0B2E2B;--accent-soft:#DFEDEA;--accent-ink:#0B2E2B">
+    <div class="card-head">
+      <span class="card-index">06</span>
+      <div>
+        <h3>Speak Native</h3>
+        <p class="card-meta"><code>speak-native/</code></p>
+      </div>
+    </div>
+    <div class="stage stage--light">
+      <div class="lockup" style="--accent:#0B2E2B;--wm-accent:#B8401F;--accent-dark:#FF7A59">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-06"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">SPEAK</span>
+    <span class="wm-bottom">NATIVE</span>
+  </span>
+  </div>
+    </div>
+    <div class="stage stage--dark">
+      <div class="lockup lockup--small" style="--accent:#0B2E2B;--wm-accent:#B8401F;--accent-dark:#FF7A59">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-06"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">SPEAK</span>
+    <span class="wm-bottom">NATIVE</span>
+  </span>
+  </div>
+      <svg class="mark mark--icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-06"></use></svg>
+    </div>
+    <div class="card-body">
+      <p class="rationale">Speak is the action; Native is the standard. The bubble with the voice wave makes pronunciation work visible and aims at a native-sounding delivery.</p>
+      <div class="card-url">
+        <span class="card-url-label">Page</span>
+        <a href="speak-native/index.html">speak-native/index.html</a>
+      </div>
+      <div class="domain">
+    <div class="domain-head">
+      <span class="domain-name">speaknative.com</span>
+      <a class="domain-check" href="https://www.namecheap.com/domains/registration/results/?domain=speaknative.com" target="_blank" rel="noopener">Namecheap ↗</a>
+    </div>
+    <div class="domain-grid"><div class="tld tld--taken">
+        <span class="tld-ext">.com</span>
+        <span class="tld-status">Taken</span>
+        <span class="tld-price">—</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.io</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$29.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.education</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$40.98/yr</span>
+      </div><div class="tld tld--taken">
+        <span class="tld-ext">.online</span>
+        <span class="tld-status">Taken</span>
+        <span class="tld-price">—</span>
+      </div></div>
+  </div>
+      <div class="palette" aria-label="Color palette">
+        <span class="swatch"><span style="background:#0B2E2B"></span><small>#0B2E2B</small></span><span class="swatch"><span style="background:#FF7A59"></span><small>#FF7A59</small></span><span class="swatch"><span style="background:#F7F3EC"></span><small>#F7F3EC</small></span><span class="swatch"><span style="background:#F2B33D"></span><small>#F2B33D</small></span>
+      </div>
+    </div>
+  </article>
+<article class="card" id="talk-table" style="--accent:#1F6B4F;--accent-soft:#E0F0E8;--accent-ink:#134531">
+    <div class="card-head">
+      <span class="card-index">07</span>
+      <div>
+        <h3>Talk Table</h3>
+        <p class="card-meta"><code>talk-table/</code></p>
+      </div>
+    </div>
+    <div class="stage stage--light">
+      <div class="lockup" style="--accent:#1F6B4F;--wm-accent:#8F4A16;--accent-dark:#F4A261">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-07"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">TALK</span>
+    <span class="wm-bottom">TABLE</span>
+  </span>
+  </div>
+    </div>
+    <div class="stage stage--dark">
+      <div class="lockup lockup--small" style="--accent:#1F6B4F;--wm-accent:#8F4A16;--accent-dark:#F4A261">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-07"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">TALK</span>
+    <span class="wm-bottom">TABLE</span>
+  </span>
+  </div>
+      <svg class="mark mark--icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-07"></use></svg>
+    </div>
+    <div class="card-body">
+      <p class="rationale">Talk is the action; Table is the format. The round table and the two facing bubbles say “group conversation” without relying on a generic people icon.</p>
+      <div class="card-url">
+        <span class="card-url-label">Page</span>
+        <a href="talk-table/index.html">talk-table/index.html</a>
+      </div>
+      <div class="domain">
+    <div class="domain-head">
+      <span class="domain-name">talktable.com</span>
+      <a class="domain-check" href="https://www.namecheap.com/domains/registration/results/?domain=talktable.com" target="_blank" rel="noopener">Namecheap ↗</a>
+    </div>
+    <div class="domain-grid"><div class="tld tld--taken">
+        <span class="tld-ext">.com</span>
+        <span class="tld-status">Taken</span>
+        <span class="tld-price">—</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.io</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$29.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.education</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$40.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.online</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$0.98/yr</span>
+      </div></div>
+  </div>
+      <div class="palette" aria-label="Color palette">
+        <span class="swatch"><span style="background:#1F6B4F"></span><small>#1F6B4F</small></span><span class="swatch"><span style="background:#F4A261"></span><small>#F4A261</small></span><span class="swatch"><span style="background:#FFFDF8"></span><small>#FFFDF8</small></span><span class="swatch"><span style="background:#0F4A36"></span><small>#0F4A36</small></span>
+      </div>
+    </div>
+  </article>
+<article class="card" id="lang-route" style="--accent:#B8492F;--accent-soft:#F6E2DA;--accent-ink:#7E2D1B">
+    <div class="card-head">
+      <span class="card-index">08</span>
+      <div>
+        <h3>Lang Route</h3>
+        <p class="card-meta"><code>lang-route/</code></p>
+      </div>
+    </div>
+    <div class="stage stage--light">
+      <div class="lockup" style="--accent:#B8492F;--wm-accent:#8F5A12;--accent-dark:#E4B363">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-08"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">LANG</span>
+    <span class="wm-bottom">ROUTE</span>
+  </span>
+  </div>
+    </div>
+    <div class="stage stage--dark">
+      <div class="lockup lockup--small" style="--accent:#B8492F;--wm-accent:#8F5A12;--accent-dark:#E4B363">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-08"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">LANG</span>
+    <span class="wm-bottom">ROUTE</span>
+  </span>
+  </div>
+      <svg class="mark mark--icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-08"></use></svg>
+    </div>
+    <div class="card-body">
+      <p class="rationale">Lang is what you learn; Route is the format. The path and the letter pin place the learning in Guatemala and state what you come to practice.</p>
+      <div class="card-url">
+        <span class="card-url-label">Page</span>
+        <a href="lang-route/index.html">lang-route/index.html</a>
+      </div>
+      <div class="domain">
+    <div class="domain-head">
+      <span class="domain-name">langroute.com</span>
+      <a class="domain-check" href="https://www.namecheap.com/domains/registration/results/?domain=langroute.com" target="_blank" rel="noopener">Namecheap ↗</a>
+    </div>
+    <div class="domain-grid"><div class="tld tld--taken">
+        <span class="tld-ext">.com</span>
+        <span class="tld-status">Taken</span>
+        <span class="tld-price">—</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.io</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$29.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.education</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$40.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.online</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$0.98/yr</span>
+      </div></div>
+  </div>
+      <div class="palette" aria-label="Color palette">
+        <span class="swatch"><span style="background:#B8492F"></span><small>#B8492F</small></span><span class="swatch"><span style="background:#E4B363"></span><small>#E4B363</small></span><span class="swatch"><span style="background:#FCFAF4"></span><small>#FCFAF4</small></span><span class="swatch"><span style="background:#8F2F0E"></span><small>#8F2F0E</small></span>
+      </div>
+    </div>
+  </article>
+<article class="card" id="bilingual-bridge" style="--accent:#1D2B4F;--accent-soft:#E1E6F2;--accent-ink:#141F3B">
+    <div class="card-head">
+      <span class="card-index">09</span>
+      <div>
+        <h3>Bilingual Conversation</h3>
+        <p class="card-meta"><code>bilingual-conversation/</code></p>
+      </div>
+    </div>
+    <div class="stage stage--light">
+      <div class="lockup" style="--accent:#1D2B4F;--wm-accent:#A8431A;--accent-dark:#FF8A5C">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-09"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">BILINGUAL</span>
+    <span class="wm-bottom">CONVERSATION</span>
+  </span>
+  </div>
+    </div>
+    <div class="stage stage--dark">
+      <div class="lockup lockup--small" style="--accent:#1D2B4F;--wm-accent:#A8431A;--accent-dark:#FF8A5C">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-09"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">BILINGUAL</span>
+    <span class="wm-bottom">CONVERSATION</span>
+  </span>
+  </div>
+      <svg class="mark mark--icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-09"></use></svg>
+    </div>
+    <div class="card-body">
+      <p class="rationale">Bilingual is the result; Conversation is the format. The two letter bubbles connect through a bridge: two languages, one exchange.</p>
+      <div class="card-url">
+        <span class="card-url-label">Page</span>
+        <a href="bilingual-conversation/index.html">bilingual-conversation/index.html</a>
+      </div>
+      <div class="domain">
+    <div class="domain-head">
+      <span class="domain-name">bilingualconversation.com</span>
+      <a class="domain-check" href="https://www.namecheap.com/domains/registration/results/?domain=bilingualconversation.com" target="_blank" rel="noopener">Namecheap ↗</a>
+    </div>
+    <div class="domain-grid"><div class="tld tld--free">
+        <span class="tld-ext">.com</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$12.08/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.io</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$29.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.education</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$40.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.online</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$0.98/yr</span>
+      </div></div>
+  </div>
+      <div class="palette" aria-label="Color palette">
+        <span class="swatch"><span style="background:#1D2B4F"></span><small>#1D2B4F</small></span><span class="swatch"><span style="background:#E86A33"></span><small>#E86A33</small></span><span class="swatch"><span style="background:#F8F9F6"></span><small>#F8F9F6</small></span><span class="swatch"><span style="background:#6C7BA8"></span><small>#6C7BA8</small></span>
+      </div>
+    </div>
+  </article>
+<article class="card" id="lang-match" style="--accent:#4A56D6;--accent-soft:#E5E7FB;--accent-ink:#2D37A8">
+    <div class="card-head">
+      <span class="card-index">10</span>
+      <div>
+        <h3>Lang Match</h3>
+        <p class="card-meta"><code>lang-match/</code></p>
+      </div>
+    </div>
+    <div class="stage stage--light">
+      <div class="lockup" style="--accent:#4A56D6;--wm-accent:#C2410C;--accent-dark:#FFB38A">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-10"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">LANG</span>
+    <span class="wm-bottom">MATCH</span>
+  </span>
+  </div>
+    </div>
+    <div class="stage stage--dark">
+      <div class="lockup lockup--small" style="--accent:#4A56D6;--wm-accent:#C2410C;--accent-dark:#FFB38A">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-10"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">LANG</span>
+    <span class="wm-bottom">MATCH</span>
+  </span>
+  </div>
+      <svg class="mark mark--icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-10"></use></svg>
+    </div>
+    <div class="card-body">
+      <p class="rationale">Lang is the criterion; Match is the mechanic. The two bubbles overlap and the check mark signals the match between language and teacher.</p>
+      <div class="card-url">
+        <span class="card-url-label">Page</span>
+        <a href="lang-match/index.html">lang-match/index.html</a>
+      </div>
+      <div class="domain">
+    <div class="domain-head">
+      <span class="domain-name">langmatch.com</span>
+      <a class="domain-check" href="https://www.namecheap.com/domains/registration/results/?domain=langmatch.com" target="_blank" rel="noopener">Namecheap ↗</a>
+    </div>
+    <div class="domain-grid"><div class="tld tld--taken">
+        <span class="tld-ext">.com</span>
+        <span class="tld-status">Taken</span>
+        <span class="tld-price">—</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.io</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$29.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.education</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$40.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.online</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$0.98/yr</span>
+      </div></div>
+  </div>
+      <div class="palette" aria-label="Color palette">
+        <span class="swatch"><span style="background:#4A56D6"></span><small>#4A56D6</small></span><span class="swatch"><span style="background:#FFB38A"></span><small>#FFB38A</small></span><span class="swatch"><span style="background:#19B892"></span><small>#19B892</small></span><span class="swatch"><span style="background:#FFFFFF"></span><small>#FFFFFF</small></span>
+      </div>
+    </div>
+  </article>
+<article class="card" id="tandem-talk" style="--accent:#147A6C;--accent-soft:#DFF0EC;--accent-ink:#0E544A">
+    <div class="card-head">
+      <span class="card-index">11</span>
+      <div>
+        <h3>Tandem Natives</h3>
+        <p class="card-meta"><code>tandem-natives/</code></p>
+      </div>
+    </div>
+    <div class="stage stage--light">
+      <div class="lockup" style="--accent:#147A6C;--wm-accent:#8A5A0A;--accent-dark:#F6C453">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-11"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">TANDEM</span>
+    <span class="wm-bottom">NATIVES</span>
+  </span>
+  </div>
+    </div>
+    <div class="stage stage--dark">
+      <div class="lockup lockup--small" style="--accent:#147A6C;--wm-accent:#8A5A0A;--accent-dark:#F6C453">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-11"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">TANDEM</span>
+    <span class="wm-bottom">NATIVES</span>
+  </span>
+  </div>
+      <svg class="mark mark--icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-11"></use></svg>
+    </div>
+    <div class="card-body">
+      <p class="rationale">Tandem is the exchange; Natives are the people. The letter bubbles cross with arrows in both directions: each person teaches and learns.</p>
+      <div class="card-url">
+        <span class="card-url-label">Page</span>
+        <a href="tandem-natives/index.html">tandem-natives/index.html</a>
+      </div>
+      <div class="domain">
+    <div class="domain-head">
+      <span class="domain-name">tandemnatives.com</span>
+      <a class="domain-check" href="https://www.namecheap.com/domains/registration/results/?domain=tandemnatives.com" target="_blank" rel="noopener">Namecheap ↗</a>
+    </div>
+    <div class="domain-grid"><div class="tld tld--free">
+        <span class="tld-ext">.com</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$12.08/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.io</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$29.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.education</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$40.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.online</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$0.98/yr</span>
+      </div></div>
+  </div>
+      <div class="palette" aria-label="Color palette">
+        <span class="swatch"><span style="background:#147A6C"></span><small>#147A6C</small></span><span class="swatch"><span style="background:#F6C453"></span><small>#F6C453</small></span><span class="swatch"><span style="background:#FFFFFF"></span><small>#FFFFFF</small></span><span class="swatch"><span style="background:#0F5A4F"></span><small>#0F5A4F</small></span>
+      </div>
+    </div>
+  </article>
+<article class="card" id="lang-habit" style="--accent:#1B5FA8;--accent-soft:#E0EBF8;--accent-ink:#12457D">
+    <div class="card-head">
+      <span class="card-index">12</span>
+      <div>
+        <h3>Lang Habit</h3>
+        <p class="card-meta"><code>lang-habit/</code></p>
+      </div>
+    </div>
+    <div class="stage stage--light">
+      <div class="lockup" style="--accent:#1B5FA8;--wm-accent:#A33A1C;--accent-dark:#FF8A6A">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-12"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">LANG</span>
+    <span class="wm-bottom">HABIT</span>
+  </span>
+  </div>
+    </div>
+    <div class="stage stage--dark">
+      <div class="lockup lockup--small" style="--accent:#1B5FA8;--wm-accent:#A33A1C;--accent-dark:#FF8A6A">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-12"></use></svg>
+    <span class="wordmark" aria-hidden="true">
+    <span class="wm-top">LANG</span>
+    <span class="wm-bottom">HABIT</span>
+  </span>
+  </div>
+      <svg class="mark mark--icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark-12"></use></svg>
+    </div>
+    <div class="card-body">
+      <p class="rationale">Lang is the content; Habit is the mechanic. The calendar and the check bubble turn daily practice into a language checkbox, not just any habit.</p>
+      <div class="card-url">
+        <span class="card-url-label">Page</span>
+        <a href="lang-habit/index.html">lang-habit/index.html</a>
+      </div>
+      <div class="domain">
+    <div class="domain-head">
+      <span class="domain-name">langhabit.com</span>
+      <a class="domain-check" href="https://www.namecheap.com/domains/registration/results/?domain=langhabit.com" target="_blank" rel="noopener">Namecheap ↗</a>
+    </div>
+    <div class="domain-grid"><div class="tld tld--taken">
+        <span class="tld-ext">.com</span>
+        <span class="tld-status">Taken</span>
+        <span class="tld-price">—</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.io</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$29.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.education</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$40.98/yr</span>
+      </div><div class="tld tld--free">
+        <span class="tld-ext">.online</span>
+        <span class="tld-status">Available</span>
+        <span class="tld-price">$0.98/yr</span>
+      </div></div>
+  </div>
+      <div class="palette" aria-label="Color palette">
+        <span class="swatch"><span style="background:#1B5FA8"></span><small>#1B5FA8</small></span><span class="swatch"><span style="background:#E8664A"></span><small>#E8664A</small></span><span class="swatch"><span style="background:#C7EC5B"></span><small>#C7EC5B</small></span><span class="swatch"><span style="background:#FFFFFF"></span><small>#FFFFFF</small></span>
+      </div>
+    </div>
+  </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p><strong>Next step:</strong> register the domains you want, then wire a favicon and a dark version per template.</p>
+      <p>Templates index · every card links to its live page. Domain data from Namecheap: availability and first-year price per extension; <code>.online</code> renews at $34.98/yr.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var CAP = 1.6;
+      function fit() {
+        var wordmarks = document.querySelectorAll(".wordmark");
+        for (var i = 0; i < wordmarks.length; i++) {
+          var wm = wordmarks[i];
+          var top = wm.querySelector(".wm-top");
+          var bottom = wm.querySelector(".wm-bottom");
+          if (!top || !bottom) continue;
+
+          top.style.fontSize = "1em";
+          bottom.style.fontSize = "1em";
+          top.style.letterSpacing = "0";
+          bottom.style.letterSpacing = "0";
+          top.style.marginRight = "0";
+          bottom.style.marginRight = "0";
+
+          var wt = top.getBoundingClientRect().width;
+          var wb = bottom.getBoundingClientRect().width;
+          var target = Math.max(wt, wb);
+          if (!target) continue;
+
+          function grow(el, natural) {
+            if (!natural) return;
+            var scale = Math.min(target / natural, CAP);
+            el.style.fontSize = scale + "em";
+          }
+          grow(top, wt);
+          grow(bottom, wb);
+
+          wt = top.getBoundingClientRect().width;
+          wb = bottom.getBoundingClientRect().width;
+
+          function track(el, natural) {
+            if (natural >= target - 0.5) return;
+            var chars = el.textContent.trim().length;
+            if (chars < 2) return;
+            var spacing = (target - natural) / (chars - 1);
+            el.style.letterSpacing = spacing + "px";
+            el.style.marginRight = -spacing + "px";
+          }
+          track(top, wt);
+          track(bottom, wb);
+        }
+      }
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(fit);
+      }
+      window.addEventListener("load", fit);
+      window.addEventListener("resize", fit);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speak Native — Sound like yourself in another language</title>
+  <meta name="description" content="A pronunciation and speaking lab with native coaches. Find the sounds that give you away, drill them for eight weeks, and keep your accent — just make it clear.">
+  <meta name="theme-color" content="#0B2E2B">
+  <meta property="og:title" content="Speak Native — Sound like yourself in another language">
+  <meta property="og:description" content="A sound lab for language learners. Diagnostic, drills, rhythm, and a coach who listens closely.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="../assets/logos/voice.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3M9 21h6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M9 6.5 18 12l-9 5.5v-11Z" fill="currentColor"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 6h3v12H8zM13 6h3v12h-3z" fill="currentColor"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 19.5a5.5 5.5 0 0 1 11 0M16 5.3a3 3 0 0 1 0 5.6M17 14.2a5 5 0 0 1 3.5 4.7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.78 5.63 6.22.9-4.5 4.39 1.06 6.2L12 17.2l-5.56 2.92 1.06-6.2L3 9.53l6.22-.9L12 3Z" fill="currentColor"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m3 7 9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m10 9 5 3-5 3V9Z" fill="currentColor"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7.5 10v7M7.5 7.1v.1M11.5 17v-4a2.5 2.5 0 0 1 5 0v4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Speak Native home">
+        <img class="brand-mark" src="../assets/logos/voice.svg" alt="" width="40" height="40">
+        <span class="brand-name" aria-hidden="true">
+          <span class="brand-line brand-line--top">SPEAK</span>
+          <span class="brand-line brand-line--bottom">NATIVE</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+        <a href="#method">The lab</a>
+        <a href="#sound-lab">Sound map</a>
+        <a href="#coaches">Coaches</a>
+        <a href="#program">Program</a>
+        <a href="#pricing">Pricing</a>
+        <a class="btn btn-coral nav-mobile-cta" href="#join">Book a check</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-coral btn-sm nav-cta" href="#join">Book a check</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"></use></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker"><span aria-hidden="true"></span> Pronunciation lab · English &amp; Spanish · Guatemala</p>
+          <h1>Sound like<br><em>yourself.</em><br>Only clearer.</h1>
+          <p class="hero-lede">You do not need to lose your accent. You need the handful of sounds that make people ask you to repeat yourself — found, drilled, and gone in eight weeks. For Spanish speakers taking on English and English speakers taking on Spanish, with coaches in Guatemala.</p>
+          <div class="hero-actions">
+            <a class="btn btn-coral btn-lg" href="#join">Book a free sound check</a>
+            <button class="btn btn-ghost btn-lg" type="button" id="hero-check">Try a 3-minute check <svg class="icon" aria-hidden="true"><use href="#i-play"></use></svg></button>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="../assets/img/teacher-sofia.jpg" alt="">
+              <img src="../assets/img/teacher-james.jpg" alt="">
+              <img src="../assets/img/teacher-daniel.jpg" alt="">
+              <img src="../assets/img/teacher-maya.jpg" alt="">
+            </div>
+            <p><strong>4.9 from 1,100 voice checks</strong><span>English · Spanish · 42 accents from Guatemala and the US</span></p>
+          </div>
+        </div>
+
+        <div class="hero-stage">
+          <div class="console" aria-label="Sample pronunciation check for the word thoroughly">
+            <div class="console-top">
+              <span class="console-live"><span aria-hidden="true"></span> Live analysis</span>
+              <span class="console-lang">English · Guatemala</span>
+            </div>
+
+            <div class="console-target">
+              <span class="console-label">Target word</span>
+              <p class="console-word" id="hero-word">thoroughly</p>
+              <span class="console-ipa" id="hero-ipa">/ˈθʌr.ə.li/</span>
+            </div>
+
+            <div class="wave wave--hero" id="hero-wave" aria-hidden="true"></div>
+
+            <div class="console-meter">
+              <div>
+                <span>Clarity</span>
+                <strong id="hero-score">84</strong>
+              </div>
+              <div>
+                <span>Rhythm</span>
+                <strong>91</strong>
+              </div>
+              <div>
+                <span>Vowels</span>
+                <strong>76</strong>
+              </div>
+            </div>
+
+            <div class="console-feedback">
+              <span class="feedback-tag">One thing to try</span>
+              <p id="hero-feedback">Your <strong>TH</strong> is slipping into a <strong>/t/</strong>. Tongue forward, tiny puff of air — no voice.</p>
+            </div>
+
+            <button class="btn btn-coral btn-block" type="button" id="hero-run">Run the check <svg class="icon" aria-hidden="true"><use href="#i-mic"></use></svg></button>
+            <p class="console-status" id="hero-status" aria-live="polite">Microphone ready · 3 seconds of audio</p>
+
+            <div class="console-coach">
+              <img src="../assets/img/teacher-sofia.jpg" alt="">
+              <span><strong>Sofía reviews it</strong><span>Native Spanish · phonetics specialist</span></span>
+              <span class="console-score"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg> 4.9</span>
+            </div>
+          </div>
+
+          <span class="hero-note">Bring your accent.<br>Keep the clarity.</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>/θ/</span><span>/r/</span><span>schwa</span><span>word stress</span><span>connected speech</span><span>vowel length</span><span>intonation</span><span>the soft no</span>
+        <span>/θ/</span><span>/r/</span><span>schwa</span><span>word stress</span><span>connected speech</span><span>vowel length</span><span>intonation</span><span>the soft no</span>
+      </div>
+    </div>
+
+    <section class="section method" id="method">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">The method</p>
+            <h2>Pronunciation is<br><em>a physical habit.</em></h2>
+          </div>
+          <p>Not a personality trait, not a talent. A set of mouth movements and timing patterns you can practise, record, and hear change. We start with the sounds that cost you the most clarity.</p>
+        </div>
+
+        <div class="pillar-grid">
+          <article class="pillar">
+            <span class="pillar-num">01</span>
+            <span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="#i-mic"></use></svg></span>
+            <h3>Find the leak</h3>
+            <p>A ten-minute diagnostic: you read, improvise, and argue with a coach. We mark the three sounds that make comprehension drop, not the twenty that sound “foreign”.</p>
+            <span class="pillar-meta">Week 1 · sound map</span>
+          </article>
+          <article class="pillar pillar--coral">
+            <span class="pillar-num">02</span>
+            <span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="#i-play"></use></svg></span>
+            <h3>Drill the mouth</h3>
+            <p>Short daily reps with a mirror, a recording, and a model. Minimal pairs, then phrases, then the sentence you actually avoided in last week’s meeting.</p>
+            <span class="pillar-meta">Weeks 2–5 · 8 min a day</span>
+          </article>
+          <article class="pillar">
+            <span class="pillar-num">03</span>
+            <span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="#i-users"></use></svg></span>
+            <h3>Take it into the room</h3>
+            <p>A weekly live session where the target sounds have to survive real conversation. Your coach listens for the old habit, then names the moment it came back.</p>
+            <span class="pillar-meta">Weeks 2–8 · live practice</span>
+          </article>
+        </div>
+
+        <div class="method-strip">
+          <p><strong>42</strong> accents represented</p>
+          <p><strong>8 min</strong> of daily practice</p>
+          <p><strong>3</strong> target sounds, not twenty</p>
+          <p><strong>0</strong> “speak like a native” promises</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lab" id="sound-lab">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">The sound map</p>
+            <h2>Pick the sound<br><em>that gives you away.</em></h2>
+          </div>
+          <p>Try the lab. Choose a common trouble spot, hear what changes, and read the mouth note. This is the same interface you will use between sessions.</p>
+        </div>
+
+        <div class="lab-shell">
+          <div class="lab-tabs" role="tablist" aria-label="Choose a target sound">
+            <button class="lab-tab is-active" type="button" role="tab" id="lab-tab-th" aria-selected="true" aria-controls="lab-panel" data-sound="th">
+              <span>01</span> The TH split
+            </button>
+            <button class="lab-tab" type="button" role="tab" id="lab-tab-r" aria-selected="false" aria-controls="lab-panel" data-sound="r" tabindex="-1">
+              <span>02</span> The English R
+            </button>
+            <button class="lab-tab" type="button" role="tab" id="lab-tab-vowels" aria-selected="false" aria-controls="lab-panel" data-sound="vowels" tabindex="-1">
+              <span>03</span> Long &amp; short vowels
+            </button>
+            <button class="lab-tab" type="button" role="tab" id="lab-tab-rhythm" aria-selected="false" aria-controls="lab-panel" data-sound="rhythm" tabindex="-1">
+              <span>04</span> Stress &amp; rhythm
+            </button>
+          </div>
+
+          <div class="lab-panel" id="lab-panel" role="tabpanel" aria-labelledby="lab-tab-th">
+            <div class="lab-copy">
+              <span class="lab-kicker" id="lab-kicker">Sound 01 · dental fricative</span>
+              <h3 id="lab-title">Think, not sink.</h3>
+              <p id="lab-desc">The voiceless TH is a tongue-tip sound, not a /t/ and not an /s/. Spanish, French, Italian and many other first languages replace it with something nearby. The result is understandable, but it costs you a beat.</p>
+
+              <ul class="lab-pairs" id="lab-pairs">
+                <li>think <span>/θɪŋk/</span> vs. sink <span>/sɪŋk/</span></li>
+                <li>three <span>/θriː/</span> vs. tree <span>/triː/</span></li>
+                <li>mouth <span>/maʊθ/</span> vs. mouse <span>/maʊs/</span></li>
+              </ul>
+
+              <div class="lab-tip">
+                <span class="lab-tip-label">Mouth note</span>
+                <p id="lab-tip">Tongue tip lightly between the teeth. Blow air, no voice. If your throat vibrates, you are making the other TH.</p>
+              </div>
+
+              <div class="lab-actions">
+                <button class="btn btn-coral" type="button" id="lab-play">
+                  <svg class="icon" aria-hidden="true"><use href="#i-play"></use></svg> Hear the model
+                </button>
+                <button class="btn btn-ghost-dark" type="button" id="lab-record">
+                  <span class="record-dot" aria-hidden="true"></span> Record your try
+                </button>
+              </div>
+              <p class="lab-status" id="lab-status" aria-live="polite">Choose a sound, then record one word.</p>
+            </div>
+
+            <div class="lab-console">
+              <div class="lab-console-head">
+                <span>Target</span>
+                <span class="lab-console-dot" aria-hidden="true"></span>
+              </div>
+              <div class="lab-word-row">
+                <p class="lab-word" id="lab-word">think</p>
+                <span class="lab-ipa" id="lab-ipa">/θɪŋk/</span>
+              </div>
+              <div class="wave wave--lab" id="lab-wave" aria-hidden="true"></div>
+              <div class="lab-meter">
+                <div><span>Clarity</span><strong id="lab-score">—</strong></div>
+                <div><span>Attempts</span><strong id="lab-attempts">0</strong></div>
+              </div>
+              <div class="lab-verdict" id="lab-verdict" hidden>
+                <span class="verdict-tag">Coach note</span>
+                <p id="lab-verdict-text"></p>
+              </div>
+              <p class="lab-console-note">Demo only. In the lab, your recording is compared with a native model and kept in your sound map.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section proof" id="proof">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">Before / after</p>
+            <h2>Same person.<br><em>Fewer repeats.</em></h2>
+          </div>
+          <p>These are not accent-erasure stories. They are stories about being understood on the first try — on a call, at a counter, in a meeting.</p>
+        </div>
+
+        <div class="proof-grid">
+          <article class="before-after before-after--feature">
+            <header class="ba-head">
+              <span>Ana · Spanish → English</span>
+              <span class="ba-weeks">8 weeks</span>
+            </header>
+            <div class="ba-row">
+              <span class="ba-label">Before</span>
+              <div class="wave wave--before" id="wave-before-1" aria-hidden="true"></div>
+              <span class="ba-score">62</span>
+            </div>
+            <div class="ba-row">
+              <span class="ba-label">After</span>
+              <div class="wave wave--after" id="wave-after-1" aria-hidden="true"></div>
+              <span class="ba-score ba-score--good">89</span>
+            </div>
+            <blockquote>“I stopped saying my own name twice on calls. That was the whole reason I signed up.”</blockquote>
+            <footer>
+              <img src="../assets/img/testimonial-1.jpg" alt="Portrait of Ana Torres" loading="lazy">
+              <span><strong>Ana Torres</strong><span>Product designer · Guatemala City</span></span>
+            </footer>
+          </article>
+
+          <article class="before-after">
+            <header class="ba-head">
+              <span>Tom · English → Spanish</span>
+              <span class="ba-weeks">8 weeks</span>
+            </header>
+            <div class="ba-row">
+              <span class="ba-label">Before</span>
+              <div class="wave wave--before" id="wave-before-2" aria-hidden="true"></div>
+              <span class="ba-score">57</span>
+            </div>
+            <div class="ba-row">
+              <span class="ba-label">After</span>
+              <div class="wave wave--after" id="wave-after-2" aria-hidden="true"></div>
+              <span class="ba-score ba-score--good">84</span>
+            </div>
+            <blockquote>“My R was doing all the work. Now the vowels do it.”</blockquote>
+            <footer>
+              <img src="../assets/img/testimonial-3.jpg" alt="Portrait of Tom Becker" loading="lazy">
+              <span><strong>Tom Becker</strong><span>Engineer · Austin</span></span>
+            </footer>
+          </article>
+
+          <article class="before-after">
+            <header class="ba-head">
+              <span>Lucía · Spanish → English</span>
+              <span class="ba-weeks">12 weeks</span>
+            </header>
+            <div class="ba-row">
+              <span class="ba-label">Before</span>
+              <div class="wave wave--before" id="wave-before-3" aria-hidden="true"></div>
+              <span class="ba-score">66</span>
+            </div>
+            <div class="ba-row">
+              <span class="ba-label">After</span>
+              <div class="wave wave--after" id="wave-after-3" aria-hidden="true"></div>
+              <span class="ba-score ba-score--good">91</span>
+            </div>
+            <blockquote>“The rhythm drills changed more than the sounds. I finally sound like I mean it.”</blockquote>
+            <footer>
+              <img src="../assets/img/testimonial-2.jpg" alt="Portrait of Lucía Fernández" loading="lazy">
+              <span><strong>Lucía Fernández</strong><span>Analyst · Quetzaltenango</span></span>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section coaches" id="coaches">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">The people listening</p>
+            <h2>Specialists,<br><em>not cheerleaders.</em></h2>
+          </div>
+          <p>Every coach is a native speaker trained to hear the difference between an accent and a barrier. They will tell you what is working and what is costing you.</p>
+        </div>
+
+        <div class="coach-grid">
+          <article class="coach">
+            <div class="coach-photo">
+              <img src="../assets/img/teacher-sofia.jpg" alt="Portrait of Sofía, a Speak Native coach" loading="lazy">
+            </div>
+            <div class="coach-body">
+              <span class="coach-lang">Spanish · English</span>
+              <h3>Sofía Herrera</h3>
+              <p>Phonetics specialist. Works on dental fricatives, vowel length, and the confidence to slow down.</p>
+              <span class="coach-tag">Antigua · 12 years</span>
+            </div>
+          </article>
+          <article class="coach">
+            <div class="coach-photo">
+              <img src="../assets/img/teacher-james.jpg" alt="Portrait of James, a Speak Native coach" loading="lazy">
+            </div>
+            <div class="coach-body">
+              <span class="coach-lang">English · Spanish</span>
+              <h3>James Whitfield</h3>
+              <p>Connected speech and interview nerves. Gets you from clear words to clear sentences.</p>
+              <span class="coach-tag">Antigua · 9 years</span>
+            </div>
+          </article>
+          <article class="coach">
+            <div class="coach-photo">
+              <img src="../assets/img/teacher-daniel.jpg" alt="Portrait of Daniel, a Speak Native coach" loading="lazy">
+            </div>
+            <div class="coach-body">
+              <span class="coach-lang">English · Spanish</span>
+              <h3>Daniel Brooks</h3>
+              <p>Presentation voice and rhythm. Less volume, more intention. A theatre director in another life.</p>
+              <span class="coach-tag">Lake Atitlán · 7 years</span>
+            </div>
+          </article>
+          <article class="coach">
+            <div class="coach-photo">
+              <img src="../assets/img/teacher-maya.jpg" alt="Portrait of Maya, a Speak Native coach" loading="lazy">
+            </div>
+            <div class="coach-body">
+              <span class="coach-lang">Spanish · English</span>
+              <h3>Maya Okonkwo</h3>
+              <p>Intonation and the soft no. Helps you sound warm without sounding uncertain.</p>
+              <span class="coach-tag">Livingston · 10 years</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="program" id="program">
+      <div class="container">
+        <div class="program-head">
+          <div>
+            <p class="eyebrow">The eight weeks</p>
+            <h2>One sound map.<br><em>Then the real work.</em></h2>
+          </div>
+          <p>The first session is a diagnostic. After that, the program bends around your three target sounds. You record, you practise, you come back. No generic course to sit through.</p>
+        </div>
+
+        <ol class="program-track">
+          <li class="program-step">
+            <span class="program-week">Week 01</span>
+            <span class="program-dot" aria-hidden="true"></span>
+            <h3>Sound check</h3>
+            <p>A 30-minute recorded conversation. You leave with a one-page map: what is clear, what is costing you, and what to practise first.</p>
+            <span class="program-meta">30 min live · sound map</span>
+          </li>
+          <li class="program-step">
+            <span class="program-week">Weeks 02–04</span>
+            <span class="program-dot" aria-hidden="true"></span>
+            <h3>The three sounds</h3>
+            <p>Minimal pairs, mouth positions, and eight-minute daily reps. Your coach sends a new model every Monday and marks your recordings within a day.</p>
+            <span class="program-meta">Daily reps · 3 live sessions</span>
+          </li>
+          <li class="program-step">
+            <span class="program-week">Weeks 05–06</span>
+            <span class="program-dot" aria-hidden="true"></span>
+            <h3>Rhythm &amp; connection</h3>
+            <p>The sounds are clean; now they need to survive a sentence. Stress, linking, and the pauses that make you sound certain instead of rushed.</p>
+            <span class="program-meta">2 live sessions · phrase drills</span>
+          </li>
+          <li class="program-step">
+            <span class="program-week">Weeks 07–08</span>
+            <span class="program-dot" aria-hidden="true"></span>
+            <h3>Your real room</h3>
+            <p>Rehearse the meeting, the interview, the dinner. Final recording, final map, and a practice plan you can keep after the lab ends.</p>
+            <span class="program-meta">2 live sessions · final map</span>
+          </li>
+        </ol>
+
+        <div class="program-note">
+          <span class="program-note-label">What you keep</span>
+          <p>Your sound map, every model recording, a bank of your own phrases, and a four-week practice plan. No subscription required after week eight.</p>
+          <a class="btn btn-ghost-dark" href="#pricing">See the plans <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">The lab, priced plainly</p>
+            <h2>Start with<br><em>one check.</em></h2>
+          </div>
+          <p>The diagnostic is free. After that, pay for the lab or for a single session. No annual plan, no app subscription, no “lifetime access” that expires.</p>
+        </div>
+
+        <div class="price-grid">
+          <article class="price">
+            <span class="price-label">Try it</span>
+            <h3>Single session</h3>
+            <p class="price-amount">$45</p>
+            <p class="price-note">One 30-minute live session</p>
+            <ul class="price-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> A recorded diagnostic</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Three target sounds</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> A one-page sound map</li>
+            </ul>
+            <a class="btn btn-outline btn-block js-choose-plan" href="#join" data-plan="Single session · $45">Book one check</a>
+          </article>
+
+          <article class="price price--feature">
+            <span class="price-flag">The whole lab</span>
+            <span class="price-label">Most chosen</span>
+            <h3>Voice Lab</h3>
+            <p class="price-amount">$390</p>
+            <p class="price-note">Eight weeks · or three of $140</p>
+            <ul class="price-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> 8 live sessions (30 min)</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Weekly model recordings</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Feedback on every recording</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Final sound map + practice plan</li>
+            </ul>
+            <a class="btn btn-coral btn-block js-choose-plan" href="#join" data-plan="Voice Lab · $390">Take the lab</a>
+          </article>
+
+          <article class="price">
+            <span class="price-label">For teams</span>
+            <h3>Team voice</h3>
+            <p class="price-amount">$690</p>
+            <p class="price-note">Up to six people · four weeks</p>
+            <ul class="price-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> One shared diagnostic per person</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Four group sessions</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> A team phrasebook</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Manager summary</li>
+            </ul>
+            <a class="btn btn-outline btn-block js-choose-plan" href="#join" data-plan="Team voice · $690">Talk to us</a>
+          </article>
+        </div>
+        <p class="pricing-foot">Prices in USD. The first sound check is free. If the first paid session is not useful, tell us within seven days and we will refund it.</p>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-copy">
+          <p class="eyebrow">Before you record</p>
+          <h2>The honest<br><em>answers.</em></h2>
+          <p>Still unsure? Write to a coach. A human replies within one working day.</p>
+          <a class="contact-card" href="mailto:voice@nativespeaker.com">
+            <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg></span>
+            <span><strong>Ask a coach</strong><span>voice@nativespeaker.com</span></span>
+          </a>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item is-open">
+            <h3><button class="faq-question" type="button" aria-expanded="true" aria-controls="voice-faq-1">Will this erase my accent?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="voice-faq-1" aria-hidden="true"><div><p>No, and that is not the goal. Your accent is part of how you sound like yourself. We work on the specific sounds and timing patterns that make comprehension drop. You keep the rest.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="voice-faq-2">Do I need a good microphone?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="voice-faq-2" aria-hidden="true" inert><div><p>A phone or laptop microphone is enough for the diagnostic. If your room is noisy, record in a smaller space or under a blanket — seriously. We care about the sounds, not the studio.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="voice-faq-3">How much practice is it really?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="voice-faq-3" aria-hidden="true" inert><div><p>Eight minutes a day, five days a week, plus one 30-minute live session. The daily reps are short on purpose. Consistency matters more than a long Sunday session.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="voice-faq-4">Is this only for English?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="voice-faq-4" aria-hidden="true" inert><div><p>English and Spanish are the two lab languages. Spanish covers the vowel system, the trill and tap, and the rhythm traps that make English speakers sound flat.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="voice-faq-5">What if I am a complete beginner?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="voice-faq-5" aria-hidden="true" inert><div><p>Pronunciation work is most useful once you can hold a basic conversation. If you are below A2, start with a general class and come back when you have a little more language to shape.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="voice-faq-6">Can I switch coaches?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button></h3>
+            <div class="faq-panel" id="voice-faq-6" aria-hidden="true" inert><div><p>Yes, once during the lab. Your sound map, recordings, and coach notes move with you, so you do not start over.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="join" id="join">
+      <div class="container join-grid">
+        <div class="join-copy">
+          <p class="eyebrow">Free sound check</p>
+          <h2>Send us<br><em>your voice.</em></h2>
+          <p>Thirty minutes, one coach, one honest map of what is clear and what is costing you. No card, no placement test, no “fluency score”.</p>
+          <ul class="join-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"></use></svg> 30 minutes, live online</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-mic"></use></svg> Three target sounds</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> A plan either way</li>
+          </ul>
+          <p class="join-proof"><strong>1,100</strong> voice checks completed · <strong>4.9 / 5</strong></p>
+        </div>
+
+        <div class="join-card">
+          <p class="selection-note" id="selection-note" hidden></p>
+
+          <form id="join-form" novalidate>
+            <div class="field">
+              <label for="join-name">Your name</label>
+              <input id="join-name" name="name" type="text" autocomplete="name" placeholder="Ana Torres">
+            </div>
+            <div class="field">
+              <label for="join-email">Email</label>
+              <input id="join-email" name="email" type="email" autocomplete="email" placeholder="ana@example.com">
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="join-language">Lab language</label>
+                <select id="join-language" name="language">
+                  <option value="English">English</option>
+                  <option value="Spanish">Spanish</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="join-focus">What bothers you?</label>
+                <select id="join-focus" name="focus">
+                  <option value="People ask me to repeat myself">People ask me to repeat myself</option>
+                  <option value="I avoid certain words">I avoid certain words</option>
+                  <option value="I sound rushed or flat">I sound rushed or flat</option>
+                  <option value="I want to sound more certain">I want to sound more certain</option>
+                  <option value="Not sure — surprise me">Not sure — surprise me</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="join-accent">Your first language</label>
+              <select id="join-accent" name="accent">
+                <option value="Spanish">Spanish</option>
+                <option value="English">English</option>
+                <option value="Portuguese">Portuguese</option>
+                <option value="French">French</option>
+                <option value="Italian">Italian</option>
+                <option value="German">German</option>
+                <option value="Another language">Another language</option>
+              </select>
+            </div>
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+            <button class="btn btn-coral btn-block" type="submit">Book my free sound check</button>
+            <p class="form-note">No card. A coach replies within one business day.</p>
+          </form>
+
+          <div class="join-success" id="join-success" hidden aria-live="polite">
+            <span class="success-mark"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+            <h3>Ready when you are, <span id="success-name">Ana</span>.</h3>
+            <p>We will email <strong id="success-email">ana@example.com</strong> with times for your <span id="success-language">English</span> sound check.</p>
+            <p class="success-next">Bring one sentence you always avoid saying out loud. We will start there.</p>
+            <button class="btn btn-outline" id="join-again" type="button">Book another check</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand--footer" href="#top" aria-label="Speak Native home">
+            <img class="brand-mark" src="../assets/logos/voice.svg" alt="" width="40" height="40">
+            <span class="brand-name" aria-hidden="true">
+              <span class="brand-line brand-line--top">SPEAK</span>
+              <span class="brand-line brand-line--bottom">NATIVE</span>
+            </span>
+          </a>
+          <p>A pronunciation lab for people who want to be understood, not erased.</p>
+          <div class="socials">
+            <a href="https://instagram.com" aria-label="Speak Native on Instagram" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+            <a href="https://youtube.com" aria-label="Speak Native on YouTube" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-youtube"></use></svg></a>
+            <a href="https://linkedin.com" aria-label="Speak Native on LinkedIn" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Speak Native</h3>
+          <a href="#method">The method</a>
+          <a href="#sound-lab">Sound map</a>
+          <a href="#program">Eight weeks</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="#coaches">Coaches</a>
+          <a href="#proof">Before / after</a>
+          <a href="mailto:voice@nativespeaker.com">Contact</a>
+          <a href="#join">Free check</a>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <a href="#faq">Help centre</a>
+          <a href="#faq">Privacy</a>
+          <a href="#faq">Terms</a>
+          <a href="#faq">Refunds</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Speak Native. Keep the accent.</p>
+        <span>English · Spanish · Live online</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="../assets/brand-fit.js" defer></script>
+</body>
+</html>
